@@ -1,0 +1,63 @@
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+.navbar-nav > li {
+    padding: 0px 27px;
+}
+.backgroundblack{
+    background: rgba(0,0,0,0.8);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.colorblack{
+    color: #111;
+}
+.backggray{
+    padding-top: 40px;
+    background-color: #f2f2f2;
+}
+.bordertop{
+    border-top:1px solid #111;
+    padding: 10px;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+    border-radius: 0px 25px 25px 0px;
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0;
+	border-radius: 25px 0px 0px 25px; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+li,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+	width: 70px;
+	height: 70px;
+}
+
+.iconcart{
+width: 60px;
+padding-top: 15px;
+height: 60px;
+}
