@@ -11,3 +11,4 @@ Router::load('routes.php')->direct(Request::uri(), Request::method());
 Router::load('routes.php')->direct(Request::uri(), Request::method());
 Router::load('routes.php')->direct(Request::uri(), Request::method());
 Router::load('routes.php')->direct(Request::uri(), Request::method());
+Router::load('routes.php')->direct(Request::uri(), Request::method());
