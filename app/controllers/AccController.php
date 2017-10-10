@@ -11,7 +11,7 @@ class AccController
     $password = md5($_POST['password']);
     $user = Account::checkLogin($username, $password);
     if(!isset($user)) {
-      return redirect('login');
+      return redirect('loginadmin');
     }
     session_start();
     $_SESSION['username'] = $user;
