@@ -4,9 +4,10 @@
 	<title>APPLE STORE TEAM 4</title>
 	<link rel="stylesheet" type="text/css" href="public/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="public/css/effects.min.css">
-	<link rel="stylesheet" type="text/css" href="public/css/tv.css">
+	<link rel="stylesheet" type="text/css" href="public/css/n-custom.css">
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://glyphicons.com/">
 	<script src="public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>

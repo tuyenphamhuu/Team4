@@ -1,5 +1,5 @@
 <?php require 'partials/head.php'; ?>
-<<<<<<< HEAD
+<?php require 'partials/nav.php'; ?>
 
 <h1>iPhone</h1>
 <content>
@@ -64,10 +64,5 @@
 		</div>
 	</div>	
 </content>
-
-=======
-<?php require('nav.php'); ?>
-<h1>Iphone</h1>
->>>>>>> dev
 
 <?php require 'partials/footer.php'; ?>
