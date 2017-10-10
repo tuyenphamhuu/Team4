@@ -8,3 +8,4 @@ $router->get('tv', 'PagesController@tv');
 $router->get('watch', 'PagesController@watch');
 
 $router->post('users', 'UsersController@store');
+// $router->post('singin', 'UsersController@sign-in');
