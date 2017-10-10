@@ -1,0 +1,67 @@
+#logo-img-admin {
+	background-color: #131315;
+}
+#img-admin {
+	width: 35%;
+}
+.name-label {
+	color: #000;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: none;
+}
+.ad-func {
+	color: #fff;
+	text-transform: none;
+}
+.name-func {
+	font-size: 15px;
+	font-weight: 600;
+}
+.ad-func ul {
+	padding-left: 5px;
+	margin-bottom: 40px;
+}
+.func-item {
+	font-size: 15px;
+	line-height: 40px;	
+	list-style-type: none;
+}
+.func-item a {
+	color: #fff;
+	text-decoration: none;
+}
+.func-item img {
+	width: 18px;
+	margin-right: 10px;
+}
+.func-item a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.ic-func {
+	margin-right: 7px;
+}
+#form-func .form-group label {
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 0;
+	text-transform: capitalize;
+}
+.right h5 {
+	color: #B22E12;
+	margin: 40px 0;
+	letter-spacing: 0;
+	font-weight: 600;
+}
+#form-func button {
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	padding: 5px 40px;
+	background-color: #131315;
+}
+#form-func button:hover {
+	font-size: 18px;
+}

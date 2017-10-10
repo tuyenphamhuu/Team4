@@ -1,5 +1,5 @@
 <?php require 'partials/head.php'; ?>
-<?php require('partials/nav.php'); ?>
+<?php require 'partials/nav.php'; ?>
 <content>
 	<div class="container-fluid">
 		<div id="iphone" class="row text-center">
@@ -102,4 +102,8 @@
 	</div>
 
 </content>
+<<<<<<< HEAD
 <?php require 'partials/footer.php'; ?>
+=======
+<?php require 'partials/footer.php'; ?>
+>>>>>>> dev
