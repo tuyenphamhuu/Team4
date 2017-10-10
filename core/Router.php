@@ -51,7 +51,6 @@ class Router
   protected function callAction($controller, $action)
   {
     $controller = "App\\Controllers\\{$controller}";
-    echo $controller;
     $controller = new $controller;
     if (! method_exists($controller, $action)) {
       throw new Exception(
