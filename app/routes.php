@@ -6,7 +6,7 @@ $router->get('mac', 'PagesController@mac');
 $router->get('ipad', 'PagesController@ipad');
 $router->get('tv', 'PagesController@tv');
 $router->get('watch', 'PagesController@watch');
-$router->get('login', 'AccController@getLogin');
+$router->get('loginadmin', 'AccController@getLogin');
 $router->get('admin/index', 'AccController@getIndex');
 $router->post('postlogin', 'AccController@postLogin');
 
