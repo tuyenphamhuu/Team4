@@ -7,7 +7,8 @@ $router->get('ipad', 'PagesController@ipad');
 $router->get('tv', 'PagesController@tv');
 $router->get('watch', 'PagesController@watch');
 $router->get('login', 'AccController@getLogin');
-//$router->post('login', 'AccountController@postLogin');
+$router->get('admin/index', 'AccController@getIndex');
+$router->post('postlogin', 'AccController@postLogin');
 
 $router->post('users', 'UsersController@store');
 // $router->post('singin', 'UsersController@sign-in');

@@ -1,27 +1,33 @@
 <?php
 namespace App\Controllers;
+use App\Models\Account;
 
 class AccController
 {
 
-  // public function postLogin()
-  // {
-  //   $username = $_POST['username'];
-  //   $password = md5($_POST['password']);
-  //   $user = LoginModel::checkLogin($username, $password);
-  //   if(\sizeof($user) == 0) {
-  //     return redirect('signin');
-  //   }
-  //   \session_start();
-  //   $_SESSION['username'] = $user;
+  public function postLogin()
+  {
+    $username = $_POST['username'];
+    $password = md5($_POST['password']);
+    $user = Account::checkLogin($username, $password);
+    if(!isset($user)) {
+      return redirect('login');
+    }
+    session_start();
+    $_SESSION['username'] = $user;
     
-  //   return \redirect('admin/index');
-  // }
+    return view('admin/index');
+  }
 
 
   public function getLogin()
   {
     return view('admin/signin');
+  }
+
+  public function getIndex()
+  {
+    return view('admin/index');
   }
 
 

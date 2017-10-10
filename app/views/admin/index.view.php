@@ -1,6 +1,5 @@
-<?php require 'partials/head.php'; ?>
+<?php require 'app/views/partials/head.php'; ?>
 <div class="container">
 	HELLO
 </div>
 
-<?php require 'partials/footer.php'; ?>

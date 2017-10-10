@@ -1,18 +1,15 @@
 <?php
 
 namespace App\Models;
+
 use App\core\App;
 
 class Account
 {
   static $table = "account";
-  public $email;
+  public $username;
   public $password;
-  public $first_name;
-  public $last_name;
-  public $phone;
-  public $address;
-  public $gender;
+
   // get all users
   public static function selectAll()
   {
@@ -41,11 +38,12 @@ class Account
   {
     App::get('database')->updateById(User::$table, $params, $id);
   }
+
   // check login
   public static function checkLogin($user, $pass) 
   {
-    $table = User::$table;
-    $sql = "select * FROM {$table} WHERE UserName='{$email}' AND PassWord='{$password}'";
+    $table = Account::$table;
+    $sql = "SELECT * FROM {$table} WHERE UserName='{$user}' AND PassWord='{$pass}'";
     $user = App::get('database')->query($sql);
     
     return $user[0];
