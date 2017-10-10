@@ -102,11 +102,4 @@
 	</div>
 
 </content>
-=======
-<?php require('nav.php'); ?>
->>>>>>> dev
->>>>>>> dev
-<h1>Trang chủ</h1>
->>>>>>> dev
-
 <?php require 'partials/footer.php'; ?>
