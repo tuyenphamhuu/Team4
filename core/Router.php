@@ -38,9 +38,20 @@ class Router
     throw new Exception("No route defined for this uri");
   }
 
+  // public function direct($uri, $requestType) 
+  // {
+  //   if(array_key_exists($uri, $this->routes[$requestType])) {
+  //     return $this->callAction(
+  //       ...explode('@', $this->routes[$requestType][$uri])
+  //     );
+  //   }
+  //   throw new Exception('No route defined for this URI.');
+  // }
+
   protected function callAction($controller, $action)
   {
     $controller = "App\\Controllers\\{$controller}";
+    echo $controller;
     $controller = new $controller;
     if (! method_exists($controller, $action)) {
       throw new Exception(

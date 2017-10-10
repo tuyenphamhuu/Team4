@@ -1,5 +1,6 @@
 <?php require 'partials/head.php'; ?>
-<?php require('partials/nav.php'); ?>
-<h1>Mac</h1>
+<div class="container">
+	HELLO
+</div>
 
 <?php require 'partials/footer.php'; ?>
