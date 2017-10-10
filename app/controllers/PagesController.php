@@ -31,4 +31,8 @@ class PagesController
   {
     return view('watch');
   }
+  public function admin()
+  {
+    return view('signin');
+  }
 }

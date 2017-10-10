@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-sm-12 col-12 text-center">
-		  	<a href="#" class="btn" role="button" ><img class="logo" 
+		  	<a href="/" class="btn" role="button" ><img class="logo" 
 		  	 src="public/images/logo-apple.png" alt="LOGO"></a>
 		</div>
 		<div class="col-lg-4 col-sm-12 col-12 m-auto">
