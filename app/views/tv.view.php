@@ -1,4 +1,5 @@
 <?php require 'partials/head.php'; ?>
+<?php require('partials/nav.php'); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div id="logo-img-admin" class="left col-lg-2 col-md-2 col-sm-2">
@@ -154,3 +155,14 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
+=======
+=======
+<?php require('nav.php'); ?>
+>>>>>>> dev
+>>>>>>> dev
+<h1>TV</h1>
+>>>>>>> dev
+
+<?php require 'partials/footer.php'; ?>
+>>>>>>> dev
