@@ -105,6 +105,7 @@
 =======
 <?php require('nav.php'); ?>
 >>>>>>> dev
+>>>>>>> dev
 <h1>Trang chủ</h1>
 >>>>>>> dev
 
