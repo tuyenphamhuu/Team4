@@ -9,3 +9,4 @@ $router->get('watch', 'PagesController@watch');
 $router->get('admin', 'PagesController@admin');
 
 $router->post('users', 'UsersController@store');
+// $router->post('singin', 'UsersController@sign-in');
