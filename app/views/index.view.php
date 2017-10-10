@@ -1,6 +1,5 @@
 <?php require 'partials/head.php'; ?>
-<<<<<<< HEAD
-
+<?php require('partials/nav.php'); ?>
 <content>
 	<div class="container-fluid">
 		<div id="iphone" class="row text-center">
@@ -105,6 +104,7 @@
 </content>
 =======
 <?php require('nav.php'); ?>
+>>>>>>> dev
 <h1>Trang chủ</h1>
 >>>>>>> dev
 
