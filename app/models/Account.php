@@ -21,11 +21,11 @@ class Account
   $email, $password) 
   {
     App::get('database')->insert(User::$table, [
-      'role_id'=> $role_id,
+      'role_id'    => $role_id,
       'first_name' => $first_name,
-      'last_name' => $last_name,
-      'email' => $email,
-      'password' => $password,
+      'last_name'  => $last_name,
+      'email'      => $email,
+      'password'   => $password,
     ]);
   }
   // get User by id
