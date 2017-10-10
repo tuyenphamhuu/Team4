@@ -1,4 +1,5 @@
 <?php require 'partials/head.php'; ?>
+<<<<<<< HEAD
 
 <content>
 	<div class="container-fluid">
@@ -102,5 +103,9 @@
 	</div>
 
 </content>
+=======
+<?php require('nav.php'); ?>
+<h1>Trang chủ</h1>
+>>>>>>> dev
 
 <?php require 'partials/footer.php'; ?>
