@@ -13,4 +13,4 @@
 	<link rel="stylesheet" type="text/css" href="public/css/custom.css">
 </head>
 <body>
-    <?php require('nav.php'); ?>
+    
