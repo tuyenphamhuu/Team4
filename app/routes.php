@@ -10,3 +10,4 @@ $router->get('login', 'AccController@getLogin');
 //$router->post('login', 'AccountController@postLogin');
 
 $router->post('users', 'UsersController@store');
+// $router->post('singin', 'UsersController@sign-in');
