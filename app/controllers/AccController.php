@@ -16,7 +16,7 @@ class AccController
     session_start();
     $_SESSION['username'] = $user;
     
-    return view('admin/index');
+    return redirect('adminindex');
   }
 
 
