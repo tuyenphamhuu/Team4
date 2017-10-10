@@ -64,15 +64,4 @@
 		</div>
 	</div>	
 </content>
-
-<<<<<<< HEAD
-=======
-=======
-<?php require('nav.php'); ?>
->>>>>>> dev
->>>>>>> dev
-<h1>Iphone</h1>
->>>>>>> dev
-
->>>>>>> dev
 <?php require 'partials/footer.php'; ?>
