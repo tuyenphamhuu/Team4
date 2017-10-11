@@ -4,7 +4,12 @@
 <h1>
 
 	<?php 
-		var_dump($user);
+
+		foreach ($user as $user) {
+			?>
+			<li><?php echo $user->UserName; ?></li>
+			<?php
+		}
 	 ?>	
 
 </h1>
