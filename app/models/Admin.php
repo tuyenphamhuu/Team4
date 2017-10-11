@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\core\App;
 
-class Account
+class Admin
 {
   static $table = "account";
   public $username;
@@ -13,15 +13,14 @@ class Account
   // get all users
   public static function selectAll()
   {
-    // die('ee');
-    return App::get('database')->selectAll(Account::$table);
+    return App::get('database')->selectAll(User::$table);
   }
   
-  // insert Account
+  // insert User
   public static function insert($role_id ,$first_name, $last_name , 
   $email, $password) 
   {
-    App::get('database')->insert(Account::$table, [
+    App::get('database')->insert(User::$table, [
       'role_id'    => $role_id,
       'first_name' => $first_name,
       'last_name'  => $last_name,
@@ -29,15 +28,15 @@ class Account
       'password'   => $password,
     ]);
   }
-  // get Account by id
+  // get User by id
   public static function getById($id) 
   {
-    return App::get('database')->getById(Account::$table, $id);
+    return App::get('database')->getById(User::$table, $id);
   }
-  // update Account by id
+  // update User by id
   public static function updateById($id, $params) 
   {
-    App::get('database')->updateById(Account::$table, $params, $id);
+    App::get('database')->updateById(User::$table, $params, $id);
   }
 
   // check login
@@ -46,11 +45,12 @@ class Account
     $table = Account::$table;
     $sql = "SELECT * FROM {$table} WHERE UserName='{$user}' AND PassWord='{$pass}'";
     $user = App::get('database')->query($sql);
+    
     return $user[0];
   }
   // delete User by id
   public static function deleteById($id) 
   {
-    App::get('database')->deleteById(Account::$table, $id);
+    App::get('database')->deleteById(User::$table, $id);
   }
 }
