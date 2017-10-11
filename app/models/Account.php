@@ -13,6 +13,7 @@ class Account
   // get all users
   public static function selectAll()
   {
+    // die('ee');
     return App::get('database')->selectAll(Account::$table);
   }
   
