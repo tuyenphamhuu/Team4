@@ -26,7 +26,7 @@
 			<div class="col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphoneX_silver_large.jpg">
+						<img src="public/images/iphone-x-64G.png">
 						<h5>iPhone X 64GB</h5>
 						<p><b>From $999</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
@@ -38,7 +38,7 @@
 			<div class=" col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphone8plus_gold_large.jpg">
+						<img src="public/images/iphone8plus-256G.png">
 						<h5>iPhone 8 Plus 256GB</h5>
 						<p><b>From $949</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
@@ -50,7 +50,7 @@
 			<div class="col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphone8plus_silver_large.jpg">
+						<img src="public/images/iphone8plus-64G.png">
 						<h5>iPhone 8 Plus 64GB</h5>
 						<p><b>From $799</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
@@ -64,7 +64,7 @@
 			<div class="col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphone8_spacegray_large.jpg">
+						<img src="public/images/iphone8-256GB.png">
 						<h5>iPhone 8 256GB</h5>
 						<p><b>From $849</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
@@ -76,7 +76,7 @@
 			<div class="col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphone8.jpg">
+						<img src="public/images/iphone8-64G.png">
 						<h5>iPhone 8 64GB</h5>
 						<p><b>From $699</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
