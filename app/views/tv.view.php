@@ -155,14 +155,6 @@
 			</div>
 		</div>
 	</div>
-<<<<<<< HEAD
-=======
-=======
-<?php require('nav.php'); ?>
->>>>>>> dev
->>>>>>> dev
-<h1>TV</h1>
->>>>>>> dev
 
 <?php require 'partials/footer.php'; ?>
->>>>>>> dev
+
