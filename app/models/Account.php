@@ -45,7 +45,6 @@ class Account
     $table = Account::$table;
     $sql = "SELECT * FROM {$table} WHERE UserName='{$user}' AND PassWord='{$pass}'";
     $user = App::get('database')->query($sql);
-    
     return $user[0];
   }
   // delete User by id
