@@ -13,7 +13,7 @@ class Account
   // get all users
   public static function selectAll()
   {
-    return App::get('database')->selectAll(User::$table);
+    return App::get('database')->selectAll(Account::$table);
   }
   
   // insert User
