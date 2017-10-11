@@ -123,5 +123,6 @@
 		</div>
 		
 	</div>
+</div>
 
 <?php require 'partials/footer.php'; ?>
