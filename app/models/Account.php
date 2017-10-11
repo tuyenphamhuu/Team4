@@ -13,14 +13,14 @@ class Account
   // get all users
   public static function selectAll()
   {
-    return App::get('database')->selectAll(User::$table);
+    return App::get('database')->selectAll(Account::$table);
   }
   
-  // insert User
+  // insert Account
   public static function insert($role_id ,$first_name, $last_name , 
   $email, $password) 
   {
-    App::get('database')->insert(User::$table, [
+    App::get('database')->insert(Account::$table, [
       'role_id'    => $role_id,
       'first_name' => $first_name,
       'last_name'  => $last_name,
@@ -28,15 +28,15 @@ class Account
       'password'   => $password,
     ]);
   }
-  // get User by id
+  // get Account by id
   public static function getById($id) 
   {
-    return App::get('database')->getById(User::$table, $id);
+    return App::get('database')->getById(Account::$table, $id);
   }
-  // update User by id
+  // update Account by id
   public static function updateById($id, $params) 
   {
-    App::get('database')->updateById(User::$table, $params, $id);
+    App::get('database')->updateById(Account::$table, $params, $id);
   }
 
   // check login
@@ -51,6 +51,6 @@ class Account
   // delete User by id
   public static function deleteById($id) 
   {
-    App::get('database')->deleteById(User::$table, $id);
+    App::get('database')->deleteById(Account::$table, $id);
   }
 }
