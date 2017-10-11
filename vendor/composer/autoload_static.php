@@ -8,6 +8,7 @@ class ComposerStaticInite8d29c97a5d2864984eccb1f12418596
 {
     public static $classMap = array (
         'App\\Controllers\\AccController' => __DIR__ . '/../..' . '/app/controllers/AccController.php',
+        'App\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/controllers/AdminController.php',
         'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
         'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
@@ -16,6 +17,7 @@ class ComposerStaticInite8d29c97a5d2864984eccb1f12418596
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'App\\Models\\Account' => __DIR__ . '/../..' . '/app/models/Account.php',
+        'App\\Models\\Admin' => __DIR__ . '/../..' . '/app/models/Admin.php',
         'ComposerAutoloaderInite8d29c97a5d2864984eccb1f12418596' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInite8d29c97a5d2864984eccb1f12418596' => __DIR__ . '/..' . '/composer/autoload_static.php',

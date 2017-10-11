@@ -9,7 +9,7 @@ $router->get('watch', 'PagesController@watch');
 $router->get('loginadmin', 'AccController@getLogin');
 $router->get('admin/index', 'AccController@getIndex');
 $router->post('postlogin', 'AccController@postLogin');
-$router->get('mac','AccController@selectAllUser' );
+$router->get('indexUser','UsersController@selectAllUser');
 
 $router->post('users', 'UsersController@store');
 // $router->post('singin', 'UsersController@sign-in');
