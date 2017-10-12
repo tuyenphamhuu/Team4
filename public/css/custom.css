@@ -41,6 +41,9 @@
 .prd {
     margin-top: 40px;
 }
+.wrap-item-prd img {
+    margin-bottom: 20px;
+}
 .ehover3:hover button.info {
     background-color: rgba(0,0,0,0.1);
     cursor: pointer;
