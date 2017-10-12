@@ -13,7 +13,7 @@
 					            <img class="mx-auto d-block rounded" src="images/ip-x-f.jpg" alt="">
 					            <div class="overlay">
 					                <h2>iPhone X</h2>
-					                <button id="show-pr-dt" class="info" data-toggle="modal" data-target="#modal3">View Detail
+					                <button id="show-pr-dt" class="info" data-toggle="modal" data-target="#modal3" onclick="show_prdt()">View Detail
 					                </button>
 					            </div>
 					        </div>
@@ -125,6 +125,12 @@
 							</div>
 						</div>
 					</div>
+
+	                <script type="text/javascript">
+	                	function show_prdt() {
+	                		document.getElementById("show-pr-dt") = document.getElementById("view-detail");
+	                	}
+	                </script>
 
 				</div>
 			</div>

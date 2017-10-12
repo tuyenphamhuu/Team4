@@ -145,7 +145,7 @@ footer {
     
 }
 #view-detail {
-    /*display: none;*/
+    display: none;
     position: absolute;
     color: #fff;
     padding: 50px;
