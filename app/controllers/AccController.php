@@ -14,7 +14,7 @@ class AccController
       return redirect('loginadmin');
     }
     session_start();
-    $_SESSION['username'] = $user;
+    $_SESSION['user'] = $user;
     
     return redirect('admin/index');
   }

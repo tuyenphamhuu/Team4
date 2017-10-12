@@ -35,5 +35,16 @@ class UsersController
   public function postaddUser()
   {
     Account::insertUser($_POST['user'],$_POST['pass'],$_POST['rule'], $_POST['email'], $_POST['add'], $_POST['phone']);
+  /*  $params = [
+      'UserName' => $_POST['user'],
+      'PassWord' => $_POST['pass'],
+      'Rule_rank' => $_POST['rule'],
+      'Email' => $_POST['email'],
+      'Addr' => $_POST['add'],
+      'PhoneNumber' => $_POST['phone']
+    ];
+    Account::insertUser($params);*/
+
+
   }
 }
