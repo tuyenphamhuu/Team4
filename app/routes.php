@@ -10,8 +10,11 @@ $router->get('loginadmin', 'AccController@getLogin');
 $router->get('admin/index', 'AccController@getIndex');
 $router->post('postlogin', 'AccController@postLogin');
 $router->get('indexUser','UsersController@selectAllUser');
+$router->get('admin/indexProduct','ProductController@selectAllProduct');
+$router->get('admin/addProduct','ProductController@showAddProduct');
+$router->post('addProduct', 'UsersController@addProduct');
 $router->get('admin/addUser', 'UsersController@getaddUser');
 $router->post('addUser', 'UsersController@postaddUser');
 
-$router->post('users', 'UsersController@store');
+$router->post('users', 'ProductController@store');
 // $router->post('singin', 'UsersController@sign-in');
