@@ -6,14 +6,19 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controllers\\AccController' => $baseDir . '/app/controllers/AccController.php',
+    'App\\Controllers\\AdminController' => $baseDir . '/app/controllers/AdminController.php',
     'App\\Controllers\\PagesController' => $baseDir . '/app/controllers/PagesController.php',
+    'App\\Controllers\\ProductController' => $baseDir . '/app/controllers/ProductController.php',
     'App\\Controllers\\UsersController' => $baseDir . '/app/controllers/UsersController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
+    'App\\Models\\Account' => $baseDir . '/app/models/Account.php',
+    'App\\Models\\Product' => $baseDir . '/app/models/Product.php',
     'ComposerAutoloaderInite8d29c97a5d2864984eccb1f12418596' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Project' => $baseDir . '/app/models/Project.php',
+    'Composer\\Autoload\\ComposerStaticInite8d29c97a5d2864984eccb1f12418596' => $vendorDir . '/composer/autoload_static.php',
 );

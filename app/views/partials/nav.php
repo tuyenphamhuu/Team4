@@ -2,8 +2,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-sm-12 col-12 text-center">
-		  	<a href="#" class="btn" role="button" ><img class="logo" 
-		  	 src="public/images/logo-apple.png" alt="LOGO"></a>
+		  	<a href="/" class="btn" role="button" ><img class="logo" 
+		  	 src="/public/images/logo-apple.png" alt="LOGO"></a>
 		</div>
 		<div class="col-lg-4 col-sm-12 col-12 m-auto">
 		  	<div class="input-group stylish-input-group">
@@ -16,7 +16,7 @@
             </div>
 		</div>
 		<div class="col-lg-3 col-sm-12 col-12 text-center">
-			<a href=""><img class="iconcart" src="public/images/ic_shopping_cart_black_24px.svg" alt="
+			<a href=""><img class="iconcart" src="/public/images/ic_shopping_cart_black_24px.svg" alt="
                 "></a>
 		</div>
 		</div>
@@ -62,4 +62,4 @@
 			</div>
 		</div>
 	</div >
-</header><!-- /header -->
+</header>
