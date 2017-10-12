@@ -28,4 +28,12 @@ class UsersController
 
      return view('admin/indexUser',['user' => $user ]);
   }
+  public function getaddUser()
+  {
+    return view('admin/addUser');
+  }
+  public function postaddUser()
+  {
+    $user = Account::insertUser($_POST['user'],$_POST['pass'],$_POST['rule'], $_POST['email'], $_POST['add'], $_POST['phone']);
+  }
 }
