@@ -138,7 +138,7 @@ footer {
     color: #111;
 }
 .list-unstyled li:hover a {
-    color: #ef8700;
-    text-decoration: none;
+    color: #111;
+ /*   text-decoration: none;*/
     
 }

@@ -13,3 +13,4 @@ $router->get('indexUser','UsersController@selectAllUser');
 
 $router->post('users', 'UsersController@store');
 // $router->post('singin', 'UsersController@sign-in');
+$router->get('detail-iPad','PagesController@detailiPad');
