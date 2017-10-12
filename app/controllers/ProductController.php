@@ -29,4 +29,8 @@ class ProductController
 
      return view('admin/indexProduct',['products' => $products ]);
   }
+
+  public function showAddProduct(){
+    return view('admin/addProduct');
+  }
 }
