@@ -12,6 +12,7 @@ $router->post('postlogin', 'AccController@postLogin');
 $router->get('indexUser','UsersController@selectAllUser');
 $router->get('admin/indexProduct','ProductController@selectAllProduct');
 $router->get('admin/addProduct','ProductController@showAddProduct');
+$router->post('addProduct', 'UsersController@addProduct');
 
-$router->post('users', 'UsersController@store');
+$router->post('users', 'ProductController@store');
 // $router->post('singin', 'UsersController@sign-in');

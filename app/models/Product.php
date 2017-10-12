@@ -14,16 +14,16 @@ class Product
     return App::get('database')->selectAll(Product::$table);
   }
   
-  // insert User
-  public static function insert($role_id ,$first_name, $last_name , 
-  $email, $password) 
+  public static function insert($ProductName ,$NewPrice, $OldPrice , 
+  $ColorProduct, $Config, $description) 
   {
-    App::get('database')->insert(Product::$table, [
-      'role_id'    => $role_id,
-      'first_name' => $first_name,
-      'last_name'  => $last_name,
-      'email'      => $email,
-      'password'   => $password,
+    App::get('database')->insert(ProductController::$table, [
+      'ProductName' => $ProductName,
+      'NewPrice' => $NewPrice,
+      'OldPrice' => $OldPrice,
+      'ColorProduct' => $ColorProduct,
+      'Config' => $Config,
+      'description' => $description,
     ]);
   }
   // get User by id
