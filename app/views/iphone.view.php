@@ -88,9 +88,9 @@
 			<div class=" col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphone8plus_gold_large.jpg">
-						<h5>iPhone 8 Plus 256GB</h5>
-						<p><b>From $949</b></p>
+						<img src="public/images/iphone7plus-128G.png">
+						<h5>iPhone 7 Plus 128GB</h5>
+						<p><b>From $769</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
 						
@@ -100,9 +100,9 @@
 			<div class="col-md-3">
 				<div class="iphone-item">
 					<a href="#">
-						<img src="public/images/iphone8plus_silver_large.jpg">
-						<h5>iPhone 8 Plus 64GB</h5>
-						<p><b>From $799</b></p>
+						<img src="public/images/iphone7plus-32GB.png">
+						<h5>iPhone 7 Plus 32GB</h5>
+						<p><b>From $669</b></p>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
 						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
 										
@@ -110,29 +110,106 @@
 				</div>
 			</div>	
 		</div>
-		<div class="ip-item row">
-			<div class="col-md-6">
-				<a href="#">
-					<img src="images/ip7-.jpg">
-				</a>
+
+	<div class="iphone-products row">
+			<div class="col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphone7-128G.png">
+						<h5>iPhone 7 128GB</h5>
+						<p><b>From $649</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+						
+					</a>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<a href="#">
-					<img src="images/ip7-.jpg">
-				</a>
+			<div class="col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphone7-32GB.png">
+						<h5>iPhone 7 32GB</h5>
+						<p><b>From $549</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+										
+					</a>
+				</div>
 			</div>
+			<div class=" col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphone6splus-128GB.png">
+						<h5>iPhone 6s Plus 128GB</h5>
+						<p><b>From $649</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+						
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphone6spl-32Gb.png">
+						<h5>iPhone 6s Plus 32GB</h5>
+						<p><b>From $549</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+										
+					</a>
+				</div>
+			</div>	
 		</div>
-		<div class="ip-item row">
-			<div class="col-md-6">
-				<a href="#">
-					<img src="images/ip6s-.gif">
-				</a>
+		<div class="iphone-products row">
+			<div class="col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphone6s-128G.png">
+						<h5>iPhone 6s 128GB</h5>
+						<p><b>From $849</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+						
+					</a>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<a href="#">
-					<img src="images/ip6s-.gif">
-				</a>
+			<div class="col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphone6s-32G.png">
+						<h5>iPhone 6s 32GB</h5>
+						<p><b>From $449</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+										
+					</a>
+				</div>
 			</div>
+			<div class=" col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphoneSE-128G.png">
+						<h5>iPhone SE 128GB</h5>
+						<p><b>From $449</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+						
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="iphone-item">
+					<a href="#">
+						<img src="public/images/iphoneSE-32g.png">
+						<h5>iPhone SE 32GB</h5>
+						<p><b>From $349</b></p>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="https://www.w3schools.com" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+										
+					</a>
+				</div>
+			</div>	
 		</div>
 	</div>
 </div>	
