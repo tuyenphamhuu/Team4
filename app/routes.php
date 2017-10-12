@@ -18,3 +18,12 @@ $router->post('addUser', 'UsersController@postaddUser');
 
 $router->post('users', 'ProductController@store');
 // $router->post('singin', 'UsersController@sign-in');
+
+$router->get('account','UsersController@account');
+$router->get('product-rep','UsersController@product_rep');
+$router->get('add-product','UsersController@add_product');
+$router->get('product-detail','UsersController@product_detail');
+$router->get('product','UsersController@product');
+$router->get('order','UsersController@order');
+$router->get('detail-order','UsersController@detail_order');
+$router->get('rule','UsersController@rule');
