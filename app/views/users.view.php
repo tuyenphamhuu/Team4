@@ -1,5 +1,5 @@
 <?php require 'partials/head.php'; ?>
-<?php require('partials/nav.php'); ?>
+
 <h1>Users</h1>
 
 <ul>
