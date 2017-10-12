@@ -14,7 +14,7 @@ class AccController
       return redirect('loginadmin');
     }
     session_start();
-    $_SESSION['user'] = $user;
+    $_SESSION['username'] = $user;
     
     return redirect('admin/index');
   }
@@ -29,11 +29,7 @@ class AccController
   {
     return view('admin/index');
   }
-  public function selectAllUser()
-  {
-     $user = Account::selectAll();
-     return view('mac',['user' => $user ]);
-  }
+  
 
   // public function getLogout()
   // {
