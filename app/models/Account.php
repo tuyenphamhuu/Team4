@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-use App\core\App;
+use App\Core\App;
+use PDO;
 
 class Account
 {
@@ -18,16 +19,18 @@ class Account
   }
   
   // insert Account
-  public static function insert($role_id ,$first_name, $last_name , 
-  $email, $password) 
+  public static function insertUser($user, $pass, $rule, $email, $add, $phone) 
   {
-    App::get('database')->insert(Account::$table, [
-      'role_id'    => $role_id,
-      'first_name' => $first_name,
-      'last_name'  => $last_name,
-      'email'      => $email,
-      'password'   => $password,
+    App::get ('database') -> insert(Account::$table, [
+      'UserName'    => $user,
+      'PassWord'  => md5($pass),
+      'Rule_rank'   => $rule,
+      'Email'       => $email,
+      'Addr'        => $add,
+      'PhoneNumber' => $phone
     ]);
+    return view('admin/addUser');
+    // App::get('database')->insert(Account::$table, $params);
   }
   // get Account by id
   public static function getById($id) 

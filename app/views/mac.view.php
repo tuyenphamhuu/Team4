@@ -2,16 +2,7 @@
 <?php require 'partials/nav.php'; ?>
 
 <h1>
-
-	<?php 
-
-		foreach ($user as $user) {
-			?>
-			<li><?php echo $user->UserName; ?></li>
-			<?php
-		}
-	 ?>	
-
+	MacBook
 </h1>
 
 <?php require 'partials/footer.php'; ?>

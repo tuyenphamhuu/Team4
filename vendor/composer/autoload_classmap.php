@@ -16,7 +16,6 @@ return array(
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
     'App\\Models\\Account' => $baseDir . '/app/models/Account.php',
-    'App\\Models\\Admin' => $baseDir . '/app/models/Admin.php',
     'ComposerAutoloaderInite8d29c97a5d2864984eccb1f12418596' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInite8d29c97a5d2864984eccb1f12418596' => $vendorDir . '/composer/autoload_static.php',
