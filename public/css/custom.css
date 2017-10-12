@@ -24,7 +24,6 @@
 }
 .prd-type {
     color: #111;
-    /*width: 100%;*/
     font-size: 60px;
     font-weight: 600;
     margin-top: 50px;
@@ -103,6 +102,8 @@
 .backggray{
     padding-top: 40px;
     background-color: #f2f2f2;
+    text-transform: capitalize;
+    letter-spacing: 0;  
 }
 .bordertop{
     border-top:1px solid #111;
@@ -127,9 +128,9 @@
     height: 70px;
 }
 .iconcart{
-width: 60px;
-padding-top: 15px;
-height: 60px;
+    width: 60px;
+    padding-top: 15px;
+    height: 60px;
 }
 footer {
     background-color: #000;
@@ -143,3 +144,21 @@ footer {
     text-decoration: none;
     
 }
+#view-detail {
+    /*display: none;*/
+    position: absolute;
+    color: #fff;
+    padding: 50px;
+    margin: 50px auto 0;
+    text-transform: capitalize;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 99999;
+}
+#view-detail div div h3 {
+    margin-bottom: 40px;
+}
+.img-dt {
+    width: 100%;
+}
+
+

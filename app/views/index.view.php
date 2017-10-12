@@ -13,7 +13,7 @@
 					            <img class="mx-auto d-block rounded" src="images/ip-x-f.jpg" alt="">
 					            <div class="overlay">
 					                <h2>iPhone X</h2>
-					                <button class="info" data-toggle="modal" data-target="#modal3">View Detail
+					                <button id="show-pr-dt" class="info" data-toggle="modal" data-target="#modal3">View Detail
 					                </button>
 					            </div>
 					        </div>
@@ -92,6 +92,40 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- view detail -->
+					<div id="view-detail">
+						<div class="row justify-content-around">
+							<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+								<img class="img-dt mx-auto d-block" src="../../images/ip_8_f.jpg">
+							</div>
+							<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 align-self-center text-left">
+								<h3 class="text-uppercase font-weight-bold">Iphone 8</h3>
+								<p>
+									<b>Screen size: <small>5.8 inch</small></b>
+								</p>
+								<p>
+									<b>Internal Storage: <small>64/256GB</small></b>
+								</p>
+								<p>
+									<b>Front-facing cam: <small>7MB TrueDepth f/22</small></b>
+								</p>
+								<p>
+									<b>Video Capture: <small>4K at 60fps</small></b>
+								</p>
+								<p>
+									<b>Bluetooth <small>v5.0</small></b>
+								</p>
+								<p>
+									<b>Oprerating System <small>ios11</small></b>
+								</p>
+								<p>
+									<b>Wifi: <small>Dual band 802.11ac</small></b>
+								</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -102,4 +136,5 @@
 	</div>
 
 </content>
+
 <?php require 'partials/footer.php'; ?>
