@@ -2,6 +2,7 @@
 <?php session_start(); ?>
 <html>
 <head>
+<meta charset="UTF-8">
 	<title>APPLE STORE TEAM 4</title>
 	<link rel="stylesheet" type="text/css" href="/public/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
