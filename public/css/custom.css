@@ -80,7 +80,7 @@
 }
 #mac div span {
     font-size: 40px;
-    text-decoration: lowercase;
+    text-decoration: none;
 }
 .ip-item {
     margin-bottom: 20px;
@@ -161,4 +161,11 @@ footer {
     width: 100%;
 }
 
-
+.colblack{
+    color: #111;
+    font-size: 13px;
+}
+.wh{
+    width: 80px;
+    height: 80px;
+}

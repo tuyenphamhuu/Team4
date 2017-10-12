@@ -60,34 +60,6 @@
 						</a>
 					</li>
 				</ul>
-				<p class="name-func">EXTEND</p>
-				<ul id="list-func">
-					<li class="func-item ic-func">
-						<a href="#">
-							<img src="images/home.svg">Home
-						</a>
-					</li>
-					<li class="func-item ic-func">
-						<a href="#">
-							<img src="images/database.svg">Database
-						</a>
-					</li>
-					<li class="func-item ic-func">
-						<a href="#">
-							<img src="images/heart.svg">Heart
-						</a>
-					</li>
-					<li class="func-item ic-func">
-						<a href="#">
-							<img src="images/ic_shopping_cart_black_24px.svg">Shopping cart
-						</a>
-					</li>
-					<li class="func-item ic-func">
-						<a href="#">
-							<img src="images/package.svg">Sales
-						</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 		<div class="right col-lg-10 col-md-10 col-sm-10">

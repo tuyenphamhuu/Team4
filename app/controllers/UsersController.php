@@ -9,7 +9,7 @@ class UsersController
 {
   public function index ()
   {
-    $users = App::get('database')->selectAll('users');
+    $users = App::get('database')->selectAll ('users');
 
     return view('users', compact('users'));
   }
@@ -17,7 +17,7 @@ class UsersController
   public function store () 
   {
     App::get('database')->insert('users', [
-      'name' => $_POST['name']
+      'name' =>$_POST['name']
     ]);
 
     return redirect('users');
@@ -35,40 +35,23 @@ class UsersController
     return view('admin/account');
   }
 
-  public function product_rep ()
+  
+  public function getaddUser()
   {
-    return view('admin/product-rep');
+    return view('admin/addUser');
   }
-
-  public function add_product ()
+  public function postaddUser()
   {
-    return view('admin/add-product');
+    Account::insertUser($_POST['user'],$_POST['pass'],$_POST['rule'], $_POST['email'], $_POST['add'], $_POST['phone']);
+  /*  $params = [
+      'UserName' => $_POST['user'],
+      'PassWord' => $_POST['pass'],
+      'Rule_rank' => $_POST['rule'],
+      'Email' => $_POST['email'],
+      'Addr' => $_POST['add'],
+      'PhoneNumber' => $_POST['phone']
+    ];
+    Account::insertUser($params);*/
+
   }
-
-  public function product_detail ()
-  {
-    return view('admin/product-detail');
-  }
-
-  public function product ()
-  {
-    return view('admin/product');
-  }
-
-  public function order ()
-  {
-    return view('admin/order');
-  }
-
-  public function detail_order ()
-  {
-    return view('admin/detail-order');
-  }
-
-  public function rule ()
-  {
-    return view('admin/rule');
-  }
-
-
 }
