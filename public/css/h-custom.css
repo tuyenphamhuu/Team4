@@ -141,21 +141,22 @@ height: 60px;
 }
 /*ipad page*/
 
-.breadcrumb{
+.breadcrumb {
        background-color: #f2f2f2;
-       font-size: 25px;
+ /*      font-size: 30px;*/
 }
-.breadcrumb a{
+.breadcrumb a {
+    font-size: 25px;
     color: black;
     text-decoration: none;
-    text-transform: none;
+    text-transform: none; 
     letter-spacing: 0;
 }
+
 #wrapper-ipad {
     background-color: #f2f2f2;
 }
 .ipad-products {
-    margin-bottom: 20px;
     padding: 30px 0 10px 10px;
     
 }
@@ -165,7 +166,7 @@ height: 60px;
 .ipad-item {
 /*    background-color: #ece8e4;*/
     text-align: center;
-    padding: 50px;
+    padding: 0 50px;
 }
 .ipad-item p {
     color: black;
@@ -180,6 +181,20 @@ height: 60px;
     text-transform: none;
     letter-spacing: 0;
 }
+.ipad-item a img {
+    width: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 99;
+}
+
+.ipad-item a:hover img {
+    transform: scale(1.2,1.2);
+    opacity: 0.7;
+}
+.ipad-item:hover a img {
+    z-index: 9999;
+}
 
 /*iphone page*/
 
@@ -187,7 +202,6 @@ height: 60px;
     background-color: #f2f2f2;
 }
 .iphone-products {
-    margin-bottom: 20px;
     padding: 30px 0 10px 10px;
     
 }
