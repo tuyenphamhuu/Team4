@@ -75,7 +75,7 @@
 /*admin*/
 #ad-admin-inner {
 	color: red;
-	min-height: 100vh;
+	min-height: 100%;
 	background-size: cover;
 	background-image: url("../../images/background-apple.jpg");
 }
