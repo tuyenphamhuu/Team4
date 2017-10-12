@@ -66,17 +66,13 @@
 				  	<li><a class="colorblack" href="#" title="">Contact Apple</a></li>
 				</ul>
 			</div>
-
 		</div>
 		<div class="row colorblack backggray justify-content-center text-center">
 			<div class="col-md-6 col-sm-12 col-12 bordertop">
 				Copyright © 2017 Apple Inc. All rights reserved.
-			</div>
-			
+			</div>	
 		</div>
-	</div>
-	
+	</div>	
 </footer> <!-- /footer -->
-
-</body>
-</html>
+<!-- </body>
+</html> -->

@@ -4,11 +4,12 @@
 <!-- <h1>iPhone</h1> -->
 <content>
 <div id="wrapper-iphone">
-	<!-- <nav class="breadcrumb">
-	  	<a class="breadcrumb-item" href="#">Home</a>
-	  	<a class="breadcrumb-item" href="#">Iphone</a>
-	  	<a class="breadcrumb-item" href="#">Iphone 8X</a>
-	</nav> -->
+	<div class="container"> 
+		<nav class="breadcrumb">
+		  	<a class="breadcrumb-item" href="#">iPhone</a>
+		</nav>
+		<hr>
+	</div>
 	<div class="container-fluid">
 		<div class="iphone-products row">
 			<div class="col-md-3">
