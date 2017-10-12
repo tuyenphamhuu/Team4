@@ -100,6 +100,8 @@
 .backggray{
     padding-top: 40px;
     background-color: #f2f2f2;
+    text-transform: capitalize;
+    letter-spacing: 0;  
 }
 .bordertop{
     border-top:1px solid #111;
@@ -124,9 +126,9 @@
     height: 70px;
 }
 .iconcart{
-width: 60px;
-padding-top: 15px;
-height: 60px;
+    width: 60px;
+    padding-top: 15px;
+    height: 60px;
 }
 footer {
     background-color: #000;
