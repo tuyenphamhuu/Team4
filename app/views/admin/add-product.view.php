@@ -1,13 +1,6 @@
 <?php require 'app/views/partials/head.php'; ?>
 <?php require 'app/views/partials/header-admin.php'; ?>
 
-	<!-- add new button -->
-	<div class="row add-new">
-		<div class="tt-ad col-12">
-			<button>+ Add new</button>
-		</div>
-	</div>
-
 	<!-- add new button detail -->
 	<form class="table add-new add-new-detail">
 		<h5 class="font-weight-bold">Add Products</h5>

@@ -10,16 +10,32 @@
 				</div>
 				<div id="btom-ad">
 					<a class="btom-ad-item" href="#">
-						<img class="mx-auto d-block" src="../../images/prd-ad.png">
+						<img class="mx-auto d-block" src="../../images/account-ad.png">
+						<p class="hidden-ad">Accounts</p>
+					</a>
+					<a class="btom-ad-item" href="#">
+						<img class="mx-auto d-block" src="../../images/detail-prd.png">
+						<p class="hidden-ad">Detail Order</p>
+					</a>
+					<a class="btom-ad-item" href="#">
+						<img class="mx-auto d-block" src="../../images/order.png">
+						<p class="hidden-ad">Order</p>
+					</a>
+					<a class="btom-ad-item" href="#">
+						<img class="mx-auto d-block" src="../../images/prd.png">
 						<p class="hidden-ad">Products</p>
 					</a>
 					<a class="btom-ad-item" href="#">
-						<img class="mx-auto d-block" src="../../images/cate-ad.png">
-						<p class="hidden-ad">Categories</p>
+						<img class="mx-auto d-block" src="../../images/prd-rep.png">
+						<p class="hidden-ad">Products Rep</p>
 					</a>
 					<a class="btom-ad-item" href="#">
-						<img class="mx-auto d-block" src="../../images/account-ad.png">
-						<p class="hidden-ad">Accounts</p>
+						<img class="mx-auto d-block" src="../../images/ad.png">
+						<p class="hidden-ad">Rule</p>
+					</a>
+					<a class="btom-ad-item" href="#">
+						<img class="mx-auto d-block" src="../../images/prd-ad.png">
+						<p class="hidden-ad">Type Product</p>
 					</a>
 				</div>
 			</div>
@@ -58,6 +74,12 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<!-- add new button -->
+			<div class="row add-new">
+				<div class="tt-ad col-12">
+					<button>+ Add new</button>
 				</div>
 			</div>
 			
