@@ -18,3 +18,4 @@ $router->post('addUser', 'UsersController@postaddUser');
 
 $router->post('users', 'ProductController@store');
 // $router->post('singin', 'UsersController@sign-in');
+$router->get('detail-iPad','PagesController@detailiPad');
