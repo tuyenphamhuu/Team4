@@ -10,6 +10,7 @@ $router->get('loginadmin', 'AccController@getLogin');
 $router->get('admin/index', 'AccController@getIndex');
 $router->post('postlogin', 'AccController@postLogin');
 $router->get('indexUser','UsersController@selectAllUser');
+$router->get('admin/indexProduct','ProductController@selectAllProduct');
 
 $router->post('users', 'UsersController@store');
 // $router->post('singin', 'UsersController@sign-in');
