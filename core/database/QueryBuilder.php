@@ -37,7 +37,6 @@ class QueryBuilder
       return $e->getMessage();
     }
   }
-
   public function updateById($table, $params, $id)
   {
     $result = [];
