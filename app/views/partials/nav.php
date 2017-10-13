@@ -25,37 +25,37 @@
 	</div>
 	<div class="backgroundblack">
 		<div class="container">
-			<div>
+			<div class="menu">
 				<nav class="navbar navbar-expand-lg navbar navbar-dark ">
 				  	<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    	<span class="navbar-toggler-icon"></span>
 				  	</button>
 				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					    <ul class="navbar-nav mr-auto">
+					    <ul class="navbar-nav mr-auto ">
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+					        	<a class="nav-link colorwhite" href="/">Home<span class="sr-only">(current)</span></a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="mac">Mac</a>
+					        	<a class="nav-link colorwhite" href="mac">Mac</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="ipad">iPad</a>
+					        	<a class="nav-link colorwhite" href="ipad">iPad</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="iphone">iPhone</a>
+					        	<a class="nav-link colorwhite" href="iphone">iPhone</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="watch">Watch</a>
+					        	<a class="nav-link colorwhite" href="watch">Watch</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="tv">TV</a>
+					        	<a class="nav-link colorwhite" href="tv">TV</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="#">Music</a>
+					        	<a class="nav-link colorwhite" href="#">Music</a>
 					      	</li>
 					      	<li class="nav-item">
-					       		<a class="nav-link" href="#">Support</a>
+					       		<a class="nav-link colorwhite" href="#">Support</a>
 					      	</li>
 					    </ul>
 				  	</div>
