@@ -170,11 +170,11 @@ footer {
     height: 80px;
 }
 /*View Detail*/
-/*.dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-}*/
-/*.dropdown-content {
+}
+.dropdown-content {
     display: none;
     position: fixed;
     top: 50px;
@@ -197,4 +197,4 @@ footer {
 }
 .show {
     display:block;
-}*/
+}
