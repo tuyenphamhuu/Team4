@@ -18,12 +18,14 @@ class Product
   $ColorProduct, $Config, $description) 
   {
     App::get('database')->insert(Product::$table, [
-      'ProductName'  => $ProductName,
-      'NewPrice'     => $NewPrice,
-      'OldPrice'     => $OldPrice,
-      'ColorProduct' => $ColorProduct,
-      'Config'       => $Config,
-      'description'  => $description
+
+      'ProductName'    => $ProductName,
+      'NewPrice'       => $NewPrice,
+      'OldPrice'       => $OldPrice,
+      'ID_TypeProduct' => 1,
+      'ColorProduct'   => $ColorProduct,
+      'Config'         => $Config,
+      'description'    => $description
     ]);
   }
 
