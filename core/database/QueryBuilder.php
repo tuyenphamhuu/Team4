@@ -37,7 +37,7 @@ class QueryBuilder
       return $e->getMessage();
     }
   }
-  public function updateById($table, $params, $id)
+  public function updateById($table, $params, $id, $sql)
   {
     $result = [];
     $keys = array_keys($params);
@@ -52,11 +52,12 @@ class QueryBuilder
       array_push($result, $temp);
     }      
     $sql = sprintf(
-      'update %s set %s where id=%s',
+      $sql,
       $table,
       implode(',', $result),
       $id
     );
+    
     try {
       $stm = $this->pdo->prepare($sql);
       $stm->execute($params);
@@ -90,9 +91,9 @@ class QueryBuilder
   }
 
 
-  public function getById($table, $id) 
+  public function getById($sql) 
   {
-    $sql = "select * from {$table} where id={$id}";
+    //$sql = "select * from {$table} where id={$id}";
     try {
       $stm = $this->pdo->prepare($sql);
       $stm->execute();
