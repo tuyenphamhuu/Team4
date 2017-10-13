@@ -7,9 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/n-custom.css">
-	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../../../public/js/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../public/js/bootstrap.min.js">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="https://glyphicons.com/">
+	<link rel="stylesheet" type="text/css" href="../../../public/js/jquery-3.1.1.slim.min.js">
 	<script src="/public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>
@@ -22,4 +24,3 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </head>
 <body>
-    
