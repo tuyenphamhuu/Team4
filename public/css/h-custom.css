@@ -9,7 +9,7 @@
     float: none;
 }
 .navbar-nav > li {
-    padding: 0px 27px;
+    padding: 0px 20px;
 }
 .backgroundblack {
     background: rgba(0,0,0,0.8);
@@ -120,6 +120,7 @@
     box-shadow:0 0 0;
     border-radius: 25px 0px 0px 25px; 
     border-color:#ccc;
+    padding: 10px;
 }
 .stylish-input-group button{
     border:0;
