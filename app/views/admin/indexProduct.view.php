@@ -1,6 +1,7 @@
 
 <?php require 'app/views/partials/head.php'; ?>
 <?php require 'app/views/partials/head-admin.php'; ?>
+<?php require 'core/function.php'; ?>
 <br>
 <div class="container-fluid">
     <div class="row">
@@ -33,11 +34,9 @@
                     <td><?php echo $product->NewPrice; ?></td>
                     <td><?php echo $product->OldPrice; ?></td>
                     <td><?php echo $product->ColorProduct; ?></td>
-                    <td><?php echo $product->Config; ?></td>
-                    <td><button type="button" class="btn btn-outline-dark">edit</button>
-</td>
-                    <td><button type="button" class="btn btn-outline-danger">del</button>
-</td>
+                    <td><?php echo the_excerpt($product->Config); ?></td>
+                    <td><a class="btn btn-dark" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">edit</a></td>
+                    <td><a class="btn btn-warning" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">del</a></td>
                     </tr>
                     <?php
                         $stt++;

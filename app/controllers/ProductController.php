@@ -46,4 +46,28 @@ class ProductController
 
     return redirect('admin/indexProduct');
   }
+  
+  public function showEditProduct() 
+  {
+    $product = Product::getById($_GET['id']);
+    return view('admin/editProduct',['product' => $product]);
+  }
+
+  public function editProduct() 
+  {
+    $id = $_POST['ID_Product'];
+    $params = [
+    'ProductName' => $_POST['ProductName'],
+    'NewPrice' => $_POST['NewPrice'],
+    'OldPrice' => $_POST['OldPrice'],
+    'ColorProduct' => $_POST['ColorProduct'],
+    'Config' => $_POST['Config'],
+    'description' => $_POST['description']
+    ];
+    $sql = 'update %s set %s where ID_Product=%s';
+    Product::updateById($id, $params, $sql);
+
+    return redirect('admin/indexProduct');
+  }
+
 }
