@@ -52,6 +52,17 @@ class UsersController
       'PhoneNumber' => $_POST['phone']
     ];
     Account::insertUser($params);*/
-
   }
+  public function getEditUser()
+  {
+    $id   = $_GET['id'];
+    $user = Account::getById($id);
+    return view ('admin/editUser',['user' => $user]);
+  }
+  public function postEditUser()
+  {
+    
+    die($id);
+    $user = Account::getByIdUser($id);
+  } 
 }

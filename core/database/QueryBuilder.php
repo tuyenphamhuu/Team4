@@ -90,9 +90,9 @@ class QueryBuilder
   }
 
 
-  public function getById($table, $id) 
+  public function getById($sql) 
   {
-    $sql = "select * from {$table} where id={$id}";
+    //$sql = "select * from {$table} where id={$id}";
     try {
       $stm = $this->pdo->prepare($sql);
       $stm->execute();
@@ -101,5 +101,4 @@ class QueryBuilder
       die($e->getMessage());
     }
   }
-
 }

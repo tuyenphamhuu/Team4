@@ -35,7 +35,8 @@ class Account
   // get Account by id
   public static function getById($id) 
   {
-    return App::get('database')->getById(Account::$table, $id);
+    $sql = "select * from account where ID_Account ={$id}";
+    return App::get('database')->getById($sql);
   }
   // update Account by id
   public static function updateById($id, $params) 

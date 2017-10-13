@@ -15,6 +15,8 @@ $router->get('admin/addProduct','ProductController@showAddProduct');//vu
 $router->post('addProduct', 'ProductController@addProduct');//vu
 $router->get('admin/addUser', 'UsersController@getaddUser');
 $router->post('addUser', 'UsersController@postaddUser');
+$router->get('admin/editUser', 'UsersController@getEditUser');
+$router->post('editUser', 'UsersController@postEditUser');
 
 $router->post('users', 'ProductController@store');
 // $router->post('singin', 'UsersController@sign-in');

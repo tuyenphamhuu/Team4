@@ -83,6 +83,7 @@
 			<th>Email</th>
 			<th>Addr</th>
 			<th>PhoneNumber</th>
+			<th>Control</th>
 		</tr>
 		<tr>
 			<?php 
@@ -95,7 +96,10 @@
 			<td><?php echo $user->Email; ?></td>
 			<td><?php echo $user->Addr; ?></td>
 			<td><?php echo $user->PhoneNumber; ?></td>
-			
+			<td>
+				<a href="admin/editUser?id=<?php echo $user->ID_Account?>">Edit</a>
+				<a href="">Delete</a>
+			</td>
 		</tr>
 		<?php
 			}
