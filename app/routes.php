@@ -11,13 +11,14 @@ $router->get('admin/index', 'AccController@getIndex');
 $router->post('postlogin', 'AccController@postLogin');
 $router->get('indexUser','UsersController@selectAllUser');
 $router->get('admin/indexProduct','ProductController@selectAllProduct');
-$router->get('admin/addProduct','ProductController@showAddProduct');
-$router->post('addProduct', 'UsersController@addProduct');
+$router->get('admin/addProduct','ProductController@showAddProduct');//vu
+$router->post('addProduct', 'ProductController@addProduct');//vu
 $router->get('admin/addUser', 'UsersController@getaddUser');
 $router->post('addUser', 'UsersController@postaddUser');
 
 $router->post('users', 'ProductController@store');
 // $router->post('singin', 'UsersController@sign-in');
+$router->get('detail-iPad','PagesController@detailiPad');
 
 $router->get('account','UsersController@account');
 $router->get('product-rep','UsersController@product_rep');

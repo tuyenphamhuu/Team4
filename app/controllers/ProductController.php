@@ -36,14 +36,13 @@ class ProductController
 
   public function addProduct() 
   {
-    Product::insert('product', [
-      'ProductName' => $_POST['ProductName'],
-      'NewPrice' => $_POST['NewPrice'],
-      'OldPrice' => $_POST['OldPrice'],
-      'ColorProduct' => $_POST['ColorProduct'],
-      'Config' => $_POST['Config'],
-      'description' => $_POST['description'],
-    ]);
+    Product::insert($_POST['ProductName'],
+      $_POST['NewPrice'],
+      $_POST['OldPrice'],
+      $_POST['ColorProduct'],
+      $_POST['Config'],
+      $_POST['description']
+    );
 
     return redirect('admin/indexProduct');
   }

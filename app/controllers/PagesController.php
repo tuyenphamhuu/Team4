@@ -35,4 +35,9 @@ class PagesController
   {
     return view('signin');
   }
+
+  public function detailiPad()
+  {
+    return view('detail-iPad');
+  }
 }
