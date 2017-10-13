@@ -53,7 +53,7 @@
 						<img src="public/images/ipad-pro-10in-512G.png">
 						<h5>10.5-inch iPad Pro 512GB</h5>
 						<p><b>From $999</b></p>
-						<a href="#" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="/detailiPad" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
 						<a href="#" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
 					</a>
 				</div>

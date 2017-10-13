@@ -29,3 +29,4 @@ $router->get('order','UsersController@order');
 $router->get('detail-order','UsersController@detail_order');
 $router->get('rule','UsersController@rule');
 $router->post('editProduct', 'ProductController@editProduct');//vu
+$router->get('detailiPad', 'PagesController@detailiPad');//vu
