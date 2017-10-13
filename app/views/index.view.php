@@ -111,32 +111,32 @@
 			</div>
 		</div>
 		<!-- Modal -->
-<div class="modal fade myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      	<!-- view detail -->
-		<div id="view-detail" class="container">
-			<div class="row justify-content-around">
-				<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-					<img class="img-dt mx-auto d-block" src="public/images/ip_8_f.jpg">
+		<div class="modal fade myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      	<!-- view detail -->
+				<div id="view-detail" class="container">
+					<div class="row justify-content-around">
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+							<img class="img-dt mx-auto d-block" src="public/images/ip_8_f.jpg">
+						</div>
+						<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 align-self-center text-left">
+							<h3 class="text-uppercase font-weight-bold">Iphone 8</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+							<button class="info">More Detail</button>
+						</div>
+					</div>
 				</div>
-				<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 align-self-center text-left">
-					<h3 class="text-uppercase font-weight-bold">Iphone 8</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-					<button class="info">More Detail</button>
-				</div>
-			</div>
+		    </div>
+		  </div>
 		</div>
-    </div>
-  </div>
-</div>
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
-		<div><strong>iMac Pro</strong><span>(Power to the pro)</span></div>
+		<a href="#"><div><strong>iMac Pro</strong><span>(Power to the pro)</span></div></a>
 	</div>
 
 </content>

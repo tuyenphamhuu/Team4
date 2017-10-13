@@ -26,8 +26,8 @@
 	<div class="backgroundblack">
 		<div class="container">
 			<div class="menu">
-				<nav class="navbar navbar-expand-lg navbar navbar-dark ">
-				  	<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+				<nav class="navbar navbar-expand-lg navbar navbar-dark navbar-toggleable-md navbar-light">
+				  	<!-- <a class="navbar-brand" href="#"></a> -->
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    	<span class="navbar-toggler-icon"></span>
 				  	</button>
