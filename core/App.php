@@ -10,7 +10,6 @@ class App
   {
     static::$registry[$key] = $value;
   }
-
   public static function get($key)
   {
     if (! array_key_exists($key, static::$registry)) {
@@ -18,4 +17,6 @@ class App
     }
     return static::$registry[$key];
   }
+
+  
 }

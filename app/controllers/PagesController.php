@@ -31,4 +31,13 @@ class PagesController
   {
     return view('watch');
   }
+  public function admin()
+  {
+    return view('signin');
+  }
+
+  public function detailiPad()
+  {
+    return view('detail-iPad');
+  }
 }
