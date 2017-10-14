@@ -18,23 +18,10 @@
 			</div>
 			<div class="col-md-6">
 				<div class="detail1">
-					<h2>iPad Pro 10.5.9inch 512GB</h2>
+					<h2>iPad Pro 10.5-inch 512GB</h2>
 					<hr>
 				</div>
 				<div class="detail2">
-					<!-- <p>Connectivity</p>
-					<div class="row">
-						<div class="col-md-6 text-center ">
-							<p>Wi-Fi</p>
-							<p>$799</p>	
-						</div>
-						<div class="col-md-6 text-center">
-							<p>Wi-Fi + Cellular</p>
-							<p>$929</p>	
-						</div>
-						
-					</div>
-					<hr> -->
 					<div class="panel-group" >
 					    <div class="panel panel-default">
 					      	<div class="panel-heading">
@@ -47,27 +34,27 @@
 					        		<div class="row">
 					        		<div class="col-lg-3 text-center">
 						        		<a href="#">
-						        			<button type="button" class="btn btn-outline-dark" >
+						        			<!-- <button type="button" class="btn  btn-outline-secondary"> -->
 						        				<div class="button color">
 						        				<img src="public/images/color-silver-201508.png">
 						        				<p>Silver</p>
 						        				</div>
 						        		
-						        			</button>
+						        			<!-- </button> -->
 						        		</a>
 						        	</div>
 						        	<div class="col-lg-3 text-center">
 						        		<a href="#">
-						        			<button type="button" class="btn btn-outline-dark">
+						        			<!-- <button type="button" class="btn btn-outline-secondary"> -->
 						        				<img src="public/images/color-space-gray-201508.png">
 						        				<p>Space Gray</p>
 						        		
-						        			</button>
+						        			<!-- </button> -->
 						        		</a>
 						        	</div>
 						        	<div class="col-lg-3 text-center">
 						        		<a href="#">
-						        			<button type="button" class="btn btn-outline-dark">
+						        			<button type="button" class="btn btn-outline-secondary">
 						        				<img src="public/images/color-gold-201508.png">
 						        				<p>Gold</p>
 						        		
@@ -76,7 +63,7 @@
 						        	</div>
 						        	<div class="col-lg-3 text-center">
 						        		<a href="#">
-						        			<button type="button" class="btn btn-outline-dark">
+						        			<button type="button" class="btn btn-outline-secondary">
 						        				<img src="public/images/color-rosegold-201509.png">
 						        				<p>Rose Gold</p>
 						        		
@@ -99,7 +86,7 @@
 					        		<div class="row">
 						        		<div class="col-lg-6 text-center">
 							        		<a href="#">
-							        			<button type="button" class="btn btn-outline-dark" >
+							        			<button type="button" class="btn btn-outline-secondary" >
 							        				<p>Wi-Fi</p>
 													<p>$799</p>	
 							        			</button>
@@ -107,7 +94,7 @@
 							        	</div>
 							        	<div class="col-lg-6 text-center">
 							        		<a href="#">
-							        			<button type="button" class="btn btn-outline-dark">
+							        			<button type="button" class="btn btn-outline-secondary">
 							        					<p>Wi-Fi + Cellular</p>
 														<p>$929</p>	
 							        			</button>

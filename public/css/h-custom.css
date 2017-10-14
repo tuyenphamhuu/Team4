@@ -270,8 +270,9 @@ height: 60px;
     padding-right: : 50px;
     padding-left: 50px;
 }
-.btn-outline-dark {
-    border-color: #f2f2f2;
+.btn-outline-secondary {
+    /*border-color: #f2f2f2;*/
+    box-shadow: 10px;
 }
 
 
