@@ -10,15 +10,15 @@
 					<div class="row justify-content-center prd">
 						<div class="col-md-3">
 							<div class="wrap-item-prd hover ehover3">
-					            <img class="mx-auto d-block rounded" src="public/images/ip-x-f.jpg" alt="">
-					            <div class="overlay">
-					      <h2>iPhone X</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
+					      <img class="mx-auto d-block rounded" src="public/images/ip-x-f.jpg" alt="">
+					      <div class="overlay">
+					      	<h2>iPhone X</h2>
+										<button type="button" class="info" data-toggle="modal" data-target=".myModal">
 									Detail
-									</button>
-					            </div>
-					        </div>
+										</button>
+					      </div>
 					    </div>
+					  </div>
 						<div class="col-md-3">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ip8-.jpg" alt="iphone_8">
@@ -116,12 +116,13 @@
 		    <div class="modal-content">
 		      	<!-- view detail -->
 				<div id="view-detail" class="container">
-					<div class="row justify-content-around">
-						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+					<div class="row justify-content-around hr-v-dl">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
 							<img class="img-dt mx-auto d-block" src="public/images/ip_8_f.jpg">
 						</div>
-						<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 align-self-center text-left">
-							<h3 class="text-uppercase font-weight-bold">Iphone 8</h3>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center text-transform text-left">
+							<h4 class="text-red font-weight-bold">$699</h4>
+							<h5 class="text-uppercase font-weight-bold">Iphone 8</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -133,6 +134,104 @@
 		    </div>
 		  </div>
 		</div>
+
+		<!-- cart -->
+		<div class="cart">
+			<h2 class="font-weight-bold text-center">My cart</h2>
+			<table class="bill-ap table table-bordered text-transform table-hover table-responsive">
+				<thead>
+					<tr>
+						<th style="width: 4%">STT</th>
+						<th style="width: 45%">Name Products</th>
+						<th style="width: 15%">Price</th>
+						<th style="width: 15%">Quantity</th>
+						<th style="width: 15%">Total Amount</th>
+						<th style="width: 6%">Edit</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="list-pr-ap">
+						<th>1</th>
+						<td>
+							<div class="row">
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+									<img src="../../public/images/7+-f.jpg">
+								</div>
+								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+									iPhone 8
+								</div>
+							</div>
+						</td>
+						<td>$699</td>
+						<td class="count-ap">
+							<input class="text-center" type="number" value="1">
+						</td>
+						<td>$699</td>
+						<td class="edit-bill">
+							<a class="" href="#"><img src="/public/images/pencil.png"></a>
+							<a class="" href="#"><img src="/public/images/trash.png"></a>
+						</td>
+					</tr>
+					<tr class="list-pr-ap">
+						<th>2</th>
+						<td>
+							<div class="row">
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+									<img src="../../public/images/ipad-pro-10in.png">
+								</div>
+								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+									iPad Pro 12.9 inch
+								</div>
+							</div>
+						</td>
+						<td>$799</td>
+						<td class="count-ap">
+							<input class="text-center" type="number" value="2">
+						</td>
+						<td>$1598</td>
+						<td class="edit-bill">
+							<a class="" href="#"><img src="/public/images/pencil.png"></a>
+							<a class="" href="#"><img src="/public/images/trash.png"></a>
+						</td>
+					</tr>
+					<tr class="list-pr-ap">
+						<th>3</th>
+						<td>
+							<div class="row">
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+									<img src="../../public/images/7+-f.jpg">
+								</div>
+								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+									iPhone 7 plus
+								</div>
+							</div>
+						</td>
+						<td>$669</td>
+						<td class="count-ap">
+							<input class="text-center" type="number" value="1">
+						</td>
+						<td>$669</td>
+						<td class="edit-bill">
+							<a class="" href="#"><img src="/public/images/pencil.png"></a>
+							<a class="" href="#"><img src="/public/images/trash.png"></a>
+						</td>
+					</tr>
+					<tr class="list-pr-ap">
+						<td colspan="4" class="text-left">
+							<button class="btn btn-warning">&laquo; Keep buying</button>
+						</td>
+						<td class="font-weight-bold">
+							Total: $2397
+						</td>
+						<td>
+							<button class="btn btn-success">Pay &raquo;</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
