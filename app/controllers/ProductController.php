@@ -36,12 +36,14 @@ class ProductController
 
   public function addProduct() 
   {
+    move_uploaded_file($_FILES['Image']['tmp_name'],"public/images/".$_FILES['Image']['name']); 
     Product::insert($_POST['ProductName'],
       $_POST['NewPrice'],
       $_POST['OldPrice'],
       $_POST['ColorProduct'],
       $_POST['Config'],
-      $_POST['description']
+      $_POST['description'],
+      $_FILES['Image']['name']
     );
 
     return redirect('admin/indexProduct');
@@ -53,20 +55,49 @@ class ProductController
     return view('admin/editProduct',['product' => $product]);
   }
 
+  public function showDelProduct() 
+  {
+    $product = Product::getById($_GET['id']);
+    return view('admin/delProduct',['product' => $product]);
+  }
+
   public function editProduct() 
   {
     $id = $_POST['ID_Product'];
-    $params = [
+    if ($_FILES['Image']['name'] == ''){
+      $params = [
+        'ProductName' => $_POST['ProductName'],
+        'NewPrice' => $_POST['NewPrice'],
+        'OldPrice' => $_POST['OldPrice'],
+        'ColorProduct' => $_POST['ColorProduct'],
+        'Config' => $_POST['Config'],
+        'description' => $_POST['description']
+        ];
+    }else{
+      $params = [
     'ProductName' => $_POST['ProductName'],
     'NewPrice' => $_POST['NewPrice'],
     'OldPrice' => $_POST['OldPrice'],
     'ColorProduct' => $_POST['ColorProduct'],
     'Config' => $_POST['Config'],
-    'description' => $_POST['description']
+    'description' => $_POST['description'],
+    'Image' => $_FILES['Image']['name']
     ];
+    move_uploaded_file($_FILES['Image']['tmp_name'],"public/images/".$_FILES['Image']['name']);
+    }
+    
     $sql = 'update %s set %s where ID_Product=%s';
     Product::updateById($id, $params, $sql);
 
+    return redirect('admin/indexProduct');
+  }
+
+
+  public function delProduct() 
+  {
+    $id = $_POST['ID_Product'];
+    $sql="delete from product where ID_Product={$id}";
+    Product::deleteById($sql);
     return redirect('admin/indexProduct');
   }
 
