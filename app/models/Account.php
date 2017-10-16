@@ -53,8 +53,8 @@ class Account
     return $user[0];
   }
   // delete User by id
-  public static function deleteById($id) 
+  public static function deleteById($sql) 
   {
-    App::get('database')->deleteById(Account::$table, $id);
+    App::get('database')->deleteById($sql);
   }
 }

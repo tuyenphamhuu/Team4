@@ -98,7 +98,7 @@
 			<td><?php echo $user->PhoneNumber; ?></td>
 			<td>
 				<a href="admin/editUser?id=<?php echo $user->ID_Account?>">Edit</a>
-				<a href="">Delete</a>
+				<a href="delUser?id=<?php echo $user->ID_Account?>" onclick="return confirm('Do you want to del this ?')" >Delete</a>	
 			</td>
 		</tr>
 		<?php

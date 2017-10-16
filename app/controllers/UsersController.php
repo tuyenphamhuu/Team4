@@ -74,4 +74,12 @@ class UsersController
 
     return redirect('indexUser');
   }
+  public function getdelUser()
+  {
+    $id = $_GET['id'];
+    $sql = "DELETE FROM account WHERE ID_Account = {$id}";
+    Account::deleteById($sql);
+
+    return redirect('indexUser');
+  }
 }
