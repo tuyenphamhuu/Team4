@@ -2,11 +2,15 @@
 
 namespace App\Controllers;
 
+use App\Core\App;
+use App\Models\TypeProduct;
 class PagesController
 {
 
   public function index()
   {
+    //session_start();
+    $_SESSION['data'] = TypeProduct::selectAll();
     return view('index');
   }
 
