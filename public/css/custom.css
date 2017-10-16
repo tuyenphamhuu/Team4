@@ -219,7 +219,7 @@ img {
 
 /*cart*/
 .cart {
-    display: none;
+    /*display: none;*/
 }
 .edit-bill a {
     width: 50%;
@@ -233,4 +233,8 @@ img {
 .count-ap input {
     width: 80px;
     border: 1px solid #ddd;
+}
+.edit-bill > button {
+    border: none;
+    background-color: transparent;
 }
