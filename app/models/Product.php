@@ -31,12 +31,13 @@ class Product
 
   public static function getById($id) 
   {
-    return App::get('database')->getById(Product::$table, $id);
+    $sql = "select * from product where ID_Product={$id}";
+    return App::get('database')->getById($sql);
   }
 
-  public static function updateById($id, $params) 
+  public static function updateById($id, $params, $sql) 
   {
-    App::get('database')->updateById(Product::$table, $params, $id);
+    App::get('database')->updateById(Product::$table, $params, $id, $sql);
   }
 
 

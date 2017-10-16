@@ -35,10 +35,8 @@
                     <td><?php echo $product->OldPrice; ?></td>
                     <td><?php echo $product->ColorProduct; ?></td>
                     <td><?php echo the_excerpt($product->Config); ?></td>
-                    <td><button type="button" class="btn btn-outline-dark">edit</button>
-</td>
-                    <td><button type="button" class="btn btn-outline-danger">del</button>
-</td>
+                    <td><a class="btn btn-dark" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">edit</a></td>
+                    <td><a class="btn btn-warning" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">del</a></td>
                     </tr>
                     <?php
                         $stt++;

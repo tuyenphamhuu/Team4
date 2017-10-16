@@ -9,7 +9,7 @@
     float: none;
 }
 .navbar-nav > li {
-    padding: 0px 27px;
+    padding: 0px 20px;
 }
 .backgroundblack {
     background: rgba(0,0,0,0.8);
@@ -120,6 +120,7 @@
     box-shadow:0 0 0;
     border-radius: 25px 0px 0px 25px; 
     border-color:#ccc;
+    padding: 10px;
 }
 .stylish-input-group button{
     border:0;
@@ -229,9 +230,6 @@ height: 60px;
     text-transform: none;
     letter-spacing: 0;
 }
-<<<<<<< HEAD
-=======
-
 .iphone-item a img {
     width: 100%;
     opacity: 1;
@@ -250,6 +248,31 @@ height: 60px;
 /*detail-ipad-page*/
 #wrapper-detail {
     background-color: #f2f2f2;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.detail-image {
+    text-align: center;
+   /* padding: 20px;*/
+}
+.panel-heading a {
+    font-size: 20px;
+    color: #111;
+   
+}
+.panel-heading h4:hover a {
+    color:blue;
+    text-decoration: none;
+}
+.panel-body {
+    font-size: 18px;
+}
+.button-color {
+    padding-right: : 50px;
+    padding-left: 50px;
+}
+.btn-outline-dark {
+    border-color: #f2f2f2;
 }
 
 
@@ -258,7 +281,6 @@ height: 60px;
 
 
 
->>>>>>> c2f11eda74f2b23fd4f2f512e05b947c0048da1b
 footer {
     background-color: #000;
     padding-top: 5px;
