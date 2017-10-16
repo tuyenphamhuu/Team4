@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+use App\Core\App;
+use App\Models\Product;
 
 use App\Core\App;
 use App\Models\TypeProduct;
@@ -16,7 +18,9 @@ class PagesController
 
   public function iphone()
   {
-    return view('iphone');
+    $products = Product::selectAll();
+
+    return view('iphone', ['products' => $products ]);
   }
 
   public function ipad()
