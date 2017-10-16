@@ -32,3 +32,5 @@ $router->get('detail-order','UsersController@detail_order');
 $router->get('rule','UsersController@rule');
 $router->post('editProduct', 'ProductController@editProduct');//vu
 $router->get('detailiPad', 'PagesController@detailiPad');//vu
+$router->get('admin/delProduct', 'ProductController@showDelProduct');//vu
+$router->post('delProduct', 'ProductController@delProduct');//vu
