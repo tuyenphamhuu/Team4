@@ -253,7 +253,8 @@ height: 60px;
 }
 .detail-image {
     text-align: center;
-   /* padding: 20px;*/
+    padding-bottom:50px;
+
 }
 .panel-heading a {
     font-size: 20px;
@@ -267,12 +268,20 @@ height: 60px;
 .panel-body {
     font-size: 18px;
 }
-.button-color {
+/*.button-color {
     padding-right: : 50px;
     padding-left: 50px;
+}*/
+.btn-outline-secondary {
+    /*border-color: #f2f2f2;*/
+    box-shadow: 10px;
 }
-.btn-outline-dark {
-    border-color: #f2f2f2;
+.detail4 {
+    font-size: 20px;
+}
+
+#add-btn {
+  margin-left: 20px;
 }
 
 
