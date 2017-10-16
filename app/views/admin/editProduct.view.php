@@ -1,5 +1,4 @@
 
-<?php require 'app/views/partials/head.php'; ?>
 <?php require 'app/views/partials/head-admin.php'; ?>
 <br>
 <div class="container-fluid">
@@ -7,7 +6,7 @@
         <?php require 'app/views/partials/sidebar-left.php'; ?>
         
         <div class="right col-lg-10 col-md-10 col-sm-8">
-            <form id="form-func" action="/editProduct" method="POST">
+            <form id="form-func" action="/editProduct" method="POST"  enctype="multipart/form-data">
             <input name="ID_Product" type="text" value="<?php echo $product[0]->ID_Product;?>" hidden="hidden">
                 <div class="form-group row">
                     <div class="col-md-3">
@@ -66,6 +65,14 @@
                     <textarea  name="description" name="message" rows="5" cols="100"><?php echo $product[0]->description;?>
                     </textarea>
                     </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <label for="exampleInputEmail1">Image</label>
+                    </div>
+                    <div class="col-md-9">
+                    <img style="width: 150px;" src="/public/images/<?php echo $product[0]->Image; ?>" class="img-fluid" ><br><br>
+                    <input name="Image" type="file" class="form-control-file" id="exampleFormControlFile1"></div>
                 </div>
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
