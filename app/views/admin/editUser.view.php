@@ -9,8 +9,6 @@
 	 	foreach ($user as $user) {
 	 		?>
 	 			<form action="/editUser" method="POST">
-					UserName :
-					<input type="text" name="user" value="<?php echo $user->UserName ?>"><br>
 					PassWord :
 					<input type="password" name="pass"><br>
 					Rule_rank :
@@ -21,7 +19,8 @@
 					<input type="text" name="add" value="<?php echo $user->Addr ?>"><br>
 					PhoneNumber :
 					<input type="text" name="phone" value="<?php echo $user->PhoneNumber ?>"><br>
-					<button type="submit">add</button>
+					<input type="text" name="id" hidden="hidden" value="<?php echo $user->ID_Account ?>"><br>
+					<button type="submit">Edit</button>
 				</form>
 	 		<?php
 	 	}

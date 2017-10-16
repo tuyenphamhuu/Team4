@@ -61,8 +61,17 @@ class UsersController
   }
   public function postEditUser()
   {
-    
-    die($id);
-    $user = Account::getByIdUser($id);
-  } 
+    $id     = $_POST['id'];
+    $params = [
+      'PassWord'    => md5($_POST['pass']),
+      'Rule_rank'   => $_POST['rule'],
+      'Email'       => $_POST['email'],
+      'Addr'        => $_POST['add'],
+      'PhoneNumber' => $_POST['phone']
+    ];
+    $sql = 'update %s set %s where ID_Account=%s';
+    Account::updateById($id, $params, $sql);
+
+    return redirect('indexUser');
+  }
 }

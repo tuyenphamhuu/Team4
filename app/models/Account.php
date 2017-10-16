@@ -29,7 +29,7 @@ class Account
       'Addr'        => $add,
       'PhoneNumber' => $phone
     ]);
-    return view('admin/addUser');
+    return view('admin/indexUser');
     // App::get('database')->insert(Account::$table, $params);
   }
   // get Account by id
@@ -39,9 +39,9 @@ class Account
     return App::get('database')->getById($sql);
   }
   // update Account by id
-  public static function updateById($id, $params) 
+  public static function updateById($id, $params, $sql) 
   {
-    App::get('database')->updateById(Account::$table, $params, $id);
+    App::get('database')->updateById(Account::$table, $params, $id, $sql);
   }
 
   // check login
