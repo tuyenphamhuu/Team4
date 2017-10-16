@@ -4,8 +4,8 @@ namespace App\Controllers;
 use App\Core\App;
 use App\Models\Product;
 
-use App\Core\App;
 use App\Models\TypeProduct;
+
 class PagesController
 {
 
@@ -18,8 +18,9 @@ class PagesController
 
   public function iphone()
   {
-    $products = Product::selectAll();
-
+    $id = $_GET['id'];
+    $sql = " SELECT * FROM product WHERE ID_TypeProduct = '{$id}'";
+    $products = Product::selectByType($sql);
     return view('iphone', ['products' => $products ]);
   }
 
