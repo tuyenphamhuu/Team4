@@ -45,4 +45,9 @@ class Product
   {
     App::get('database')->deleteById($sql);
   }
+
+  public static function selectByType($sql)
+  {
+    return App::get('database')->query($sql);
+  }
 }
