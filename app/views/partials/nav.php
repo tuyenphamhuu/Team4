@@ -38,8 +38,8 @@
 					        	<a class="nav-link colorwhite" href="/">Home<span class="sr-only">(current)</span></a>
 					      	</li>
 							  <?php
-							  	$data = $_SESSION['data'];
-									 foreach($data as $data)
+							  	$datas = $_SESSION['data'];
+									 foreach($datas as $data)
 									 {
 										?>
 											<li class="nav-item">
