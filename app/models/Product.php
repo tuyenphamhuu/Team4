@@ -15,7 +15,7 @@ class Product
   }
   
   public static function insert($ProductName ,$NewPrice, $OldPrice , 
-  $ColorProduct, $Config, $description) 
+  $ColorProduct, $Config, $description, $Image) 
   {
     App::get('database')->insert(Product::$table, [
 
@@ -25,7 +25,8 @@ class Product
       'ID_TypeProduct' => 1,
       'ColorProduct'   => $ColorProduct,
       'Config'         => $Config,
-      'description'    => $description
+      'description'    => $description,
+      'Image'    => $Image
     ]);
   }
 
@@ -41,8 +42,8 @@ class Product
   }
 
 
-  public static function deleteById($id) 
+  public static function deleteById($sql) 
   {
-    App::get('database')->deleteById(Product::$table, $id);
+    App::get('database')->deleteById($sql);
   }
 }
