@@ -27,7 +27,7 @@ class ProductController
   {
      $products = Product::selectAll();
 
-     return view('admin/indexProduct',['products' => $products ]);
+     return view('admin/indexProduct',['products' => $products ]); 
   }
 
   public function showAddProduct(){

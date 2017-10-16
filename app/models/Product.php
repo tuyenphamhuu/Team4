@@ -13,7 +13,6 @@ class Product
   {
     return App::get('database')->selectAll(Product::$table);
   }
-  
   public static function insert($ProductName ,$NewPrice, $OldPrice , 
   $ColorProduct, $Config, $description, $Image) 
   {
