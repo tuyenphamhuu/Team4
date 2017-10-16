@@ -47,7 +47,7 @@
 										    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" value="option1" checked>
 										    		<label for="exampleRadios1" class="form-check-label">
 										     		<span>
-										    			<img src="public/images/color-silver-201508.png">
+										    			<img class="image-color" src="public/images/color-silver-201508.png">
 										    			<p>Silver</p>
 										    		</span>
 										  		</label>	 
@@ -66,7 +66,8 @@
 										    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios2" value="option1" checked>
 										     	<label for="exampleRadios2" class="form-check-label">
 										     		<span>
-										    			<img src="public/images/color-space-gray-201508.png">
+
+										    			<img class="image-color" src="public/images/color-space-gray-201508.png">
 										    			<p>Space Gray</p>
 										    		</span>
 										  		</label>
@@ -84,7 +85,7 @@
 										    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios3" value="option1" checked>
 										     	<label for="exampleRadios3" class="form-check-label">
 										     		<span>
-										    		<img src="public/images/color-gold-201508.png">
+										    		<img class="image-color" src="public/images/color-gold-201508.png">
 										    		<p>Gold</p>
 										    		</span>
 										  		</label>
@@ -102,7 +103,7 @@
 										    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios4" value="option1" checked>
 										     	<label for="exampleRadios4" class="form-check-label">
 										     		<span>
-										    			<img src="public/images/color-rosegold-201509.png">
+										    			<img class="image-color" src="public/images/color-rosegold-201509.png">
 										    			<p>Rose Gold</p>
 										    		</span>
 										  		</label>

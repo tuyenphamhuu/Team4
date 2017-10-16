@@ -219,7 +219,7 @@ img {
 
 /*cart*/
 .cart {
-    display: none;
+    /*display: none;*/
 }
 .edit-bill a {
     width: 50%;
