@@ -18,6 +18,7 @@ class Product
   $ColorProduct, $Config, $description, $Image) 
   {
     App::get('database')->insert(Product::$table, [
+
       'ProductName'    => $ProductName,
       'NewPrice'       => $NewPrice,
       'OldPrice'       => $OldPrice,

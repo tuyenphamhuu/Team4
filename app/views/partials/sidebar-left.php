@@ -8,6 +8,9 @@
 			<li class="nav-item">
 			<a class="nav-link colblack-a" href="/admin/indexProduct"><h3>Product</h3></a>
 			</li>
+			<li class="nav-item">
+			<a class="nav-link colblack-a" href="/indexUser"><h3>Account</h3></a>
+			</li>
 		</ul>
 	</div>
 </div>

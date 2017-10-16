@@ -52,6 +52,34 @@ class UsersController
       'PhoneNumber' => $_POST['phone']
     ];
     Account::insertUser($params);*/
+  }
+  public function getEditUser()
+  {
+    $id   = $_GET['id'];
+    $user = Account::getById($id);
+    return view ('admin/editUser',['user' => $user]);
+  }
+  public function postEditUser()
+  {
+    $id     = $_POST['id'];
+    $params = [
+      'PassWord'    => md5($_POST['pass']),
+      'Rule_rank'   => $_POST['rule'],
+      'Email'       => $_POST['email'],
+      'Addr'        => $_POST['add'],
+      'PhoneNumber' => $_POST['phone']
+    ];
+    $sql = 'update %s set %s where ID_Account=%s';
+    Account::updateById($id, $params, $sql);
 
+    return redirect('indexUser');
+  }
+  public function getdelUser()
+  {
+    $id = $_GET['id'];
+    $sql = "DELETE FROM account WHERE ID_Account = {$id}";
+    Account::deleteById($sql);
+
+    return redirect('indexUser');
   }
 }
