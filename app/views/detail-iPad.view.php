@@ -129,7 +129,7 @@
   				<div class="detail4 row">
 					 <label for="example-number-input" class="col-3 col-form-label">Quantity</label>
 					 <div class="col-3">
-					    <input class="form-control" type="number" value="1" id="example-number-input">
+					    <input class="form-control" type="number" value="1" min="1" id="example-number-input">
 					 </div>
 				</div>
 				<hr>
