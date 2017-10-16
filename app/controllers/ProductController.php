@@ -66,22 +66,22 @@ class ProductController
     $id = $_POST['ID_Product'];
     if ($_FILES['Image']['name'] == ''){
       $params = [
-        'ProductName' => $_POST['ProductName'],
-        'NewPrice' => $_POST['NewPrice'],
-        'OldPrice' => $_POST['OldPrice'],
+        'ProductName'  => $_POST['ProductName'],
+        'NewPrice'     => $_POST['NewPrice'],
+        'OldPrice'     => $_POST['OldPrice'],
         'ColorProduct' => $_POST['ColorProduct'],
-        'Config' => $_POST['Config'],
-        'description' => $_POST['description']
+        'Config'       => $_POST['Config'],
+        'description'  => $_POST['description']
         ];
     }else{
       $params = [
-    'ProductName' => $_POST['ProductName'],
-    'NewPrice' => $_POST['NewPrice'],
-    'OldPrice' => $_POST['OldPrice'],
-    'ColorProduct' => $_POST['ColorProduct'],
-    'Config' => $_POST['Config'],
-    'description' => $_POST['description'],
-    'Image' => $_FILES['Image']['name']
+    'ProductName'      => $_POST['ProductName'],
+    'NewPrice'         => $_POST['NewPrice'],
+    'OldPrice'         => $_POST['OldPrice'],
+    'ColorProduct'     => $_POST['ColorProduct'],
+    'Config'           => $_POST['Config'],
+    'description'      => $_POST['description'],
+    'Image'            => $_FILES['Image']['name']
     ];
     move_uploaded_file($_FILES['Image']['tmp_name'],"public/images/".$_FILES['Image']['name']);
     }
