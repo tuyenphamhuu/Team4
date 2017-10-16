@@ -1,18 +1,27 @@
 <?php
 
 namespace App\Controllers;
+use App\Core\App;
+use App\Models\Product;
+
+use App\Models\TypeProduct;
 
 class PagesController
 {
 
   public function index()
   {
+    //session_start();
+    $_SESSION['data'] = TypeProduct::selectAll();
     return view('index');
   }
 
   public function iphone()
   {
-    return view('iphone');
+    $id = $_GET['id'];
+    $sql = " SELECT * FROM product WHERE ID_TypeProduct = '{$id}'";
+    $products = Product::selectByType($sql);
+    return view('iphone', ['products' => $products ]);
   }
 
   public function ipad()

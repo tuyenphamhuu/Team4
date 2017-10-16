@@ -1,20 +1,23 @@
 <?php
 
 $router->get('', 'PagesController@index');
-$router->get('iphone', 'PagesController@iphone');
-$router->get('mac', 'PagesController@mac');
-$router->get('ipad', 'PagesController@ipad');
+$router->get('iPhone', 'PagesController@iphone');
+$router->get('Mac', 'PagesController@mac');
+$router->get('iPad', 'PagesController@ipad');
 $router->get('tv', 'PagesController@tv');
 $router->get('watch', 'PagesController@watch');
 $router->get('loginadmin', 'AccController@getLogin');
 $router->get('admin/index', 'AccController@getIndex');
 $router->post('postlogin', 'AccController@postLogin');
-$router->get('indexUser','UsersController@selectAllUser');
+$router->get('indexUser','UsersController@selectAllUser');//tuyen
 $router->get('admin/indexProduct','ProductController@selectAllProduct');//vu
 $router->get('admin/addProduct','ProductController@showAddProduct');//vu
 $router->post('addProduct', 'ProductController@addProduct');//vu
 $router->get('admin/addUser', 'UsersController@getaddUser');
 $router->post('addUser', 'UsersController@postaddUser');
+$router->get('delUser', 'UsersController@getdelUser');//tuyen
+$router->get('admin/editUser', 'UsersController@getEditUser');
+$router->post('editUser', 'UsersController@postEditUser');
 
 $router->post('users', 'ProductController@store');
 $router->get('admin/editProduct', 'ProductController@showEditProduct');//vu

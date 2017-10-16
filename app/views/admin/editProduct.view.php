@@ -74,7 +74,7 @@
                     <img style="width: 150px;" src="/public/images/<?php echo $product[0]->Image; ?>" class="img-fluid" ><br><br>
                     <input name="Image" type="file" class="form-control-file" id="exampleFormControlFile1"></div>
                 </div>
-                <button type="submit" class="btn btn-primary">Add</button>
+                 <button type="submit" class="btn btn-primary">Edit</button>
             </form>
         </div>
     </div>

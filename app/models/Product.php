@@ -13,11 +13,11 @@ class Product
   {
     return App::get('database')->selectAll(Product::$table);
   }
-  
   public static function insert($ProductName ,$NewPrice, $OldPrice , 
   $ColorProduct, $Config, $description, $Image) 
   {
     App::get('database')->insert(Product::$table, [
+
       'ProductName'    => $ProductName,
       'NewPrice'       => $NewPrice,
       'OldPrice'       => $OldPrice,
@@ -44,5 +44,10 @@ class Product
   public static function deleteById($sql) 
   {
     App::get('database')->deleteById($sql);
+  }
+
+  public static function selectByType($sql)
+  {
+    return App::get('database')->query($sql);
   }
 }

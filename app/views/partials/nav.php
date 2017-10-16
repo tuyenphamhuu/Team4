@@ -1,4 +1,5 @@
 <header>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-center">
@@ -36,27 +37,19 @@
 					      	<li class="nav-item">
 					        	<a class="nav-link colorwhite" href="/">Home<span class="sr-only">(current)</span></a>
 					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link colorwhite" href="mac">Mac</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link colorwhite" href="ipad">iPad</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link colorwhite" href="iphone">iPhone</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link colorwhite" href="watch">Watch</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link colorwhite" href="tv">TV</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link colorwhite" href="#">Music</a>
-					      	</li>
-					      	<li class="nav-item">
-					       		<a class="nav-link colorwhite" href="#">Support</a>
-					      	</li>
+							  <?php
+							  	$datas = $_SESSION['data'];
+									 foreach($datas as $data)
+									 {
+										?>
+											<li class="nav-item">
+												<a class="nav-link colorwhite" href="<?php echo $data->ProductName?>?id=<?php echo $data->ID_TypeProduct ?>"><?php echo $data->ProductName?></a>
+											</li>
+										<?php
+									 } 
+							  ?>
+					      	
+					      	
 					    </ul>
 				  	</div>
 				</nav>
