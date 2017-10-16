@@ -234,3 +234,7 @@ img {
     width: 80px;
     border: 1px solid #ddd;
 }
+.edit-bill > button {
+    border: none;
+    background-color: transparent;
+}

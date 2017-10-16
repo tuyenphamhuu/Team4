@@ -127,7 +127,7 @@
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-							<button class="info">More Detail</button>
+							<button class="info">Add to Cart</button>
 						</div>
 					</div>
 				</div>
@@ -145,8 +145,8 @@
 						<th style="width: 45%">Name Products</th>
 						<th style="width: 15%">Price</th>
 						<th style="width: 15%">Quantity</th>
-						<th style="width: 15%">Total Amount</th>
-						<th style="width: 6%">Edit</th>
+						<th style="width: 15%">Total Money</th>
+						<th style="width: 6%">Delete</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -168,8 +168,33 @@
 						</td>
 						<td>$699</td>
 						<td class="edit-bill">
-							<a class="" href="#"><img src="/public/images/pencil.png"></a>
-							<a class="" href="#"><img src="/public/images/trash.png"></a>
+
+		<!-- Button trigger modal -->
+		<button type="button" data-toggle="modal" data-target="#exampleModal">
+		  <img src="/public/images/trash.png">
+		</button>
+<!-- Modal -->
+		<div class=" modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Confirm delete</h5>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+		        <button type="button" class="remove btn btn-primary">Delete</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+	<script type="text/javascript">
+		$('.remove').click(function() {
+			$('#exampleModal').modal('hide');
+			$(this).closest('tr').remove();
+		});
+	</script>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
@@ -190,8 +215,7 @@
 						</td>
 						<td>$1598</td>
 						<td class="edit-bill">
-							<a class="" href="#"><img src="/public/images/pencil.png"></a>
-							<a class="" href="#"><img src="/public/images/trash.png"></a>
+							<a class="remove" href="#"><img src="/public/images/trash.png"></a>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
@@ -212,8 +236,7 @@
 						</td>
 						<td>$669</td>
 						<td class="edit-bill">
-							<a class="" href="#"><img src="/public/images/pencil.png"></a>
-							<a class="" href="#"><img src="/public/images/trash.png"></a>
+							<a class="remove" href="#"><img src="/public/images/trash.png"></a>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
@@ -231,12 +254,13 @@
 			</table>
 		</div>
 
-
+		
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
 		<a href="#"><div><strong>iMac Pro</strong><span>(Power to the pro)</span></div></a>
 	</div>
+
 
 </content>
 
