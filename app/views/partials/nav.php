@@ -7,7 +7,7 @@
 			  	</a>
 			</div>
 			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
-			  	<div class="input-group stylish-input-group">
+			  	<div class="search-ipt input-group stylish-input-group">
 	                <input type="text" class="form-control search" placeholder="Search" >
 	                <span class="input-group-addon">
 	                    <button type="submit">
@@ -26,10 +26,10 @@
 	<div class="backgroundblack">
 		<div class="container">
 			<div class="menu">
-				<nav class="navbar navbar-expand-lg navbar navbar-dark ">
-				  	<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+				<nav class="navbar navbar-expand-lg navbar-dark navbar-toggleable-md navbar-light">
+				  	<!-- <a class="navbar-brand" href="#"></a> -->
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    	<span class="navbar-toggler-icon"></span>
+				    	<!-- <span class="navbar-toggler-icon"></span> -->
 				  	</button>
 				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					    <ul class="navbar-nav mr-auto ">
