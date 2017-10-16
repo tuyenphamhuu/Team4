@@ -224,7 +224,7 @@ img {
 .edit-bill a {
     width: 50%;
 }
-.edit-bill a img {
+.edit-bill button img {
     width: 15px;
 }
 .list-pr-ap {

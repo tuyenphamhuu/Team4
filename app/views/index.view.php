@@ -168,33 +168,24 @@
 						</td>
 						<td>$699</td>
 						<td class="edit-bill">
-
-		<!-- Button trigger modal -->
-		<button type="button" data-toggle="modal" data-target="#exampleModal">
-		  <img src="/public/images/trash.png">
-		</button>
-<!-- Modal -->
-		<div class=" modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Confirm delete</h5>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
-		        <button type="button" class="remove btn btn-primary">Delete</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-
-	<script type="text/javascript">
-		$('.remove').click(function() {
-			$('#exampleModal').modal('hide');
-			$(this).closest('tr').remove();
-		});
-	</script>
+							<!-- Button trigger modal -->
+							<button type="button" data-toggle="modal" data-target=".exampleModal">
+							  	<img src="/public/images/trash.png">
+							</button>
+							<!-- Modal -->
+							<div class=" modal fade" class="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  	<div class="modal-dialog" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title" id="exampleModalLabel">Confirm delete</h5>
+							      		</div>
+								      	<div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+									        <button type="button" class="remove btn btn-primary">Delete</button>
+								      	</div>
+							    	</div>
+							  	</div>
+							</div>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
@@ -215,7 +206,24 @@
 						</td>
 						<td>$1598</td>
 						<td class="edit-bill">
-							<a class="remove" href="#"><img src="/public/images/trash.png"></a>
+							<!-- Button trigger modal -->
+							<button type="button" data-toggle="modal" data-target=".exampleModal">
+							  	<img src="/public/images/trash.png">
+							</button>
+							<!-- Modal -->
+							<div class=" modal fade" class="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  	<div class="modal-dialog" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title">Confirm delete</h5>
+							      		</div>
+								      	<div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+									        <button type="button" class="remove btn btn-primary">Delete</button>
+								      	</div>
+							    	</div>
+							  	</div>
+							</div>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
@@ -223,7 +231,7 @@
 						<td>
 							<div class="row">
 								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-									<img src="../../public/images/7+-f.jpg">
+									<img src="../../public/images/6+.jpg">
 								</div>
 								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
 									iPhone 7 plus
@@ -236,7 +244,24 @@
 						</td>
 						<td>$669</td>
 						<td class="edit-bill">
-							<a class="remove" href="#"><img src="/public/images/trash.png"></a>
+							<!-- Button trigger modal -->
+							<button type="button" data-toggle="modal" data-target=".exampleModal">
+							  	<img src="/public/images/trash.png">
+							</button>
+							<!-- Modal -->
+							<div class=" modal fade" class="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  	<div class="modal-dialog" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title">Confirm delete</h5>
+							      		</div>
+								      	<div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+									        <button type="button" class="remove btn btn-primary">Delete</button>
+								      	</div>
+							    	</div>
+							  	</div>
+							</div>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
@@ -254,6 +279,12 @@
 			</table>
 		</div>
 
+		<script type="text/javascript">
+			$('.remove').click(function() {
+				$('#exampleModal').modal('hide');
+				$(this).closest('tr').remove();
+			});
+		</script>
 		
 	</div>
 	<div id="mac">
