@@ -20,17 +20,17 @@
 							<div class="iphone-item">
 								<a href="#">
 									<div class="overlay-image">
-									<img src="public/images/<?php echo $products->Image; ?>">
+										<img src="public/images/<?php echo $products->Image; ?>">
 										<div class="overlay">
 											<div class="text">Tech specs</div>
 										</div>
 									</div>
-									
-									<h5><?php echo $products->ProductName; ?></h5>
-									<p><b>From $<?php echo $products->NewPrice; ?></b></p>
-									<a href="#" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
-									<a href="#" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
-									
+									<div class="gen-info">
+										<h5><?php echo $products->ProductName; ?></h5>
+										<p><b>From $<?php echo $products->NewPrice; ?></b></p>
+										<a href="#" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+										<a href="#" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+									</div>
 								</a>
 								
 							</div>

@@ -60,13 +60,15 @@
 .prd {
     margin-top: 40px;
 }
+.wrap-item-prd {
+    height: 100%;
+}
 .wrap-item-prd img {
-    max-height: 320px;
-    width: auto;
-    margin-bottom: 20px;
-
-    background-position: center center;
-    background-size: auto 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .ehover3:hover button.info {
     background-color: rgba(0,0,0,0.1);

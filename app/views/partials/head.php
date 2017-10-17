@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/n-custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/h-custom.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/reponsive.css">
+
 	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap2.min.css">

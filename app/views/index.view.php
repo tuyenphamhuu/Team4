@@ -261,7 +261,7 @@
 
 		<script>
 			$(document).ready(function() {
-				var needToRemove ;
+				var needToRemove;
 				var confirmModal = $('#exampleModal');
 				$('.remove').click(function() {
 					needToRemove = $(this).closest('tr');
