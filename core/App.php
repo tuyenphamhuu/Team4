@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Core;
-
 class App
 {
   protected static $registry = [];
@@ -10,7 +9,6 @@ class App
   {
     static::$registry[$key] = $value;
   }
-
   public static function get($key)
   {
     if (! array_key_exists($key, static::$registry)) {
@@ -18,4 +16,11 @@ class App
     }
     return static::$registry[$key];
   }
+
+  public static function dd($data)
+  {
+    echo "<pre>".die(var_dump($data))."</pre>";
+  }
+
+  
 }
