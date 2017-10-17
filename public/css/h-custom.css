@@ -331,11 +331,12 @@ height: 60px;
 .text-specs {
     padding: 0 80px;
 }
-
-
-
-
-
+.semore-product {
+    padding: 0 100px;
+}
+.img-fluid {
+    padding: 20px;
+}
 
 footer {
     background-color: #000;
