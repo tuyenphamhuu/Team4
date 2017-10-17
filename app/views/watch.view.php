@@ -10,9 +10,8 @@
 					<form>
 						 <div class="form-row">
 						    <div class="col">
-						      <input type="Email" class="form-control" placeholder="Email">
-						    </div>
-						    
+						      	<input type="Email" class="form-control" placeholder="Email" required>
+						    </div>    
 						  </div>
 					</form>
 				</div>
