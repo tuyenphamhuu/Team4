@@ -23,7 +23,7 @@
 						</div>
 						<h5><?php echo $products->ProductName; ?></h5>
 						<p><b>From $<?php echo $products->NewPrice; ?></b></p>
-						<a href="/detailiPad?id=<?php echo $products->ID_Product ?>"><button type="button" class="btn btn-dark">Buy</button></a>
+						<a href="/detailiPad?id=<?php echo $products->ID_Product; ?>"><button type="button" class="btn btn-dark">Add to Cart</button></a>
 					</a>
 				</div>
 			</div>
