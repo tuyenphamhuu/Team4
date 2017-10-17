@@ -103,7 +103,7 @@
 										    	<label for="exampleRadios5" class="form-check-label">
 										     		<span>
 										    			<p>Wi-Fi</p>
-														<p>$799</p>	
+														<p>$999</p>	
 										    		</span>
 										  		</label>
 											</div>
@@ -113,8 +113,8 @@
 											    <input class="form-check-input" type="radio" name="Radios2" id="exampleRadios6" value="option2" checked>
 											    <label for="exampleRadios6" class="form-check-label">
 											     	<span>
-										    			<p>Wi-Fi</p>
-														<p>$799</p>	
+										    			<p>Wi-Fi + Cellular</p>
+														<p>$1129</p>	
 										    		</span>
 											  	</label>
 											</div>
@@ -142,7 +142,22 @@
 
 		    </div>
 		</div> 	
-	</div>		    
+	</div>
+	<hr>
+	<div class="container">
+		<div class="tech-specs">
+			
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
 </div>
 				
   				
