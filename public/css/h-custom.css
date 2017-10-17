@@ -323,15 +323,14 @@ height: 60px;
 }
 
 #add-btn {
-  margin-left: 20px;
+  margin-left: 25px;
 }
-.detail5 {
-    margin-right: 10px;
+#buynow-btn {
+    margin-left: 16px;
 }
-.capacity {
-    padding: 20px 80px;
+.text-specs {
+    padding: 0 80px;
 }
-
 
 
 
