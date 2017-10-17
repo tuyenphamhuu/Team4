@@ -313,10 +313,6 @@ height: 60px;
     padding-right: : 50px;
     padding-left: 50px;
 }*/
-.btn-outline-secondary {
-    /*border-color: #f2f2f2;*/
-    box-shadow: 10px;
-}
 .image-color {
     height: 38.03px;
     width: 38.03px;
@@ -331,6 +327,9 @@ height: 60px;
 }
 .detail5 {
     margin-right: 10px;
+}
+.capacity {
+    padding: 20px 80px;
 }
 
 
