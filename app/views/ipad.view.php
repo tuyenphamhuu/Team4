@@ -20,7 +20,7 @@
 						</div>
 						<h5>12.9-inch iPad Pro 512GB</h5>
 						<p><b>From $1149</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
@@ -37,7 +37,7 @@
 						</div>
 						<h5>12.9-inch iPad Pro 256GB</h5>
 						<p><b>From $949</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
@@ -54,7 +54,7 @@
 						</div>
 						<h5>12.9-inch iPad Pro 64GB</h5>
 						<p><b>From $799</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 										
 					</a>
@@ -73,7 +73,7 @@
 						</div>
 						<h5>10.5-inch iPad Pro 512GB</h5>
 						<p><b>From $999</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 					</a>
 				</div>
@@ -89,7 +89,7 @@
 						</div>
 						<h5>10.5-inch iPad Pro 256GB</h5>
 						<p><b>From $799</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
@@ -106,7 +106,7 @@
 						</div>
 						<h5>10.5-inch iPad Pro 64GB</h5>
 						<p><b>From $649</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
@@ -125,7 +125,7 @@
 						</div>
 						<h5>9.7-inch iPad Pro 128GB</h5>
 						<p><b>From $429</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
@@ -142,7 +142,7 @@
 						</div>
 						<h5>9.7-inch iPad Pro 32GB</h5>
 						<p><b>From $329</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
@@ -159,7 +159,7 @@
 						</div>
 						<h5>iPad Mini 4 128GB</h5>
 						<p><b>From $399</b></p>
-						<a href="#"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<!-- <a href="#"><button type="button" class="btn btn-dark">Learn more</button></a> -->
 						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
 						
 					</a>
