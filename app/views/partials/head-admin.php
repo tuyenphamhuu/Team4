@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
 	<link rel="stylesheet" type="text/css" href="https://glyphicons.com/">
+	<script src="/public/ckeditor/ckeditor.js"></script>
 	<script src="/public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>

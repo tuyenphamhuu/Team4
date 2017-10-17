@@ -32,7 +32,7 @@
 						</td>
 						<td>$699</td>
 						<td class="count-ap">
-							<input class="text-center" type="number" value="1">
+							<input class="text-center" type="number" min="1"  value="1">
 						</td>
 						<td>$699</td>
 						<td class="edit-bill">
@@ -56,7 +56,7 @@
 						</td>
 						<td>$799</td>
 						<td class="count-ap">
-							<input class="text-center" type="number" value="2">
+							<input class="text-center" type="number" min="1" value="2">
 						</td>
 						<td>$1598</td>
 						<td class="edit-bill">
@@ -83,7 +83,7 @@
 						</td>
 						<td>$669</td>
 						<td class="count-ap">
-							<input class="text-center" type="number" value="1">
+							<input class="text-center" type="number" min="1"  value="1">
 						</td>
 						<td>$669</td>
 						<td class="edit-bill">
