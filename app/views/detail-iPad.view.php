@@ -29,9 +29,9 @@
         						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
         						Color</a>
       							</h4>
-    					</div>
-    					<div id="collapse2" class="panel-collapse collapse">
-      						<div class="panel-body">
+    						</div>
+    						<div id="collapse2" class="panel-collapse collapse">
+      							<div class="panel-body">
 					        		<div class="row">
 					        			<div class="col-lg-3 text-center">
 						        			<div class="form-check">
@@ -103,7 +103,7 @@
 										    	<label for="exampleRadios5" class="form-check-label">
 										     		<span>
 										    			<p>Wi-Fi</p>
-														<p>$799</p>	
+														<p>$999</p>	
 										    		</span>
 										  		</label>
 											</div>
@@ -113,8 +113,8 @@
 											    <input class="form-check-input" type="radio" name="Radios2" id="exampleRadios6" value="option2" checked>
 											    <label for="exampleRadios6" class="form-check-label">
 											     	<span>
-										    			<p>Wi-Fi</p>
-														<p>$799</p>	
+										    			<p>Wi-Fi + Cellular</p>
+														<p>$1129</p>	
 										    		</span>
 											  	</label>
 											</div>
@@ -141,8 +141,36 @@
 
 
 		    </div>
-		</div> 	
-	</div>		    
+		</div>
+		<hr> 	
+	</div>
+	
+	<div class="container">
+		<div class="tech-specs">
+			<div class="row">	
+				<h4>Tech Specs</h4>
+			</div>
+			<div class="row capacity">
+				<div class="col-md-6">
+					<p><b>Capacity</b></p>
+				</div>
+				<div class="col-md-6">
+					<p>512GB</p>	
+				</div>
+			</div>
+			<hr>
+			
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
 </div>
 				
   				
