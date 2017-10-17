@@ -35,3 +35,4 @@ $router->post('editProduct', 'ProductController@editProduct');//vu
 $router->get('detailiPad', 'PagesController@detailiPad');//vu
 $router->get('admin/delProduct', 'ProductController@showDelProduct');//vu
 $router->post('delProduct', 'ProductController@delProduct');//vu
+$router->get('order', 'PagesController@orderView');//vu

@@ -52,4 +52,9 @@ class PagesController
   {
     return view('detail-iPad');
   }
+
+  public function orderView()
+  {
+    return view('order');
+  }
 }
