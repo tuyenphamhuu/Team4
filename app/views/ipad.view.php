@@ -10,8 +10,8 @@
 	<div class="container-fluid">
 		<div class="ipad-products row">
 			<?php 
-					foreach ($products as $products) {
-						?>
+				foreach ($products as $products) {
+			?>
 			<div class="col-md-4">
 				<div class="ipad-item">
 					<a href="#">
@@ -23,8 +23,7 @@
 						</div>
 						<h5><?php echo $products->ProductName; ?></h5>
 						<p><b>From $<?php echo $products->NewPrice; ?></b></p>
-						<a href="/detailiPad"><button type="button" class="btn btn-dark">Buy</button></a>
-										
+						<a href="/detailiPad?id=<?php echo $products->ID_Product ?>"><button type="button" class="btn btn-dark">Buy</button></a>
 					</a>
 				</div>
 			</div>
