@@ -149,7 +149,8 @@
 			</div>
 			<div class=" text-specs row">
 				<p>
-					tech-specs-text
+					tech-specs-text : th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet mth tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m
+
 				</p>
 			</div>
 		</div>
