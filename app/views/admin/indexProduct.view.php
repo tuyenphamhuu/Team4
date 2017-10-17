@@ -16,8 +16,7 @@
                     <th>Product Name</th>
                     <th>New Price</th>
                     <th>Old Price</th>
-                    <th>Congif</th>
-                    <!-- <th>Config</th> -->
+                    <th>Description</th>
                     <th>Edit</th>
                     <th>Del</th>
                     </tr>
@@ -42,7 +41,7 @@
                     <td><?php echo $product->ProductName; ?></td>
                     <td><?php echo $product->NewPrice; ?></td>
                     <td><?php echo $product->OldPrice; ?></td>
-                    <td><?php echo the_excerpt($product->Config); ?></td>                    <!-- <td> <?php //echo the_excerpt($product->Config); ?></td> -->
+                    <td><?php echo the_excerpt($product->description); ?></td>                    <!-- <td> <?php //echo the_excerpt($product->Config); ?></td> -->
                     <td><a class="btn btn-dark" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">edit</a></td>
                     <td><a class="btn btn-warning" href="delProduct?id=<?php echo $product->ID_Product; ?>" role="button">del</a></td>
                     </tr>
