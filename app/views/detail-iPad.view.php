@@ -137,9 +137,6 @@
     				<a href="#" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Buy now</button></a>
     				<a href="#" target="_blank"><button type="button" id="add-btn" class="btn btn-dark">Add to cart</button></a>
 				</div>
-
-
-
 		    </div>
 		</div>
 		<hr> 	
@@ -150,19 +147,13 @@
 			<div class="row">	
 				<h4>Tech Specs</h4>
 			</div>
-			<div class="row capacity">
-				<div class="col-md-6">
-					<p><b>Capacity</b></p>
-				</div>
-				<div class="col-md-6">
-					<p>512GB</p>	
-				</div>
+			<div class=" text-specs row">
+				<p>
+					tech-specs-text
+				</p>
 			</div>
-			<hr>
-			
 		</div>
 	</div>
-	
 
 
 
