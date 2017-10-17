@@ -1,7 +1,7 @@
 .text-transform {
     text-transform: none;
 }
-.text-red {
+.text-red {x`
     color: #C41100;
 }
 /*#view-detail .hr-v-dl {
@@ -227,7 +227,6 @@ footer {
 img {
     width: 100%;
 }
-
 /*cart*/
 .cart {
     /*display: none;*/

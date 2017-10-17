@@ -29,9 +29,9 @@
         						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
         						Color</a>
       							</h4>
-    					</div>
-    					<div id="collapse2" class="panel-collapse collapse">
-      						<div class="panel-body">
+    						</div>
+    						<div id="collapse2" class="panel-collapse collapse">
+      							<div class="panel-body">
 					        		<div class="row">
 					        			<div class="col-lg-3 text-center">
 						        			<div class="form-check">
@@ -103,7 +103,7 @@
 										    	<label for="exampleRadios5" class="form-check-label">
 										     		<span>
 										    			<p>Wi-Fi</p>
-														<p>$799</p>	
+														<p>$999</p>	
 										    		</span>
 										  		</label>
 											</div>
@@ -113,8 +113,8 @@
 											    <input class="form-check-input" type="radio" name="Radios2" id="exampleRadios6" value="option2" checked>
 											    <label for="exampleRadios6" class="form-check-label">
 											     	<span>
-										    			<p>Wi-Fi</p>
-														<p>$799</p>	
+										    			<p>Wi-Fi + Cellular</p>
+														<p>$1129</p>	
 										    		</span>
 											  	</label>
 											</div>
@@ -137,12 +137,58 @@
     				<a href="#" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Buy now</button></a>
     				<a href="#" target="_blank"><button type="button" id="add-btn" class="btn btn-dark">Add to cart</button></a>
 				</div>
-
-
-
 		    </div>
-		</div> 	
-	</div>		    
+		</div>
+		<hr> 	
+	</div>
+	<div class="container">
+		<div class="tech-specs">
+			<div class="row">	
+				<h4>Tech Specs</h4>
+			</div>
+			<div class=" text-specs row">
+				<p>
+					tech-specs-text : th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet mth tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m th tuyen t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m t ghet m
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="seemore">
+			<div class="row">
+				<h4>See more</h4>
+			</div>
+			<div class="row">
+                <div class="row semore-product">
+       				<div class="col-md-3 text-center">
+            			<img class="img-fluid" src="public/images/ipad-pro-12in-256GB.png">
+            			<a class="colorblack" href="#">
+            				<p>12.9-inch iPad Pro 256GB</p>
+            			</a>
+           			</div>
+           			
+           			<div class="col-md-3 text-center">
+            			<img class="img-fluid" src="public/images/ipad-9in-128GB.png">
+            			<a class="colorblack" href="#">
+            				<p>9.7-inch iPad Pro 128GB</p>
+            			</a>
+           			</div>
+           			<div class="col-md-3 text-center">	
+            			<img class="img-fluid" src="public/images/ipad-mini4-128G.png">
+            			<a class="colorblack" href="#">
+            				<p>iPad Mini 4 128GB</p>
+            			</a>
+           			</div>
+           			<div class="col-md-3 text-center">	
+            			<img class="img-fluid" src="public/images/ipad-pro-10in-256G.png">
+            			<a class="colorblack" href="#">
+            				<p>10.5 inch iPad Pro 256GB</p>
+            			</a>
+           			</div>
+     			</div>
+			</div>
+		</div>
+	</div>
 </div>
 				
   				
