@@ -10,7 +10,7 @@
 					<div class="row justify-content-center prd">
 						<div class="col-md-3">
 							<div class="wrap-item-prd hover ehover3">
-					      <img class="mx-auto d-block rounded" src="public/images/ip-x-f.jpg" alt="">
+					      <img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
 					      <div class="overlay">
 					      	<h2>iPhone X</h2>
 										<button type="button" class="info" data-toggle="modal" data-target=".myModal">
@@ -121,8 +121,9 @@
 							<img class="img-dt mx-auto d-block" src="public/images/ip_8_f.jpg">
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center text-transform text-left">
-							<h4 class="text-red font-weight-bold">$699</h4>
 							<h5 class="text-uppercase font-weight-bold">Iphone 8</h5>
+							<h4 class="text-red font-weight-bold"><i>$699.00</i></h4>
+							<hr>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -138,7 +139,7 @@
 		<!-- cart -->
 		<div class="cart">
 			<h2 class="font-weight-bold text-center">My cart</h2>
-			<table class="bill-ap table table-bordered text-transform table-hover table-responsive">
+			<table class="bg-cart bill-ap table table-bordered text-transform table-hover table-responsive">
 				<thead>
 					<tr>
 						<th style="width: 4%">STT</th>
@@ -154,10 +155,10 @@
 						<th>1</th>
 						<td>
 							<div class="row">
-								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-									<img src="../../public/images/7+-f.jpg">
+								<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+									<img class="img-myc" src="../../public/images/7+-f.jpg">
 								</div>
-								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+								<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
 									iPhone 8
 								</div>
 							</div>
@@ -168,43 +169,20 @@
 						</td>
 						<td>$699</td>
 						<td class="edit-bill">
-
-		<!-- Button trigger modal -->
-		<button type="button" data-toggle="modal" data-target="#exampleModal">
-		  <img src="/public/images/trash.png">
-		</button>
-<!-- Modal -->
-		<div class=" modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Confirm delete</h5>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
-		        <button type="button" class="remove btn btn-primary">Delete</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-
-	<script type="text/javascript">
-		$('.remove').click(function() {
-			$('#exampleModal').modal('hide');
-			$(this).closest('tr').remove();
-		});
-	</script>
+							<!-- Button trigger modal -->
+							<button type="button" data-toggle="modal" data-target="#exampleModal">
+							  	<img class="remove" src="/public/images/trash-ap-3.png">
+							</button>
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
 						<th>2</th>
 						<td>
 							<div class="row">
-								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-									<img src="../../public/images/ipad-pro-10in.png">
+								<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+									<img class="img-myc" src="../../public/images/ipad-pro-10in.png">
 								</div>
-								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+								<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
 									iPad Pro 12.9 inch
 								</div>
 							</div>
@@ -215,17 +193,23 @@
 						</td>
 						<td>$1598</td>
 						<td class="edit-bill">
-							<a class="remove" href="#"><img src="/public/images/trash.png"></a>
+							<!-- Button trigger modal -->
+							<button type="button" data-toggle="modal" data-target="#exampleModal">
+							  	<img class="remove" src="/public/images/trash-ap-3.png">
+							</button>
+							<!-- Modal -->
+							
+
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
 						<th>3</th>
 						<td>
 							<div class="row">
-								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-									<img src="../../public/images/7+-f.jpg">
+								<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+									<img class="img-myc" src="../../public/images/6+.jpg">
 								</div>
-								<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+								<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
 									iPhone 7 plus
 								</div>
 							</div>
@@ -236,23 +220,62 @@
 						</td>
 						<td>$669</td>
 						<td class="edit-bill">
-							<a class="remove" href="#"><img src="/public/images/trash.png"></a>
+							<!-- Button trigger modal -->
+							<button type="button" data-toggle="modal" data-target="#exampleModal">
+							  	<img class="remove" src="/public/images/trash-ap-3.png">
+							</button>
+							<!-- Modal -->
+							
+
 						</td>
 					</tr>
 					<tr class="list-pr-ap">
 						<td colspan="4" class="text-left">
-							<button class="btn btn-warning">&laquo; Keep buying</button>
+							<button class="btn prc-bill">&laquo; Keep buying</button>
 						</td>
 						<td class="font-weight-bold">
 							Total: $2397
 						</td>
 						<td>
-							<button class="btn btn-success">Pay &raquo;</button>
+							<button class="btn prc-bill">Pay &raquo;</button>
 						</td>
 					</tr>
+
+					<!-- Modal -->
+					<div class=" modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  	<div class="modal-dialog" role="document">
+					    	<div class="modal-content">
+					      		<div class="modal-header">
+					        		<h5 class="modal-title text-transform">Confirm Delete</h5>
+					      		</div>
+					      		<div class="modal-body">
+					        		<h4 class="modal-title text-transform">Do you want to delete this row?</h4>
+					      		</div>
+						      	<div class="modal-footer">
+							        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Back</button>
+							        <button type="button" class="yes-remove btn btn-danger btn-sm">Yes, please</button>
+						      	</div>
+					    	</div>
+					  	</div>
+					</div>
+
 				</tbody>
 			</table>
 		</div>
+
+		<script>
+			$(document).ready(function() {
+				var needToRemove ;
+				var confirmModal = $('#exampleModal');
+				$('.remove').click(function() {
+					needToRemove = $(this).closest('tr');
+				});
+				$('.yes-remove').click(function() {
+					confirmModal.modal('hide');
+					needToRemove.remove();
+				});
+			});
+		</script>
 
 		
 	</div>
