@@ -20,7 +20,15 @@
 							<div class="iphone-item">
 								<a href="#">
 									<div class="overlay-image">
-									<img src="public/images/<?php echo $products->Image; ?>">
+									<img src="public/images/<?php 
+									if ($products->Image != ''){
+										echo $products->Image;
+									}
+									else{
+										echo 'knowledge_graph_logo.png';
+									}
+									
+									?>">
 										<div class="overlay">
 											<div class="text">Tech specs</div>
 										</div>
