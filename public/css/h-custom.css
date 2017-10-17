@@ -338,7 +338,23 @@ height: 60px;
     padding: 20px;
 }
 
-footer {
+/*order page*/
+.order-wrapper {
+    background-color: #ececef;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.customer-info {
+    padding-top: 20px;
+}
+.contact {
+    padding-top: 20px;
+}
+.form-address {
+    padding: 5px 0;
+}
+
+.footer {
     background-color: #000;
     padding-top: 5px;
 }
