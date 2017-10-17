@@ -271,7 +271,7 @@ height: 60px;
 
 }
 .iphone-item a img {
-    width: 100%;
+    /*width: 100%;*/
     opacity: 1;
     transition: all 1s ease;
     z-index: 99;
@@ -284,6 +284,21 @@ height: 60px;
 .iphone-item:hover a img {
     z-index: 9999;
 }
+
+
+/* ========= n* ==========>*/
+/*.iphone-item a {
+    max-height: inherit;
+}
+.iphone-item a div img {
+    max-height: 400px;
+    width: auto;
+}
+.gen-info {
+
+}*/
+/* ========= n* ==========>*/
+
 
 
 /*detail-ipad-page*/

@@ -13,8 +13,7 @@ class Product
   {
     return App::get('database')->selectAll(Product::$table);
   }
-  public static function insert($ProductName ,$NewPrice, $OldPrice , 
-  $ColorProduct, $Config, $description, $Image) 
+  public static function insert($ProductName ,$NewPrice, $OldPrice, $Config, $description, $Image) 
   {
     App::get('database')->insert(Product::$table, [
 
@@ -22,7 +21,6 @@ class Product
       'NewPrice'       => $NewPrice,
       'OldPrice'       => $OldPrice,
       'ID_TypeProduct' => 1,
-      'ColorProduct'   => $ColorProduct,
       'Config'         => $Config,
       'description'    => $description,
       'Image'    => $Image

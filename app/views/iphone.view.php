@@ -17,25 +17,33 @@
 						?>
 			<div class="col-md-3">
 				
-							<div class="iphone-item">
-								<a href="#">
-									<div class="overlay-image">
-										<img src="public/images/<?php echo $products->Image; ?>">
-										<div class="overlay">
-											<div class="text">Tech specs</div>
-										</div>
-									</div>
-									<div class="gen-info">
-										<h5><?php echo $products->ProductName; ?></h5>
-										<p><b>From $<?php echo $products->NewPrice; ?></b></p>
-										<a href="#" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
-										<a href="#" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
-									</div>
-								</a>
-								
+				<div class="iphone-item">
+					<a href="#">
+						<div class="overlay-image">
+							<img src="public/images/<?php 
+								if ($products->Image != ''){
+									echo $products->Image;
+								}
+								else{
+									echo 'knowledge_graph_logo.png';
+								}
+								?>">
+							<div class="overlay">
+								<div class="text">Tech specs</div>
 							</div>
+						</div>
+					</a>
+					<div>
+						<h5><?php echo $products->ProductName; ?></h5>
+						<p><b>From $<?php echo $products->NewPrice; ?></b></p>
+						<a href="#" target="_blank"><button type="button" class="btn btn-dark">Learn more</button></a>
+						<a href="#" target="_blank"><button type="button" class="btn btn-dark">Buy</button></a>
+					</div>
+					
+				</div>
 
 			</div>
+			
 			<?php
 					}
 				 ?>

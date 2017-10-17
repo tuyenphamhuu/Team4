@@ -32,39 +32,25 @@
                         <input name="OldPrice" value="<?php echo $product[0]->OldPrice;?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Old Price">
                     </div>
                 </div>
-                <!-- <div class="form-group row">
-                    <div class="col-md-3">
-                        <label for="exampleInputEmail1">ID_Type Product</label>
-                    </div>
-                    <div class="col-md-9">
-                        <input name="" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID_Type Product">
-                    </div>
-                </div> -->
-                <div class="form-group row">
-                    <div class="col-md-3">
-                        <label for="exampleInputEmail1">Color Product</label>
-                    </div>
-                    <div class="col-md-9">
-                        <input name="ColorProduct" value="<?php echo $product[0]->ColorProduct;?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Color Product">
-                    </div>
-                </div>
                 <div class="form-group row">
                     <div class="col-md-3">
                         <label for="exampleInputEmail1">Config</label>
                     </div>
+                    
                     <div class="col-md-9">
-                        <textarea  name="Config" name="message" rows="5" cols="100"><?php echo $product[0]->Config;?>
+                        <textarea  name="Config" id="Config" rows="5" cols="100"><?php echo $product[0]->Config;?>
                         </textarea>
-                    </div>
+                    </div><script>CKEDITOR.replace('Config');</script>
                 </div>
                 <div class="form-group row">
                     <div class="col-md-3">
                         <label for="exampleInputEmail1">Description</label>
                     </div>
+                    
                     <div class="col-md-9">
-                    <textarea  name="description" name="message" rows="5" cols="100"><?php echo $product[0]->description;?>
+                    <textarea  name="description" id="description" rows="5" cols="100"><?php echo $product[0]->description;?>
                     </textarea>
-                    </div>
+                    </div><script>CKEDITOR.replace('description');</script>
                 </div>
                 <div class="form-group row">
                     <div class="col-md-3">

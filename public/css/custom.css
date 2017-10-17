@@ -1,7 +1,7 @@
 .text-transform {
     text-transform: none;
 }
-.text-red {x`
+.text-red {
     color: #C41100;
 }
 /*#view-detail .hr-v-dl {
@@ -232,9 +232,10 @@ img {
 /*cart*/
 .cart {
     /*display: none;*/
+    /*color: #fff;*/
+    /*background-color: #000;*/
 }
-.bg-cart {
-    /*background-color: #FBF0E1 !important;*/
+.cart h2 {
 }
 .table-bordered {
     /*border-color: #000 !important;*/
@@ -246,7 +247,7 @@ img {
     width: 25px;
 }
 .list-pr-ap {
-    font-size: 15px;
+    font-size: 18px;
 }
 .count-ap input {
     width: 80px;
