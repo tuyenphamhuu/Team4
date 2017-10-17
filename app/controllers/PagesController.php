@@ -26,7 +26,10 @@ class PagesController
 
   public function ipad()
   {
-    return view('ipad');
+    $id = $_GET['id'];
+    $sql = " SELECT * FROM product WHERE ID_TypeProduct = '{$id}'";
+    $products = Product::selectByType($sql);
+    return view('ipad', ['products' => $products ]);
   }
   public function mac()
   {
@@ -48,5 +51,10 @@ class PagesController
   public function detailiPad()
   {
     return view('detail-iPad');
+  }
+
+  public function orderView()
+  {
+    return view('order');
   }
 }
