@@ -21,7 +21,7 @@ $router->post('editUser', 'UsersController@postEditUser');
 
 $router->post('users', 'ProductController@store');
 $router->get('admin/editProduct', 'ProductController@showEditProduct');//vu
-$router->get('detail-iPad','PagesController@detailiPad');
+$router->get('detailProduct','PagesController@detailProduct');
 
 $router->get('account','UsersController@account');
 $router->get('product-rep','UsersController@product_rep');
