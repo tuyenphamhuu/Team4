@@ -8,18 +8,16 @@
 				<p class="slogan">Safety, security is above all</p>
 				<div class="container-fluid margin-lr">
 					<div class="row justify-content-center prd">
-						<div class="col-md-3">
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
-					      <img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
-					      <div class="overlay">
-					      	<h2>iPhone X</h2>
-										<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-										</button>
-					      </div>
-					    </div>
-					  </div>
-						<div class="col-md-3">
+					      		<img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
+						      	<div class="overlay">
+						      		<h2>iPhone X</h2>
+									<button type="button" class="info" data-toggle="modal" data-target=".myModal">Detail</button>
+						      	</div>
+					   		 </div>
+					  	</div>
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ip8-.jpg" alt="iphone_8">
 								<div class="overlay">
@@ -30,7 +28,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ip7-.jpg" alt="iphone_7">
 								<div class="overlay">
@@ -41,7 +39,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ip6s-.gif" alt="iphone_6">
 								<div class="overlay">
@@ -61,19 +59,17 @@
 				<h1 class="prd-type">iPad</h1>
 				<p class="slogan">Safety, security is above all</p>
 				<div class="container-fluid margin-lr">
-					<div class="row prd">
-						<div class="col-md-3">
+					<div class="row justify-content-center prd">
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-pro-f.jpg" alt="ipad-pro-f.jpg">
-								<div class="overlay">
-									<h2>Ipad Pro</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
+					      		<img class="mx-auto d-block rounded" src="public/images/ipad-pro-f.jpg" alt="ipad-pro-f.jpg">
+						      	<div class="overlay">
+						      		<h2>Ipad Pro</h2>
+									<button type="button" class="info" data-toggle="modal" data-target=".myModal">Detail</button>
+						      	</div>
+					   		 </div>
+					  	</div>
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ipad-f.jpg" alt="ipad-f.jpg">
 								<div class="overlay">
@@ -84,7 +80,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ipad-mini-4-f.jpg" alt="ipad-mini-4-f.jpg">
 								<div class="overlay">
@@ -95,7 +91,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd hover ehover3">
 								<img class="mx-auto d-block rounded" src="public/images/ios11-f.jpg" alt="ios11-f.jpg">
 								<div class="overlay">
@@ -142,7 +138,7 @@
 			<table class="bg-cart bill-ap table table-bordered text-transform table-hover table-responsive">
 				<thead>
 					<tr>
-						<th style="width: 4%">STT</th>
+						<th style="width: 4%">#</th>
 						<th style="width: 45%">Name Products</th>
 						<th style="width: 15%">Price</th>
 						<th style="width: 15%">Quantity</th>
@@ -165,7 +161,7 @@
 						</td>
 						<td>$699</td>
 						<td class="count-ap">
-							<input class="text-center" type="number" value="1">
+							<input class="text-center" type="number" value="1" min="1" >
 						</td>
 						<td>$699</td>
 						<td class="edit-bill">
@@ -189,7 +185,7 @@
 						</td>
 						<td>$799</td>
 						<td class="count-ap">
-							<input class="text-center" type="number" value="2">
+							<input class="text-center" type="number" value="2" min="1">
 						</td>
 						<td>$1598</td>
 						<td class="edit-bill">
@@ -216,7 +212,7 @@
 						</td>
 						<td>$669</td>
 						<td class="count-ap">
-							<input class="text-center" type="number" value="1">
+							<input class="text-center" type="number" value="1" min="1">
 						</td>
 						<td>$669</td>
 						<td class="edit-bill">
