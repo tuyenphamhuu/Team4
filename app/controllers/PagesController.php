@@ -48,9 +48,13 @@ class PagesController
     return view('signin');
   }
 
-  public function detailiPad()
+  public function detailProduct()
   {
-    return view('detail-iPad');
+    $id = $_GET['idProduct'];
+    $sql = " SELECT ProductName, c.Color, Config, description, Image FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
+    $products = Product::selectByType($sql);
+
+    return view('detail-iPad', ['products' => $products]);
   }
 
   public function orderView()
