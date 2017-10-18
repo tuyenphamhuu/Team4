@@ -34,7 +34,7 @@
       							<div class="panel-body">
 					        		<div class="row">
 									<?php 
-
+										if($products[0]->Color != ''){
 										foreach ($products as $product) {
 											?>
 												<div class="col-lg-3 text-center">
@@ -50,6 +50,7 @@
 								        		</div>
 											<?php
 										}
+									}
 									 ?>
 					        		</div>
  								 </div>
