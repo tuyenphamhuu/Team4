@@ -357,8 +357,11 @@ height: 60px;
 .order-info {
     background-color: white;
 }
+.order {
+    padding-bottom: 10px;
+}
 .customer-info {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .contact {
     padding-top: 20px;
@@ -370,6 +373,8 @@ height: 60px;
     padding-bottom: 30px;
 
 }
+
+
 .footer {
     background-color: #000;
     padding-top: 5px;
