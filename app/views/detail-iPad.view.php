@@ -33,13 +33,14 @@
     						<div id="collapse2" class="panel-collapse collapse">
       							<div class="panel-body">
 					        		<div class="row">
+									
 									<?php 
 										if($products[0]->Color != ''){
 										foreach ($products as $product) {
 											?>
 												<div class="col-lg-3 text-center">
 								        			<div class="form-check">
-												    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" value="option1" checked>
+												    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" value="<?php echo $product->Color ?>" >
 												    		<label for="exampleRadios1" class="form-check-label">
 												     		<span>
 												    			<img class="image-color" src="public/images/<?php echo $product->Color ?>.png">
@@ -52,6 +53,7 @@
 										}
 									}
 									 ?>
+									 
 					        		</div>
  								 </div>
     						</div>
@@ -64,15 +66,15 @@
 					 <div class="col-3">
 					    <input class="form-control" type="number" value="1" min="1" id="example-number-input">
 					 </div>
+					 <input type="text" id="idProduct" hidden="hidden"  value="<?php echo $products[0]->ID_Product; ?>">
 				</div>
 				<hr>
 				<div class="detail5 row">
     				<a href="#" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Buy now</button></a>
-    				<a href="#" target="_blank"><button type="button" id="add-btn" class="btn btn-dark">Add to cart</button></a>
+    				<button type="button" id="add-btn" class="btn btn-dark">Add to cart</button>
 				</div>
-
-
-
+				<div id="responseDiv">
+ </div>
 		    </div>
 		</div>
 		<hr> 	
@@ -132,4 +134,23 @@
  		</div>
  	</div>
 </div>
+
+
+
 <?php require 'partials/footer.php'; ?>
+
+
+ <script type="text/javascript">
+  jQuery(document).ready(function(){
+   jQuery("#add-btn").click(function(){
+    jQuery.ajax({
+     type:"POST",
+     url:"ajax.php", //goi toi file ajax.php
+     data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val(),
+     success:function(html){
+      jQuery("#responseDiv").html(html);
+     }
+    });
+   });
+  });
+ </script>
