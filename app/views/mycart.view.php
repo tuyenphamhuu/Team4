@@ -127,6 +127,18 @@
 		</table>
 	</div>
 </div>
+
+<div class="main">
+
+	<div class="view effect">
+         <img src="/public/images/images/1.jpg" />
+         <div class="mask"></div>
+         <div class="content">
+         	<a href="#" class="info" title="Full Image">Full Image</a>
+         </div>
+	</div>
+</div>
+	
 <script>
 	$(document).ready(function() {
 		var needToRemove;
