@@ -271,21 +271,19 @@ height: 60px;
 
 }
 .iphone-item a img {
-    width: 100%;
+    /*width: 100%;*/
     opacity: 1;
     transition: all 1s ease;
     z-index: 99;
 }
 
-/* .iphone-item a:hover img {
+ .iphone-item a:hover img {
     transform: scale(1.2,1.2);
     opacity: 0.7;
-} */
+} 
 .iphone-item:hover a img {
     z-index: 9999;
 }
-
-
 /*detail-ipad-page*/
 #wrapper-detail {
     background-color: #ececef;
@@ -344,6 +342,9 @@ height: 60px;
     text-transform: none;
     letter-spacing: 0;
 }
+.order-info {
+    background-color: white;
+}
 .customer-info {
     padding-top: 20px;
 }
@@ -353,7 +354,10 @@ height: 60px;
 .form-address {
     padding: 5px 0;
 }
+.submit-order {
+    padding-bottom: 30px;
 
+}
 .footer {
     background-color: #000;
     padding-top: 5px;
