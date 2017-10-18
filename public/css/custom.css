@@ -63,6 +63,9 @@
 .wrap-item-prd img {
     margin-bottom: 20px;
 }
+.wrap-item-prd .overlay {
+    opacity: hide !important;
+}
 .ehover3:hover button.info {
     background-color: rgba(0,0,0,0.1);
     cursor: pointer;
@@ -260,4 +263,12 @@ img {
     color: #fff;
     background-color: #000;
     border: 1px solid #fff;
+}
+.overlay-n {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

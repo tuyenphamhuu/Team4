@@ -10,6 +10,17 @@
 	    background-position: center center;
 	}
 }
+@media screen and (max-width: 1021) {
+	#mac div {
+		top: 15px;
+	}
+	#mac div strong {
+	    font-size: 40px !important;
+	}
+	#mac div span {
+	    font-size: 32px !important;
+	}
+}
 @media screen and (max-width: 991) {
 
 }
