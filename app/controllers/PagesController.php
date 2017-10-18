@@ -51,7 +51,7 @@ class PagesController
   public function detailProduct()
   {
     $id = $_GET['idProduct'];
-    $sql = " SELECT ProductName, c.Color, Config, description, Image FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
+    $sql = " SELECT p.ID_Product, ProductName, c.Color, Config, description, Image FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
     $products = Product::selectByType($sql);
 
     return view('detail-iPad', ['products' => $products]);
