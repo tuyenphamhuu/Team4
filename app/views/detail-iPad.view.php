@@ -73,23 +73,17 @@
 				<div class="detail6 row">
 					<div class="tech-specs">
 						<div class="row">
-							<h4>Tech-Specs</h4>
+							<h4>Tech specs</h4>
 						</div>
 						<div class="row">
 							<p>Khâu xong, Triệu Lam cắn chỉ, vuốt vuốt áo cho phẳng lại rồi đưa cho Phong Thiên Trí, bảo hắn mặc vào. Phong Thiên Trí mặc áo xong cười tươi như hoa, trong lòng nghĩ đến lúc về nhà sẽ đem cất áo này thật kỹ, không thể tùy tiện mặc, đây chính là chiếc áo đầu tiên mà Triệu Lam đã tự tay đơm cúc cho hắn.</p>
 						</div>
-						
-					</div>
-					
+					</div>	
 				</div>
-
-
-
 		    </div>
 		</div>
 		<hr> 	
 	</div>
-	
 	<div class="container">
 		<div class="description-detail">
 			<div class="row">	
@@ -100,6 +94,7 @@
 			</div>
 			<hr>
 		</div>
+	</div>
 	<div class="container">
  		<div class="seemore">
  			<div class="row">
@@ -112,26 +107,25 @@
             			<a class="colorblack" href="#">
             				<p>12.9-inch iPad Pro 256GB</p>
             			</a>
-           			</div>
-            			
-            			<div class="col-md-3 text-center">
+           			</div>	
+        			<div class="col-md-3 text-center">
             			<img class="img-fluid" src="public/images/ipad-9in-128GB.png">
              			<a class="colorblack" href="#">
              				<p>9.7-inch iPad Pro 128GB</p>
              			</a>
-            			</div>
-            			<div class="col-md-3 text-center">	
+        			</div>
+    				<div class="col-md-3 text-center">	
              			<img class="img-fluid" src="public/images/ipad-mini4-128G.png">
             			<a class="colorblack" href="#">
              				<p>iPad Mini 4 128GB</p>
              			</a>
-            			</div>
-            			<div class="col-md-3 text-center">	
+        			</div>
+        			<div class="col-md-3 text-center">	
              			<img class="img-fluid" src="public/images/ipad-pro-10in-256G.png">
              			<a class="colorblack" href="#">
             				<p>10.5 inch iPad Pro 256GB</p>
              			</a>
-            			</div>
+    				</div>
       			</div>
  			</div>
  		</div>

@@ -319,6 +319,18 @@ height: 60px;
 .detail4 {
     font-size: 20px;
 }
+.detail6 h4 {
+    font-size: 20px;
+}
+.detail6 {
+    padding: 0 30px;
+}
+.description-detail {
+    padding: 0 18px;
+}
+.seemore {
+    padding: 0 18px;
+}
 
 #add-btn {
   margin-left: 25px;
@@ -326,9 +338,9 @@ height: 60px;
 #buynow-btn {
     margin-left: 16px;
 }
-.text-specs {
+/*.text-specs {
     padding: 0 80px;
-}
+}*/
 .semore-product {
     padding: 0 100px;
 }
