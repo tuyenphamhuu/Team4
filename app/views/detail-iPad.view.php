@@ -75,6 +75,7 @@
 				</div>
 
 				<hr>
+				<div id="responseDiv"></div>
 				<div class="detail6 row">
 					<div class="tech-specs">
 						<div class="row">
@@ -150,7 +151,12 @@
      url:"ajax.php", //goi toi file ajax.php
      data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val(),
      success:function(html){
-      jQuery("#responseDiv").html(html);
+
+
+
+
+
+
      }
     });
    });
