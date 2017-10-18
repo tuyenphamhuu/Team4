@@ -141,7 +141,12 @@
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
-		<a href="#"><div><strong>iMac Pro</strong><span>(Power to the pro)</span></div></a>
+		<a href="#" class="">
+			<div>
+				<strong><h1>iMac Pro</h1></strong>
+				<span><h3 class="text-transform">(Power to the pro)</h3></span>
+			</div>
+		</a>
 	</div>
 
 

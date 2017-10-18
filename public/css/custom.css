@@ -93,7 +93,8 @@
     position: relative;
     margin: 10px 0;
 }
-#mac:hover div{
+#mac:hover a {
+    width: 100%;
     background-color: #000;
     opacity: 0.7;
     transition: 1s, 3s;
@@ -105,13 +106,13 @@
     position: absolute;
     top: 35%;
     color: #fff;
-    font-size: 62px;
+    /*font-size: 62px;*/
     padding: 0 100px;
     letter-spacing: 10px;
 }
 #mac div span {
-    font-size: 40px;
-    text-decoration: none;
+    /*font-size: 40px;*/
+    /*text-decoration: none;*/
 }
 .ip-item {
     margin-bottom: 20px;
