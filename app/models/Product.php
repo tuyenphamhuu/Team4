@@ -23,7 +23,7 @@ class Product
       'ID_TypeProduct' => 1,
       'Config'         => $Config,
       'description'    => $description,
-      'Image'    => $Image
+      'Image'          => $Image
     ]);
   }
 
