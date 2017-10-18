@@ -1,7 +1,7 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 <content>
-	<div class="container-fluid">
+		<div class="container-fluid">
 		<div id="iphone" class="row text-center">
 			<div class="col-12 text-center">
 				<h1 class="prd-type">iPhone</h1>
@@ -12,10 +12,10 @@
 							<div class="wrap-item-prd">
 					      		<img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
 						      	<div class="mask">
-						      	</div>
-						      		<div class="content text-center">Detail
-										<a type="button" class="info btn btn-warning" href="modal" data-target=".myModal"></a>
+						      		<div class="content text-center">
+										<a class="info" href="modal" data-target=".myModal">Detail</a>
 									</div>
+						      	</div>
 						      	
 					   		 </div>
 					  	</div>
@@ -24,11 +24,11 @@
 					      		<img class="mx-auto d-block rounded" src="public/images/ip8-.jpg" alt="iphone_8">
 						      	<div class="mask">
 						      		<div class="content">
-										<a type="button" class="info btn btn-info" href="modal" data-target=".myModal">Detail</a>
+										<a type="button" class="info" href="modal" data-target=".myModal">Detail</a>
 									</div>
 						      	</div>
 						      	
-					   		 </div>
+					   		 </div>	
 						</div>
 						<div class="col-xl-3 col-lg-3 col-md-7 col-sm-7 col-12">
 							<div class="wrap-item-prd">
