@@ -1,119 +1,21 @@
+/*general*/
 .text-transform {
     text-transform: none;
 }
 .text-red {
     color: #C41100;
 }
-/*#view-detail .hr-v-dl {
-    padding: 40px 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-}*/
+.backgroundblack {
+    background: rgba(0,0,0,0.8);
+}
+.input-group .form-control {
+    padding: 12px;
+}
 .search-ipt input:focus {
     outline: none;
 }
 .input-group-addon {
     padding: 0 .75rem;
-}
-.navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
-}
-.navbar-nav > li {
-    display: inline-block;
-    float: none;
-}
-.navbar-nav > li {
-    padding: 0px 27px;
-}
-.backgroundblack {
-    background: rgba(0,0,0,0.8);
-}
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff !important;
-    text-transform: none;
-}
-/*.menu .navbar .collapse .navbar-nav .nav-item {
-    margin-left: none !important;
-}*/
-#iphone {
-    margin-top: 5px;
-    background-color: #edece9;
-}
-.prd-type {
-    color: #111;
-    font-size: 60px;
-    font-weight: 600;
-    margin-top: 50px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-.slogan {
-    color: #111;
-    width: 100%;
-    font-size: 21px;
-    margin-bottom: 70px;
-    text-transform: none;
-}
-.prd {
-    margin-top: 40px;
-}
-.wrap-item-prd img {
-    margin-bottom: 20px;
-}
-.wrap-item-prd .overlay {
-    opacity: hide !important;
-}
-.ehover3:hover button.info {
-    background-color: rgba(0,0,0,0.1);
-    cursor: pointer;
-}
-.margin-lr {
-    margin-bottom: 5px;
-}
-#ipad {
-    padding-bottom: 50px;
-    background-color: #edece9;
-}
-#iphone div div>div.col-md-3, #ipad div div>div.col-md-3 {
-    padding-left: 3px; 
-    padding-right: 3px; 
-}
-.cart h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-#mac {
-    position: relative;
-    margin: 10px 0;
-}
-#mac:hover div{
-    background-color: #000;
-    opacity: 0.7;
-    transition: 1s, 3s;
-}
-#mac img {
-    width: 100%;
-}
-#mac div {
-    position: absolute;
-    top: 35%;
-    color: #fff;
-    font-size: 62px;
-    padding: 0 100px;
-    letter-spacing: 10px;
-}
-#mac div span {
-    font-size: 40px;
-    text-decoration: none;
-}
-.ip-item {
-    margin-bottom: 20px;
-}
-.ip-item div a img {
-    width: 100%;
 }
 .colorblack-title{
     color: #111;   
@@ -135,6 +37,112 @@
 .bordertop{
     border-top:1px solid #111;
     padding: 10px;
+}
+.colblack{
+    color: #111;
+    font-size: 13px;
+}
+.wh{
+    width: 80px;
+    height: 80px;
+}
+
+/*nav*/
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+.navbar-nav > li {
+    padding: 0px 27px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    text-transform: none;
+}
+
+/*iphone ipad*/
+#iphone {
+    margin-top: 5px;
+    background-color: #edece9;
+}
+.prd-type {
+    color: #111;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.slogan {
+    color: #111;
+    width: 100%;
+    font-size: 21px;
+    margin-bottom: 70px;
+    text-transform: none;
+}
+#iphone div div>div.col-md-3, #ipad div div>div.col-md-3 {
+    padding-left: 3px; 
+    padding-right: 3px; 
+}
+
+/*item prd*/
+.prd {
+    margin-top: 40px;
+}   
+.overlay-n {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.overlay-n button {
+    cursor: pointer;
+}
+.margin-lr {
+    margin-bottom: 5px;
+}
+#ipad {
+    padding-bottom: 50px;
+    background-color: #edece9;
+}
+#mac {
+    position: relative;
+    margin: 10px 0;
+}
+#mac:hover div{
+    background-color: #000;
+    opacity: 0.7;
+    transition: 1s, 3s;
+}
+#mac img {
+    width: 100%;
+}
+#mac div {
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    font-size: 62px;
+    padding: 0 100px;
+    letter-spacing: 10px;
+    width: 100%;
+}
+#mac div span {
+    font-size: 40px;
+    text-decoration: none !important;
+}
+.ip-item {
+    margin-bottom: 20px;
+}
+.ip-item div a img {
+    width: 100%;
 }
 .stylish-input-group .input-group-addon{
     background: white !important; 
@@ -160,10 +168,7 @@
     padding-top: 15px;
     height: 60px;
 }
-footer {
-    background-color: #000;
-    padding-top: 5px;
-}
+
 .list-unstyled li h4:hover a {
     color: #111;
 }
@@ -208,20 +213,9 @@ footer {
     color: #C41100;
     border: 1px solid #000;
     background-color: rgba(0,0,0,0.9);
-    /*background-color: rgba(255,255,255,0.7);*/
-}
-.colblack{
-    color: #111;
-    font-size: 13px;
-}
-.wh{
-    width: 80px;
-    height: 80px;
 }
 
-.nav-link {
-    color:white;
-}
+
 img {
     width: 100%;
 }
@@ -230,11 +224,9 @@ img {
 .cart {
     /*display: none;*/
 }
-.bg-cart {
-    /*background-color: #FBF0E1 !important;*/
-}
-.table-bordered {
-    /*border-color: #000 !important;*/
+.cart h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .edit-bill a {
     width: 50%;
@@ -243,7 +235,7 @@ img {
     width: 25px;
 }
 .list-pr-ap {
-    font-size: 15px;
+    font-size: 18px;
 }
 .count-ap input {
     width: 80px;
@@ -264,11 +256,9 @@ img {
     background-color: #000;
     border: 1px solid #fff;
 }
-.overlay-n {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+/*foot*/
+footer {
+    background-color: #000;
+    padding-top: 5px;
 }

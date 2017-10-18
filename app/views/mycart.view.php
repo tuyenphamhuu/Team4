@@ -1,10 +1,12 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 
+
+
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
-		<h2 class="font-weight-bold text-center">My cart</h2>
+		<h2 class="strip font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
@@ -143,5 +145,6 @@
 		});
 	});
 </script>
+
 
 <?php require 'partials/footer.php'; ?>
