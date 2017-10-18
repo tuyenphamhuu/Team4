@@ -1,5 +1,5 @@
 .text-transform {
-    text-transform: none;
+    text-transform: none !important;
 }
 .text-red {
     color: #C41100;
@@ -66,9 +66,13 @@
 .wrap-item-prd .overlay {
     opacity: hide !important;
 }
+.ehover3:hover img {
+    /*filter: blur(1px);*/
+}
 .ehover3:hover button.info {
-    background-color: rgba(0,0,0,0.1);
+    color: #fff;
     cursor: pointer;
+    background-color: rgba(0,0,0,.8);
 }
 .margin-lr {
     margin-bottom: 5px;
