@@ -8,7 +8,9 @@
 .backgroundblack {
     background: rgba(0,0,0,0.8);
 }
-
+.input-group .form-control {
+    padding: 12px;
+}
 .search-ipt input:focus {
     outline: none;
 }
@@ -94,8 +96,16 @@
 .prd {
     margin-top: 40px;
 }   
-
-
+.overlay-n {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.overlay-n button {
+    cursor: pointer;
+}
 .margin-lr {
     margin-bottom: 5px;
 }
@@ -122,10 +132,11 @@
     font-size: 62px;
     padding: 0 100px;
     letter-spacing: 10px;
+    width: 100%;
 }
 #mac div span {
     font-size: 40px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .ip-item {
     margin-bottom: 20px;
@@ -213,9 +224,6 @@ img {
 .cart {
     /*display: none;*/
 }
-.middle-app {
-    
-}
 .cart h2 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -248,68 +256,6 @@ img {
     background-color: #000;
     border: 1px solid #fff;
 }
-
-/*hover images home*/
-.wrap-item-prd {
-    position: relative;
-    height: 100%;
-}
-.wrap-item-prd img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: all 0.2s ease-in;
-    /*z-index: 99;*/
-}
-.wrap-item-prd div.mask {
-    position: relative;
-    opacity: 0;
-    /*overflow: visible;*/
-    border-color: rgba(0,0,0,0.8) transparent transparent transparent;
-    border-style: solid;
-    border-width: 201px;
-    /*width: 100px;*/
-    /*height: 50px;*/
-    transform: translateY(-125px);
-    transition: transform 0.2s 0.1s ease-out, opacity 0.3s ease-in-out;
-}
-/*.wrap-item-prd div.content {
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    top: 30px;
-    left: 0;
-}*/
-.wrap-item-prd div.content a.info {
-    color: #fff;
-    opacity: 1;
-    transform: translateY(-125px);
-    transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
-    /*background: url(../images/images/link.png) center no-repeat;*/
-    /*display: inline-block;*/
-    display: block;
-    /*text-decoration: none;*/
-    /*padding: 0;*/
-    width: 100px;
-    height: 30px;
-    /*z-index: 99999;*/
-}
-.wrap-item-prd:hover img {
-    opacity:0.8;
-    transform:scale(1.15,1.15);
-}
-.wrap-item-prd:hover .mask {
-    opacity: 0.7;
-    transform: translateY(0px);
-}
-.wrap-item-prd:hover a.info {
-    opacity:1;
-    transform:translateY(100px);
-}
-
 /*foot*/
 footer {
     background-color: #000;

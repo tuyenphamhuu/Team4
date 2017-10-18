@@ -1,9 +1,10 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
-
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
+
+	<?php var_dump($_SESSION['cart']); ?>
 		<h2 class="font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table table-inverse text-transform table-hover table-responsive">
 			<thead>
@@ -143,5 +144,6 @@
 		});
 	});
 </script>
+
 
 <?php require 'partials/footer.php'; ?>

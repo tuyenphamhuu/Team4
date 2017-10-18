@@ -270,20 +270,27 @@ height: 60px;
     text-decoration: none;
 
 }
-.iphone-item a img {
-    /*width: 100%;*/
+/*.image-iphone {
+  display: block;
+  width: 100%;
+  height: auto;
+}*/
+
+/*.iphone-item a img {
+    width: 100%;
     opacity: 1;
     transition: all 1s ease;
     z-index: 99;
 }
 
- .iphone-item a:hover img {
+ /* .iphone-item a:hover img {
     transform: scale(1.2,1.2);
     opacity: 0.7;
 } 
 .iphone-item:hover a img {
+<<<<<<< HEAD
     z-index: 9999;
-}
+}*/
 /*detail-ipad-page*/
 #wrapper-detail {
     background-color: #ececef;
