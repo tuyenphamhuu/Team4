@@ -40,7 +40,6 @@ class ProductController
     Product::insert($_POST['ProductName'],
       $_POST['NewPrice'],
       $_POST['OldPrice'],
-      $_POST['ColorProduct'],
       $_POST['Config'],
       $_POST['description'],
       $_FILES['Image']['name']
