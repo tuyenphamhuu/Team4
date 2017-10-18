@@ -57,10 +57,10 @@ class PagesController
     return view('detail-iPad', ['products' => $products]);
   }
 
-  public function orderView()
-  {
-    return view('order');
-  }
+  // public function orderView()
+  // {
+  //   return view('order');
+  // }
 
   public function mycart()
   {
