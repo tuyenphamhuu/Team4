@@ -26,7 +26,7 @@
 									
 									?>">
 						    <div class="overlay">
-							    <div class="text"><?php echo $products->Config; ?></div>
+							    <div class="text">View Detail</div>
 							</div>
 						</div>
 						<h5><?php echo $products->ProductName; ?></h5>

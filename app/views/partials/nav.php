@@ -18,7 +18,7 @@
 	            </div>
 			</div>
 			<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 text-center">
-				<a href="/mycart">
+				<a href="mycart">
 					<img class="iconcart" src="/public/images/ic_shopping_cart_black_24px.svg" alt="shopping cart">
 	           	</a>
 			</div>
