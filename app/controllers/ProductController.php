@@ -75,7 +75,6 @@ class ProductController
         'OldPrice'     => $_POST['OldPrice'],
         'Config'       => $_POST['Config'],
         'description'  => $_POST['description'],
-        'Image'        => $_POST['knowledge_graph_logo.png']
         ];
     }else{
       $params = [
