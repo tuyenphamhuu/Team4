@@ -61,4 +61,9 @@ class PagesController
   {
     return view('order');
   }
+
+  public function mycart()
+  {
+    return view('mycart');
+  }
 }
