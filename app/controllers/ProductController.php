@@ -36,13 +36,18 @@ class ProductController
 
   public function addProduct() 
   {
-    move_uploaded_file($_FILES['Image']['tmp_name'],"public/images/".$_FILES['Image']['name']); 
+    move_uploaded_file($_FILES['Image']['tmp_name'],"public/images/".$_FILES['Image']['name']);
+    if($_FILES['Image']['name']==''){
+      $image='knowledge_graph_logo.png';
+    }else{
+      $image=$_FILES['Image']['name'];
+    }
     Product::insert($_POST['ProductName'],
       $_POST['NewPrice'],
       $_POST['OldPrice'],
       $_POST['Config'],
       $_POST['description'],
-      $_FILES['Image']['name']
+      $image
     );
 
     return redirect('admin/indexProduct');
@@ -68,16 +73,14 @@ class ProductController
         'ProductName'  => $_POST['ProductName'],
         'NewPrice'     => $_POST['NewPrice'],
         'OldPrice'     => $_POST['OldPrice'],
-        'ColorProduct' => $_POST['ColorProduct'],
         'Config'       => $_POST['Config'],
-        'description'  => $_POST['description']
+        'description'  => $_POST['description'],
         ];
     }else{
       $params = [
     'ProductName'      => $_POST['ProductName'],
     'NewPrice'         => $_POST['NewPrice'],
     'OldPrice'         => $_POST['OldPrice'],
-    'ColorProduct'     => $_POST['ColorProduct'],
     'Config'           => $_POST['Config'],
     'description'      => $_POST['description'],
     'Image'            => $_FILES['Image']['name']
