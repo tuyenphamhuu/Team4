@@ -4,7 +4,7 @@
 <div id="wrapper-detail">
 	<div class="container">	
 		<nav class="breadcrumb">
-			 <a class="breadcrumb-item" href="#">iPad Pro</a>	
+			 <a class="breadcrumb-item" href="/iPad?id=2">iPad</a>	
 		</nav>
 		<hr>
 	</div>
@@ -81,7 +81,7 @@
 							<h4>Tech specs</h4>
 						</div>
 						<div class="row">
-							<p>Khâu xong, Triệu Lam cắn chỉ, vuốt vuốt áo cho phẳng lại rồi đưa cho Phong Thiên Trí, bảo hắn mặc vào. Phong Thiên Trí mặc áo xong cười tươi như hoa, trong lòng nghĩ đến lúc về nhà sẽ đem cất áo này thật kỹ, không thể tùy tiện mặc, đây chính là chiếc áo đầu tiên mà Triệu Lam đã tự tay đơm cúc cho hắn.</p>
+							<p><?php echo $product->Config ?></p>
 						</div>
 					</div>	
 				</div>
@@ -95,7 +95,7 @@
 				<h4>Description</h4>
 			</div>
 			<div class="row ">
-				<p>Khâu xong, Triệu Lam cắn chỉ, vuốt vuốt áo cho phẳng lại rồi đưa cho Phong Thiên Trí, bảo hắn mặc vào. Phong Thiên Trí mặc áo xong cười tươi như hoa, trong lòng nghĩ đến lúc về nhà sẽ đem cất áo này thật kỹ, không thể tùy tiện mặc, đây chính là chiếc áo đầu tiên mà Triệu Lam đã tự tay đơm cúc cho hắn.</p>
+				<p><?php echo $product->description ?></p>
 			</div>
 			<hr>
 		</div>
