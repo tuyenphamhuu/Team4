@@ -338,9 +338,12 @@ height: 60px;
 
 /*order page*/
 .order-wrapper {
-    /*background-color: #ececef;*/
+    background-color: #ececef;
     text-transform: none;
     letter-spacing: 0;
+}
+.order-info {
+    background-color: white;
 }
 .customer-info {
     padding-top: 20px;
@@ -353,6 +356,7 @@ height: 60px;
 }
 .submit-order {
     padding-bottom: 30px;
+
 }
 .footer {
     background-color: #000;
