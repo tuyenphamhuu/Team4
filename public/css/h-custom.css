@@ -342,6 +342,9 @@ height: 60px;
     text-transform: none;
     letter-spacing: 0;
 }
+.order-info {
+    background-color: white;
+}
 .customer-info {
     padding-top: 20px;
 }
@@ -351,7 +354,10 @@ height: 60px;
 .form-address {
     padding: 5px 0;
 }
+.submit-order {
+    padding-bottom: 30px;
 
+}
 .footer {
     background-color: #000;
     padding-top: 5px;
