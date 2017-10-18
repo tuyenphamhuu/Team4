@@ -25,7 +25,7 @@ class Product
       'ColorProduct'   => $ColorProduct,
       'Config'         => $Config,
       'description'    => $description,
-      'Image'    => $Image
+      'Image'          => $Image
     ]);
   }
 
