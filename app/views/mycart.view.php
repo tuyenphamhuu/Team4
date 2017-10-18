@@ -4,6 +4,8 @@
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
+
+	<?php var_dump($_SESSION['cart']); ?>
 		<h2 class="font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
