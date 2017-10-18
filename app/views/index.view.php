@@ -13,7 +13,7 @@
 						      	<img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
 						      	<div class="overlay-n">
 						      		<h2>iPhone X</h2>
-									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">Detail</button>
+									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">View</button>
 						      	</div>
 						    </div>
 						</div>
@@ -23,7 +23,7 @@
 								<div class="overlay-n">
 									<h2>Iphone 8</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -34,7 +34,7 @@
 								<div class="overlay-n">
 									<h2>Iphone 7</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -45,7 +45,7 @@
 								<div class="overlay-n">
 									<h2>Iphone 6s</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -66,7 +66,7 @@
 								<div class="overlay-n">
 									<h2>Ipad Pro</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -77,7 +77,7 @@
 								<div class="overlay-n">
 									<h2>Ipad</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -88,7 +88,7 @@
 								<div class="overlay-n">
 									<h2>Ipad mini 4</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -99,7 +99,7 @@
 								<div class="overlay-n">
 									<h2>iOS 11</h2>
 									<button type="button" class="info text-transform" data-toggle="modal" data-target=".myModal">
-									Detail
+									View
 									</button>
 								</div>
 							</div>
@@ -127,7 +127,7 @@
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-							<button class="info">Add to Cart</button>
+							<button class="info">View Detail</button>
 						</div>
 					</div>
 				</div>
