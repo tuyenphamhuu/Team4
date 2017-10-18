@@ -39,7 +39,7 @@
 						  	</div>
 						  	<div class="form-row ">
 						    	<div class="col form-address">
-						      		<input type="text" class="form-control" placeholder="Phone number">
+						      		<input type="number" class="form-control" placeholder="Phone number">
 						    	</div>
 						  	</div>
 					</form>	
@@ -47,21 +47,23 @@
 				<hr>
 				<div class="delivery-info">
 					<p><b>Delivery infomation</b></p>
-					<div class="row">
-					<div class="col-3">
+					<!-- <div class="row"> -->
+					<!-- <div class="col-3"> -->
 						<p>Time and date</p>
-					</div>
-					<div class="col-3">
+					<!-- </div> -->
+					<!-- <div class="col-3"> -->
 						<p>Monday - Friday</p>
 						<p>8h00 - 17h00</p>
-					</div>
-					</div>
+				<!-- 	</div> -->
+					<!-- </div> -->
 				</div>
-			</div>
-		</div>	
-		<div class="submit-order text-center">
+				<div class="submit-order text-center">
 			<a href="#" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Submit</button></a>
-		</div>
+			</div>
+			</div>
+			
+		</div>	
+		
 	</div>
 </div>
 
