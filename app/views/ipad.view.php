@@ -26,12 +26,12 @@
 									
 									?>">
 						    <div class="overlay">
-							    <div class="text">Tech specs</div>
+							    <div class="text"><?php echo $products->Config; ?></div>
 							</div>
 						</div>
 						<h5><?php echo $products->ProductName; ?></h5>
 						<p><b>From $<?php echo $products->NewPrice; ?></b></p>
-						<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>"><button type="button" class="btn btn-dark">Add to Cart</button></a>
+						<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>"><button type="button" class="btn btn-dark">Buy</button></a>
 					</a>
 				</div>
 			</div>
