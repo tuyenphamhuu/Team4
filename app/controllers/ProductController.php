@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Core\App;
 use App\Models\Product;
+use App\Models\TypeProduct;
 
 class ProductController
 {
@@ -22,7 +23,7 @@ class ProductController
 
 //     return redirect('users');
 //   }
-
+  
   public function selectAllProduct()
   {
      $products = Product::selectAll();
@@ -31,7 +32,8 @@ class ProductController
   }
 
   public function showAddProduct(){
-    return view('admin/addProduct');
+    $type = TypeProduct::selectAll();
+    return view('admin/addProduct',['types' => $type]);
   }
 
   public function addProduct() 
@@ -45,6 +47,7 @@ class ProductController
     Product::insert($_POST['ProductName'],
       $_POST['NewPrice'],
       $_POST['OldPrice'],
+      $_POST['Type_Product'],
       $_POST['Config'],
       $_POST['description'],
       $image

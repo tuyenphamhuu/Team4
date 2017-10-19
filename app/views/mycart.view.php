@@ -4,6 +4,15 @@
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
+
+	<?php 
+	//explode($_SESSION['cart'],"|");
+	echo "<pre>";
+	$arrays=explode("|",$_SESSION['cart']);
+	foreach($arrays as $array){
+		var_dump(explode("-",$array));
+	}
+	echo "</pre>";?>
 		<h2 class="font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
