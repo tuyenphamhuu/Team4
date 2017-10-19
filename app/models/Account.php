@@ -29,18 +29,19 @@ class Account
       'Addr'        => $add,
       'PhoneNumber' => $phone
     ]);
-    return view('admin/addUser');
+    return view('admin/indexUser');
     // App::get('database')->insert(Account::$table, $params);
   }
   // get Account by id
   public static function getById($id) 
   {
-    return App::get('database')->getById(Account::$table, $id);
+    $sql = "select * from account where ID_Account ={$id}";
+    return App::get('database')->getById($sql);
   }
   // update Account by id
-  public static function updateById($id, $params) 
+  public static function updateById($id, $params, $sql) 
   {
-    App::get('database')->updateById(Account::$table, $params, $id);
+    App::get('database')->updateById(Account::$table, $params, $id, $sql);
   }
 
   // check login
@@ -52,8 +53,8 @@ class Account
     return $user[0];
   }
   // delete User by id
-  public static function deleteById($id) 
+  public static function deleteById($sql) 
   {
-    App::get('database')->deleteById(Account::$table, $id);
+    App::get('database')->deleteById($sql);
   }
 }

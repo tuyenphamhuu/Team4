@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Core;
-
 class App
 {
   protected static $registry = [];
@@ -16,6 +15,11 @@ class App
       throw new Exception("No {$key} is bound in the container");
     }
     return static::$registry[$key];
+  }
+
+  public static function dd($data)
+  {
+    echo "<pre>".die(var_dump($data))."</pre>";
   }
 
   
