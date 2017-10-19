@@ -71,9 +71,21 @@ class PagesController
         $arC[] = explode("+",$items);
       }
     }
+
+
+
+
+
+
     echo "<pre>";
       print_r($arC);
     echo "</pre>";
+
+
+
+
+    
+
     return view('mycart', [ 'arC' => $arC ]);
   }
 }

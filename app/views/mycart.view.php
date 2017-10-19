@@ -105,18 +105,5 @@
 	</div>
 </div>
 	
-<script>
-	$(document).ready(function() {
-		var needToRemove;
-		var confirmModal = $('#exampleModal');
-		$('.remove').click(function() {
-			needToRemove = $(this).closest('tr');
-		});
-		$('.yes-remove').click(function() {
-			confirmModal.modal('hide');
-			needToRemove.remove();
-		});
-	});
-</script>
 
 <?php require 'partials/footer.php'; ?>

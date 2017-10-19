@@ -103,6 +103,7 @@
 			<hr>
 		</div>
 	</div>
+
 	<div class="container">
  		<div class="seemore">
  			<div class="row">
@@ -143,7 +144,29 @@
 
 
 <?php require 'partials/footer.php'; ?>
-
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+		<div class="alert alert-info" role="alert">
+		Add to success into the cart
+		</div>
+		
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">On page</button>
+			<a href="mycart"><button type="button" class="btn btn-dark">Checkout</button></a>
+		</div>
+		</div>
+	</div>
+	</div>
 
  <script type="text/javascript">
   jQuery(document).ready(function(){
@@ -153,9 +176,10 @@
      url:"ajax.php", //goi toi file ajax.php
      data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val()+"&name="+jQuery("#ProductName").val()+"&price="+jQuery("#NewPrice").val()+"&image="+jQuery("#image").val(),
      success:function(html){
-      jQuery("#responseDiv").html(html);
+		$('#myModal').modal('show')
      }
     });
    });
   });
  </script>
+
