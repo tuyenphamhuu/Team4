@@ -72,19 +72,18 @@ class PagesController
       }
     }
 
-
-
-
-
-
     echo "<pre>";
       print_r($arC);
     echo "</pre>";
 
 
 
+    foreach($arC as $key => $value){
+      var_dump($value);
+    }
 
-    
+
+
 
     return view('mycart', [ 'arC' => $arC ]);
   }
