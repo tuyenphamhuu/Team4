@@ -1,6 +1,7 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 
+
 <div class="order-wrapper">
 	<div class="container">
 		<div class="row justify-content-center order">
@@ -83,7 +84,6 @@
 		</div>		
 	</div>
 </div>
-
 
 <?php require 'partials/footer.php'; ?>
 <script>
