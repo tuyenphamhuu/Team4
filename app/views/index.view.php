@@ -123,10 +123,36 @@
 							<h5 class="text-uppercase font-weight-bold">Iphone 8</h5>
 							<h4 class="text-red font-weight-bold"><i>$699.00</i></h4>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+							<table class="colorblack-title">
+								<tr>
+									<th>Producer:</th>
+									<td><small>Apple</small></td>
+								</tr>								
+								<tr>
+									<th>Operating system:</th>
+									<td><small>iOS 11</small></td>
+								</tr>								
+								<tr>
+									<th>Size:</th>
+									<td><small>143,5 x 71 x 7,5 mm</small></td>
+								</tr>								
+								<tr>
+									<th>weight:</th>
+									<td><small>148g</small></td>
+								</tr>								
+								<tr>
+									<th>introductory date:</th>
+									<td><small>13/09/2017</small></td>
+								</tr>								
+								<tr>
+									<th>Day of sale:</th>
+									<td><small>13/09/2017</small></td>
+								</tr>								
+								<tr>
+									<th>Price:</th>
+									<td><small>$699</small></td>
+								</tr>
+							</table>
 							<button class="info">Add to Cart</button>
 						</div>
 					</div>
