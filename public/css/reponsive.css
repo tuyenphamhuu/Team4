@@ -1,38 +1,82 @@
-@media screen and (min-width: 1600) {
+@media screen and (min-width: 1600px) {
 
 }
-@media screen and (max-width: 1599) {
+@media screen and (max-width: 1599px) {
+	
 
-}
-@media screen and (max-width: 1199) {
 	.wrap-item-prd img {
-	    max-height: 100px;
 	    background-position: center center;
 	}
-}
-@media screen and (max-width: 1021) {
-	#mac div {
-		top: 15px;
+	#mac a div {
+		font-size: 54px;
 	}
-	#mac div strong {
-	    font-size: 40px !important;
-	}
-	#mac div span {
-	    font-size: 32px !important;
+	#mac a div span {
+	    font-size: 28px;
 	}
 }
-@media screen and (max-width: 991) {
+@media screen and (max-width: 1201px) {
+	#mac a div {
+		font-size: 50px;
+	}
+	#mac a div span {
+	    font-size: 24px;
+	}
+}
+@media screen and (max-width: 995px) {
+	#mac a div {
+		font-size: 45px;
+	}
+	#mac a div span {
+	    font-size: 20px;
+	}
+}
+@media screen and (max-width: 926px) {
+	#mac a div {
+		font-size: 40px;
+	}
+	#mac a div span {
+	    font-size: 16px;
+	}
+}
+@media screen and (max-width: 853px) {
+	#mac a div {
+		top: 0;
+		bottom: 0;	
+		font-size: 35px;
+		padding: 0 40px;
+	}
+	#mac a div strong {
+		margin-top: 10px;
+		display: block;
+	}
+	#mac a div span {
+	    font-size: 12px;
+	}
+}
+@media screen and (max-width: 661px) {
+	#mac a div {
+		font-size: 30px;
+		padding: 0 20px;
+	}
+	#mac a div span {
+	    font-size: 10px;
+	}
+}
+@media screen and (max-width: 527px) {
 
 }
-@media screen and (max-width: 767) {
-
+@media screen and (max-width: 497px) {
+	#mac a div strong {
+		margin-top: 0;
+		display: block;
+	}
+	#mac a div {
+		font-size: 20px;
+	}
+	#mac a div span {
+	    font-size: 5px;
+	}
 }
-@media screen and (max-width: 599) {
-
-}
-@media screen and (max-width: 480) {
-
-}
-@media screen and (max-width: 320) {
+@media screen and (max-width: 320px) {
 
 }

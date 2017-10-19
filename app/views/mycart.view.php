@@ -1,13 +1,12 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
-
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
 
 	<?php var_dump($_SESSION['cart']); ?>
 		<h2 class="font-weight-bold text-center">My cart</h2>
-		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
+		<table class="bg-cart bill-ap table table-inverse text-transform table-hover table-responsive">
 			<thead>
 				<tr>
 					<th style="width: 4%">	#</th>
@@ -19,7 +18,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="list-pr-ap">
+				<tr class="list-pr-ap align-middle">
 					<th>1</th>
 					<td>
 						<div class="row">
@@ -31,7 +30,7 @@
 							</div>
 						</div>
 					</td>
-					<td>$699</td>
+					<th>$699</th>
 					<td class="count-ap">
 						<input class="text-center" type="number" value="1" min="1" >
 					</td>
@@ -55,7 +54,7 @@
 							</div>
 						</div>
 					</td>
-					<td>$799</td>
+					<th>$799</th>
 					<td class="count-ap">
 						<input class="text-center" type="number" value="2" min="1">
 					</td>
@@ -82,7 +81,7 @@
 							</div>
 						</div>
 					</td>
-					<td>$669</td>
+					<th>$669</th>
 					<td class="count-ap">
 						<input class="text-center" type="number" value="1" min="1">
 					</td>
@@ -145,5 +144,6 @@
 		});
 	});
 </script>
+
 
 <?php require 'partials/footer.php'; ?>
