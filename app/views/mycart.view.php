@@ -4,19 +4,72 @@
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
+	<!-- <?php var_dump($_SESSION['cart']); ?> -->
 		<h2 class="font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
-					<th style="width: 4%">STT</th>
-					<th style="width: 45%">Name Products</th>
-					<th style="width: 15%">Price</th>
+					<th style="width: 9%">Images</th>
+					<th style="width: 40%">Products Name</th>
+					<th style="width: 15%">Unit Price</th>
 					<th style="width: 15%">Quantity</th>
-					<th style="width: 15%">Total Money</th>
+					<th style="width: 15%">Total Amount</th>
 					<th style="width: 6%">Delete</th>
 				</tr>
 			</thead>
 			<tbody>
+				<tr class="list-pr-ap align-middle">
+					<td>
+						<img class="img-myc" src="../../public/images/7+-f.jpg">
+					</td>
+					<td>iPhone 8</td>
+					<th>$699</th>
+					<td class="count-ap">
+						<input class="text-center" type="number" value="1" min="1" >
+					</td>
+					<td>$699</td>
+					<td class="edit-bill">
+						<!-- Button trigger modal -->
+						<button type="button" data-toggle="modal" data-target="#exampleModal">
+						  	<img class="remove" src="/public/images/trash-ap-3.png">
+						</button>
+					</td>
+				</tr>
+				<tr class="list-pr-ap">
+					<td>
+						<img class="img-myc" src="../../public/images/ipad-pro-10in.png">
+					</td>
+					<td>iPad Pro 12.9 inch</td>
+					<th>$799</th>
+					<td class="count-ap">
+						<input class="text-center" type="number" value="2" min="1">
+					</td>
+					<td>$1598</td>
+					<td class="edit-bill">
+						<!-- Button trigger modal -->
+						<button type="button" data-toggle="modal" data-target="#exampleModal">
+						  	<img class="remove" src="/public/images/trash-ap-3.png">
+						</button>
+					</td>
+				</tr>
+				<tr class="list-pr-ap">
+					<td>
+						<img class="img-myc" src="../../public/images/6+.jpg">
+					</td>
+					<td>iPhone 7 plus</td>
+					<th>$669</th>
+					<td class="count-ap">
+						<input class="text-center" type="number" value="1" min="1">
+					</td>
+					<td>$669</td>
+					<td class="edit-bill">
+						<!-- Button trigger modal -->
+						<button type="button" data-toggle="modal" data-target="#exampleModal">
+						  	<img class="remove" src="/public/images/trash-ap-3.png">
+						</button>
+					</td>
+				</tr>
+
 				<?php 
 					foreach ($arC as $value) {
 						?>
@@ -58,7 +111,8 @@
 						SubTotal: $2397
 					</td>
 					<td>
-						<button class="btn prc-bill">Checkout &raquo;</button>
+						<button class="btn prc-bill">Check Out &raquo;</button>
+
 					</td>
 				</tr>
 
