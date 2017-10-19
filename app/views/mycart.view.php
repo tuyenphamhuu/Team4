@@ -1,5 +1,6 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
+
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
@@ -13,7 +14,7 @@
 	}
 	echo "</pre>";?>
 		<h2 class="font-weight-bold text-center">My cart</h2>
-		<table class="bg-cart bill-ap table table-inverse text-transform table-hover table-responsive">
+		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
 					<th style="width: 4%">	#</th>
@@ -25,7 +26,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="list-pr-ap align-middle">
+				<tr class="list-pr-ap">
 					<th>1</th>
 					<td>
 						<div class="row">
@@ -37,7 +38,7 @@
 							</div>
 						</div>
 					</td>
-					<th>$699</th>
+					<td>$699</td>
 					<td class="count-ap">
 						<input class="text-center" type="number" value="1" min="1" >
 					</td>
@@ -61,7 +62,7 @@
 							</div>
 						</div>
 					</td>
-					<th>$799</th>
+					<td>$799</td>
 					<td class="count-ap">
 						<input class="text-center" type="number" value="2" min="1">
 					</td>
@@ -88,7 +89,7 @@
 							</div>
 						</div>
 					</td>
-					<th>$669</th>
+					<td>$669</td>
 					<td class="count-ap">
 						<input class="text-center" type="number" value="1" min="1">
 					</td>
@@ -111,7 +112,7 @@
 						Total: $2397
 					</td>
 					<td>
-						<button class="btn prc-bill">Pay &raquo;</button>
+						<button class="btn prc-bill">Checkout &raquo;</button>
 					</td>
 				</tr>
 
@@ -151,6 +152,5 @@
 		});
 	});
 </script>
-
 
 <?php require 'partials/footer.php'; ?>
