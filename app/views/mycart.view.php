@@ -10,10 +10,10 @@
 			<thead>
 				<tr>
 					<th style="width: 9%">Images</th>
-					<th style="width: 40%">Name Products</th>
-					<th style="width: 15%">Price</th>
+					<th style="width: 40%">Products Name</th>
+					<th style="width: 15%">Unit Price</th>
 					<th style="width: 15%">Quantity</th>
-					<th style="width: 15%">Total Money</th>
+					<th style="width: 15%">Total Amount</th>
 					<th style="width: 6%">Delete</th>
 				</tr>
 			</thead>
@@ -69,7 +69,7 @@
 						</button>
 					</td>
 				</tr>
-				
+
 				<?php 
 					foreach ($arC as $value) {
 						?>

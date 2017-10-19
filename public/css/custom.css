@@ -9,8 +9,12 @@
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }*/
-.search-ipt input:focus {
-    outline: none;
+.search-ipt input {
+    padding: 0 18px !important;
+}
+.search-ipt > input:focus {
+    border: 1px solid #ddd;
+    border-right: none;
 }
 .input-group-addon {
     padding: 0 .75rem;
