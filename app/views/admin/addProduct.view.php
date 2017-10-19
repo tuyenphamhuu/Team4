@@ -33,6 +33,20 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-md-3">
+                        <label for="exampleInputEmail1">Type Product</label>
+                    </div>
+                    <div class="col-md-9">
+                    <select class="form-control" name="Type_Product" id="exampleFormControlSelect1">
+                    <?php foreach($types as $type){ 
+
+                       echo  "<option value=".$type->ID_TypeProduct.">$type->ProductName</option>";
+
+                     } ?>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
                         <label for="exampleInputEmail1">Config</label>
                     </div>
                     <div class="col-md-9">
