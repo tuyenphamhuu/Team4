@@ -1,0 +1,82 @@
+@media screen and (min-width: 1600px) {
+
+}
+@media screen and (max-width: 1599px) {
+	
+
+	.wrap-item-prd img {
+	    background-position: center center;
+	}
+	#mac a div {
+		font-size: 54px;
+	}
+	#mac a div span {
+	    font-size: 28px;
+	}
+}
+@media screen and (max-width: 1201px) {
+	#mac a div {
+		font-size: 50px;
+	}
+	#mac a div span {
+	    font-size: 24px;
+	}
+}
+@media screen and (max-width: 995px) {
+	#mac a div {
+		font-size: 45px;
+	}
+	#mac a div span {
+	    font-size: 20px;
+	}
+}
+@media screen and (max-width: 926px) {
+	#mac a div {
+		font-size: 40px;
+	}
+	#mac a div span {
+	    font-size: 16px;
+	}
+}
+@media screen and (max-width: 853px) {
+	#mac a div {
+		top: 0;
+		bottom: 0;	
+		font-size: 35px;
+		padding: 0 40px;
+	}
+	#mac a div strong {
+		margin-top: 10px;
+		display: block;
+	}
+	#mac a div span {
+	    font-size: 12px;
+	}
+}
+@media screen and (max-width: 661px) {
+	#mac a div {
+		font-size: 30px;
+		padding: 0 20px;
+	}
+	#mac a div span {
+	    font-size: 10px;
+	}
+}
+@media screen and (max-width: 527px) {
+
+}
+@media screen and (max-width: 497px) {
+	#mac a div strong {
+		margin-top: 0;
+		display: block;
+	}
+	#mac a div {
+		font-size: 20px;
+	}
+	#mac a div span {
+	    font-size: 5px;
+	}
+}
+@media screen and (max-width: 320px) {
+
+}
