@@ -10,11 +10,10 @@
 					<p> Customer Information</p>
 						<div class="form-row">
 						    <div class="col">
-						      	<input type="Email" class="form-control" id="validationCustom01" placeholder="Email" required="true">
+						      	<input type="Email" class="form-control" id="validationCustom01" placeholder="Email" required>
 						      	<div class="invalid-feedback">
 								* Please enter a valid email, e.g. name@domain.com
 								</div>
-
 						    </div>
   						</div>
 					</div>
@@ -56,7 +55,7 @@
 							</div>
 					  	<div class="form-row ">
 							<div class="col form-address">
-								<input type="number" class="form-control" id="validationCustom07" placeholder="Phone number" required>
+								<input type="tel" class="form-control" id="validationCustom07" placeholder="Phone number" required>
 								<div class="invalid-feedback">
 								* Required information
 								</div>
