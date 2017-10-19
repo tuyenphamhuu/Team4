@@ -11,13 +11,16 @@ $id = $_REQUEST['id'];//Lay parameter tu request
 
 
  //echo "So luong ".$_SESSION['color'];
+ $_SESSION['stt']++;
+ $_SESSION['data']=$_SESSION['stt']."-".$id."-".$color."-".$sl."|";
+ $_SESSION['cart'].=$_SESSION['data'];
 
- $_SESSION['cart']= array(
-    $id => array(
-        "Color" => $color,
-        "Quantity" => $sl
-    )
-);
+//  $_SESSION['cart']= array(
+//     $id => array(
+//         "Color" => $color,
+//         "Quantity" => $sl
+//     )
+// );
 echo "<pre>";
 die(var_dump($_SESSION['cart']));
 echo "</pre>";
