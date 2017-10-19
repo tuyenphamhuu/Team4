@@ -112,13 +112,9 @@
     letter-spacing: 10px;
 }
 #mac div span {
-<<<<<<< HEAD
     /*font-size: 40px;*/
     /*text-decoration: none !important;*/
-=======
-    font-size: 40px;
-    text-decoration: none;
->>>>>>> dev
+
 }
 .ip-item {
     margin-bottom: 20px;
@@ -229,24 +225,18 @@ footer {
     width: 80px;
     height: 80px;
 }
-<<<<<<< HEAD
-=======
-
 .nav-link {
     color:white;
 }
->>>>>>> dev
 img {
     width: 100%;
 }
 
 /*cart*/
-<<<<<<< HEAD
 .cart h2 {
     margin-top: 50px;
     margin-bottom: 50px;
-=======
-.cart {
+
     /*display: none;*/
 }
 .bg-cart {
@@ -254,8 +244,9 @@ img {
 }
 .table-bordered {
     /*border-color: #000 !important;*/
->>>>>>> dev
 }
+
+/*>>>>>>> dev*/
 .edit-bill a {
     width: 50%;
 }
@@ -283,8 +274,8 @@ img {
     color: #fff;
     background-color: #000;
     border: 1px solid #fff;
-<<<<<<< HEAD
 }
+/*<<<<<<< HEAD*/
 .cart table thead tr th {
     font-size: 28px !important;
 }
@@ -293,6 +284,3 @@ img {
 footer {
     background-color: #000;
     padding-top: 5px;
-=======
->>>>>>> dev
-}

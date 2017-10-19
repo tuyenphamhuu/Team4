@@ -4,23 +4,13 @@
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
-<<<<<<< HEAD
-
 	<!-- <?php var_dump($_SESSION['cart']); ?> -->
-=======
->>>>>>> dev
 		<h2 class="font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
-<<<<<<< HEAD
-					<!-- <th style="width: 4%">	#</th> -->
-					<th style="width: 8%">Images</th>
-					<th style="width: 27%">Name Products</th>
-=======
-					<th style="width: 4%">STT</th>
-					<th style="width: 45%">Name Products</th>
->>>>>>> dev
+					<th style="width: 9%">Images</th>
+					<th style="width: 40%">Name Products</th>
 					<th style="width: 15%">Price</th>
 					<th style="width: 15%">Quantity</th>
 					<th style="width: 15%">Total Money</th>
@@ -28,7 +18,6 @@
 				</tr>
 			</thead>
 			<tbody>
-<<<<<<< HEAD
 				<tr class="list-pr-ap align-middle">
 					<td>
 						<img class="img-myc" src="../../public/images/7+-f.jpg">
@@ -80,7 +69,7 @@
 						</button>
 					</td>
 				</tr>
-=======
+				
 				<?php 
 					foreach ($arC as $value) {
 						?>
