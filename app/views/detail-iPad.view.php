@@ -67,6 +67,9 @@
 					    <input class="form-control" type="number" value="1" min="1" id="example-number-input">
 					 </div>
 					 <input type="text" id="idProduct" hidden="hidden"  value="<?php echo $products[0]->ID_Product; ?>">
+					 <input type="text" id="ProductName" hidden="hidden"  value="<?php echo $products[0]->ProductName; ?>">
+					 <input type="text" id="NewPrice" hidden="hidden"  value="<?php echo $products[0]->NewPrice; ?>">
+					 <input type="text" id="image" hidden="hidden"  value="<?php echo $products[0]->Image; ?>">
 				</div>
 				<hr>
 				<div class="detail5 row">
@@ -148,7 +151,7 @@
     jQuery.ajax({
      type:"POST",
      url:"ajax.php", //goi toi file ajax.php
-     data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val(),
+     data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val()+"&name="+jQuery("#ProductName").val()+"&price="+jQuery("#NewPrice").val()+"&image="+jQuery("#image").val(),
      success:function(html){
       jQuery("#responseDiv").html(html);
      }

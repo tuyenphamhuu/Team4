@@ -51,7 +51,7 @@ class PagesController
   public function detailProduct()
   {
     $id = $_GET['idProduct'];
-    $sql = " SELECT p.ID_Product, ProductName, c.Color, Config, description, Image FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
+    $sql = " SELECT * FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
     $products = Product::selectByType($sql);
 
     return view('detail-iPad', ['products' => $products]);
@@ -64,6 +64,16 @@ class PagesController
 
   public function mycart()
   {
-    return view('mycart');
+    if (isset($_SESSION['cart'])){
+      $array = rtrim($_SESSION['cart'],'|');
+      $arrayCards = explode("|",$array);
+      foreach($arrayCards as $items){
+        $arC[] = explode("+",$items);
+      }
+    }
+    echo "<pre>";
+      print_r($arC);
+    echo "</pre>";
+    return view('mycart', [ 'arC' => $arC ]);
   }
 }
