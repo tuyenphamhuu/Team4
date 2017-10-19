@@ -1,10 +1,11 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
+
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
 		<h2 class="font-weight-bold text-center">My cart</h2>
-		<table class="bg-cart bill-ap table table-inverse text-transform table-hover table-responsive">
+		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
 					<th style="width: 4%">STT</th>
@@ -49,7 +50,6 @@
 						<?php
 					}
 				 ?>
-				
 				<tr class="list-pr-ap">
 					<td colspan="4" class="text-left">
 						<button class="btn prc-bill ">&laquo; Keep buying</button>
@@ -58,7 +58,7 @@
 						SubTotal: $2397
 					</td>
 					<td>
-						<button class="btn prc-bill">Pay &raquo;</button>
+						<button class="btn prc-bill">Checkout &raquo;</button>
 					</td>
 				</tr>
 
@@ -118,6 +118,5 @@
 		});
 	});
 </script>
-
 
 <?php require 'partials/footer.php'; ?>
