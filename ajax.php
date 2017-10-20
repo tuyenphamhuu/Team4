@@ -14,7 +14,7 @@ $image = $_REQUEST['image'];//Lay parameter tu request
 
  //echo "So luong ".$_SESSION['color'];
  $_SESSION['stt']++;
- $_SESSION['data'] =$_SESSION['stt']."+".$id."+".$color."+".$sl."+".$name."+".$price."+".$image."|";
+ $_SESSION['data'] =$_SESSION['stt']."+".$id."+".$color."+".$sl."+".$name."+".$price."+".$image."+".$id.$color."|";
  $_SESSION['cart'].=$_SESSION['data'];
 
 //  $_SESSION['cart']= array(
