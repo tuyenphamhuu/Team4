@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/n-custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/h-custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/reponsive.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/jquery.dataTables.css">
 
 	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
@@ -19,6 +20,7 @@
 	<script type="text/javascript" charset="utf-8" src="/public.js/jquery-3.1.1.slim.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap.min.js" ></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/public/js/jquery.dataTables.min.js"></script>
 	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>
 
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
