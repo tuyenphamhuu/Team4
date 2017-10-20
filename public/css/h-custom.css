@@ -382,9 +382,40 @@ height: 60px;
     padding-bottom: 30px;
 
 }
+/*.invalid-feedback {
+    display: none;
+}*/
 
 
 .footer {
     background-color: #000;
     padding-top: 5px;
+}
+
+/*admin user page*/
+.wrapper-user {
+    text-transform: none;
+    letter-spacing: 0;
+}
+.top-user-page {
+    background-color: #111;
+}
+.image-admin-account {
+    width: 70px;
+    height: 70px;
+    border-radius: 13px;
+}
+.left-main-user-page {
+    border-right: 1px solid #a9a9a9;
+}
+
+.left-main-user-page:hover a {
+    text-decoration: none;
+}
+
+.table-userpage .col {
+    width: 10%;
+}
+.table-userpage tr:hover {
+    background: rgba(0,0,0,0.05);
 }
