@@ -5,6 +5,7 @@ use App\Core\App;
 use App\Models\Product;
 
 use App\Models\TypeProduct;
+use App\Models\Order;
 
 class PagesController
 {
@@ -75,5 +76,18 @@ class PagesController
       print_r($arC);
     echo "</pre>";
     return view('mycart', [ 'arC' => $arC ]);
+  }
+  public function orderCustomer()
+  {
+    die($_POST['date']);
+    if (isset($_POST['submit'])) {
+      $param = [
+        'OrderDate'   => $_POST['date'],
+        'Email'       => $_POST['email'],
+        'Add'         => $_POST['add'],
+        'Orderer'     => $_POST['name'],
+        'PhoneNumber' => $_POST['phone']
+      ];
+    }
   }
 }
