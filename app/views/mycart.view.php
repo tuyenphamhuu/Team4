@@ -18,6 +18,7 @@
 			</thead>
 			<tbody>
 				<?php 
+					$sub = null;
 					foreach ($arC as $value) {
 						?>
 						<tr class="list-pr-ap">
@@ -36,7 +37,7 @@
 							<td class="count-ap">
 								<input class="text-center" type="number" value="<?php echo $value[3] ?>" min="1">
 							</td>
-							<td>$<?php echo $total = $value[5]*$value[3]; ?></td>
+							<td>$<?php  echo $total = $value[5]*$value[3]; $sub += $total  ?></td>
 							<td class="edit-bill">
 								<!-- Button trigger modal -->
 								<button type="button" data-toggle="modal" data-target="#exampleModal">
@@ -52,10 +53,11 @@
 				 ?>
 				<tr class="list-pr-ap">
 					<td colspan="4" class="text-left">
-						<button class="btn prc-bill ">&laquo; Keep buying</button>
+						<button class="btn prc-bill ">&laquo; Keep buying</button>	
 					</td>
 					<td class="font-weight-bold">
-						SubTotal: $2397
+						SubTotal: $
+						<?php echo $sub; ?>
 					</td>
 					<td>
 						<button class="btn prc-bill">Checkout &raquo;</button>
