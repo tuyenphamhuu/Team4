@@ -53,14 +53,14 @@
 				 ?>
 				<tr class="list-pr-ap">
 					<td colspan="4" class="text-left">
-						<button class="btn prc-bill ">&laquo; Keep buying</button>	
+						<a href="" class="btn prc-bill" >&laquo; Keep buying</a>
 					</td>
 					<td class="font-weight-bold">
 						SubTotal: $
 						<?php echo $sub; ?>
 					</td>
 					<td>
-						<button class="btn prc-bill">Checkout &raquo;</button>
+						<a href="watch?sub=<?php echo $sub ?>" class="btn prc-bill" >Checkout &raquo;</a>
 					</td>
 				</tr>
 
