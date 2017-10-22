@@ -74,7 +74,7 @@
 				<hr>
 				<div class="detail5 row">
     				<a href="#" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Buy now</button></a>
-    				<button type="button" id="add-btn" class="btn btn-dark">Add to cart</button>
+    				<button type="button"  id="add-btn" class="btn btn-dark">Add to cart</button>
 				</div>
 
 				<hr>
@@ -140,6 +140,30 @@
  	</div>
 </div>
 
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+	<div class="modal-header">
+	  <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+	<div class="modal-body">
+	<div class="alert alert-primary" role="alert">
+	Add product to success.
+	</div>
+	
+	</div>
+	<div class="modal-footer">
+	  <button type="button" class="btn btn-secondary" data-dismiss="modal">On page</button>
+	  <a href="/mycart"><button type="button" class="btn btn-primary">Checkout</button></a>
+	</div>
+  </div>
+</div>
+</div>
 
 
 <?php require 'partials/footer.php'; ?>
@@ -153,7 +177,7 @@
      url:"ajax.php", //goi toi file ajax.php
      data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val()+"&name="+jQuery("#ProductName").val()+"&price="+jQuery("#NewPrice").val()+"&image="+jQuery("#image").val(),
      success:function(html){
-      jQuery("#responseDiv").html(html);
+		$('#exampleModal').modal('show');
      }
     });
    });
