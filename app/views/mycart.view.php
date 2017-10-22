@@ -19,25 +19,29 @@
 			<tbody>
 				<?php 
 					$sub = null;
-					foreach ($arC as $value) {
+					if(isset($arC)){
+						$stt=0;
+					foreach ($arC as $key => $value) {
+						$var=array_keys($value);
+						$k =array_shift($var);
 						?>
 						<tr class="list-pr-ap">
-							<th><?php echo $value[0] ?></th>
+							<th><?php echo $stt+1; ?></th>
 							<td>
 								<div class="row">
 									<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
-										<img class="img-myc" src="../../public/images/<?php echo $value[6] ?>">
+										<img class="img-myc" src="../../public/images/<?php echo $arC[$stt][$k]['image'] ?>">
 									</div>
 									<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
-										<?php echo $value[4] ?>
+										<?php echo $arC[$stt][$k]['name'] ?>
 									</div>
 								</div>
 							</td>
-							<th>$<?php echo $value[5] ?></th>
+							<th>$<?php echo $arC[$stt][$k]['price'] ?></th>
 							<td class="count-ap">
-								<input class="text-center" type="number" value="<?php echo $value[3] ?>" min="1">
+								<input class="text-center" type="number" value="<?php echo $arC[$stt][$k]['sl'] ?>" min="1">
 							</td>
-							<td>$<?php  echo $total = $value[5]*$value[3]; $sub += $total  ?></td>
+							<td>$<?php  echo $total = $arC[$stt][$k]['sl']*$arC[$stt][$k]['price']; $sub += $total  ?></td>
 							<td class="edit-bill">
 								<!-- Button trigger modal -->
 								<button type="button" data-toggle="modal" data-target="#exampleModal">
@@ -49,7 +53,9 @@
 							</td>
 						</tr>
 						<?php
+						$stt++;
 					}
+				}
 				 ?>
 				<tr class="list-pr-ap">
 					<td colspan="4" class="text-left">

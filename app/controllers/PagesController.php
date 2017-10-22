@@ -66,50 +66,16 @@ class PagesController
   public function mycart()
   {
     if (isset($_SESSION['cart'])){
-     
-       echo "<pre>";
-          print_r($_SESSION['cart']);
-        echo "</pre>";
-
+      $arCs=$_SESSION['cart'];
+    }else{
+      $arCs=array();
     }
     // echo "<pre>";
     //   print_r($arC);
     // echo "</pre>";
 
-    //   $idtrung="";
-    //   $tgtrung="";
-    //   $trung="";
-    //   //$i[]=array();$j[]=array();
-    //   $stt=0;
-    //   $r=0;
-    //     for($t=$r;$t<count($arC);$t++){
-    //         $i=$arC[$t];
-    //       for($k=$r+1;$k<count($arC);$k++){
-    //         $j=$arC[$k];
-    //         if($i[7] == $j[7]){
-    //           $idtrung.=$stt;
-    //           //unset($arC[$stt]);
-    //           // echo "<pre>";
-    //           //   print_r($arC);
-    //           // echo "</pre>";
-    //         }else{
-    //           break;
-    //         }
-    //         $stt++;
-    //         $r=$stt+1;
-    //       }
-    //       $trung=$idtrung."|";    
-    //     }
- 
-    //   echo $trung;
-      // echo $sotrung;
-      // echo "<br>";
-      // echo $ktrung;
-     
-      
-
-
-    return view('mycart');
+    
+    return view('mycart',['arC' => $arCs ]);
   }
   public function orderCustomer()
   {

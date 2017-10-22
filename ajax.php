@@ -23,7 +23,6 @@ if (isset($_SESSION['cart'])){
     foreach ($arrcart as $key =>$values) {
         $var=array_keys($values);
         $k =array_shift($var);
-        echo $key;
         if($k == $idcolor){
             $arrcart[$stt][$k]['sl']= $values[$k]['sl']+ $sl;
             $true="1";
