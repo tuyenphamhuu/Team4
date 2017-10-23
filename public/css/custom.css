@@ -4,13 +4,12 @@
 .text-red {
     color: #C41100;
 }
-/*#view-detail .hr-v-dl {
-    padding: 40px 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-}*/
-.search-ipt input:focus {
-    outline: none;
+.search-ipt input {
+    padding: 0 18px !important;
+}
+.search-ipt > input:focus {
+    border: 1px solid #ddd;
+    border-right: none;
 }
 .input-group-addon {
     padding: 0 .75rem;
@@ -59,6 +58,14 @@
 }
 .prd {
     margin-top: 40px;
+}   
+.overlay-n {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 .wrap-item-prd img {
     margin-bottom: 20px;
@@ -90,6 +97,7 @@
     background-color: #000;
     opacity: 0.7;
     transition: 1s, 3s;
+    width: 100%;
 }
 #mac img {
     width: 100%;
@@ -98,7 +106,6 @@
     position: absolute;
     top: 35%;
     color: #fff;
-    font-size: 62px;
     padding: 0 100px;
     letter-spacing: 10px;
 }
@@ -205,7 +212,6 @@ footer {
     color: #C41100;
     border: 1px solid #000;
     background-color: rgba(0,0,0,0.9);
-    /*background-color: rgba(255,255,255,0.7);*/
 }
 .colblack{
     color: #111;
@@ -222,16 +228,9 @@ footer {
 img {
     width: 100%;
 }
-
-/*cart*/
-.cart {
-    /*display: none;*/
-}
-.bg-cart {
-    /*background-color: #FBF0E1 !important;*/
-}
-.table-bordered {
-    /*border-color: #000 !important;*/
+.cart h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .edit-bill a {
     width: 50%;
@@ -260,4 +259,12 @@ img {
     color: #fff;
     background-color: #000;
     border: 1px solid #fff;
+
+}
+.cart table thead tr th {
+    font-size: 28px !important;
+}
+footer {
+    background-color: #000;
+    padding-top: 5px;
 }
