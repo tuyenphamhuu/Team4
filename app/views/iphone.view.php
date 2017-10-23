@@ -38,7 +38,7 @@
 					<div>
 						<h5><?php echo $products->ProductName; ?></h5>
 						<p><b>From $<?php echo $products->NewPrice; ?></b></p>
-						<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>"><button type="button" class="btn btn-dark">Buy</button></a>
+						<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>&type=<?php echo $products->ID_TypeProduct ?>"><button type="button" class="btn btn-dark">Buy</button></a>
 					</div>
 					
 				</div>
