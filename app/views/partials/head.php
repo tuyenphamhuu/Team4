@@ -10,26 +10,26 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/n-custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/h-custom.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/reponsive.css">
-<<<<<<< HEAD
-=======
 	<link rel="stylesheet" type="text/css" href="/public/css/jquery.dataTables.css">
 
->>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2
+
+<!-- >>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2 -->
 	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
 
 	<script type="text/javascript" charset="utf-8" src="/public/js/jquery-3.2.1.min.js"></script>	
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> <!-- modal -->
 	<!-- <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script> <!-- modal -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-=======
+<!-- ======= -->
 	<script type="text/javascript" charset="utf-8" src="/public.js/jquery-3.1.1.slim.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap.min.js" ></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap2.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/jquery.dataTables.min.js"></script>
->>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2
+
+<!-- >>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2 -->
 	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>
 
 	<!-- <script type="text/javascript" charset="utf-8" src="/public.js/jquery-3.1.1.slim.min.js"></script> -->

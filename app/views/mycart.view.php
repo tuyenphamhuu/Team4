@@ -4,7 +4,6 @@
 <div class="container-fluid">
 	<!-- cart -->
 	<div class="cart">
-	<!-- <?php var_dump($_SESSION['cart']); ?> -->
 		<h2 class="font-weight-bold text-center">My cart</h2>
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
@@ -18,75 +17,31 @@
 				</tr>
 			</thead>
 			<tbody>
-				<!-- <tr class="list-pr-ap align-middle">
-					<td>
-						<img class="img-myc" src="../../public/images/7+-f.jpg">
-					</td>
-					<td>iPhone 8</td>
-					<th>$699</th>
-					<td class="count-ap">
-						<input class="text-center" type="number" value="1" min="1" >
-					</td>
-					<td>$699</td>
-					<td class="edit-bill">
-						<button type="button" data-toggle="modal" data-target="#exampleModal">
-						  	<img class="remove" src="/public/images/trash-ap-3.png">
-						</button>
-					</td>
-				</tr>
-				<tr class="list-pr-ap">
-					<td>
-						<img class="img-myc" src="../../public/images/ipad-pro-10in.png">
-					</td>
-					<td>iPad Pro 12.9 inch</td>
-					<th>$799</th>
-					<td class="count-ap">
-						<input class="text-center" type="number" value="2" min="1">
-					</td>
-					<td>$1598</td>
-					<td class="edit-bill">
-						<button type="button" data-toggle="modal" data-target="#exampleModal">
-						  	<img class="remove" src="/public/images/trash-ap-3.png">
-						</button>
-					</td>
-				</tr>
-				<tr class="list-pr-ap">
-					<td>
-						<img class="img-myc" src="../../public/images/6+.jpg">
-					</td>
-					<td>iPhone 7 plus</td>
-					<th>$669</th>
-					<td class="count-ap">
-						<input class="text-center" type="number" value="1" min="1">
-					</td>
-					<td>$669</td>
-					<td class="edit-bill">
-						<button type="button" data-toggle="modal" data-target="#exampleModal">
-						  	<img class="remove" src="/public/images/trash-ap-3.png">
-						</button>
-					</td>
-				</tr> -->
-
 				<?php 
-					foreach ($arC as $value) {
+					$sub = null;
+					if(isset($arC)){
+						$stt=0;
+					foreach ($arC as $key => $value) {
+						$var=array_keys($value);
+						$k =array_shift($var);
 						?>
 						<tr class="list-pr-ap">
-							<th><?php echo $value[0] ?></th>
+							<th><?php echo $stt+1; ?></th>
 							<td>
 								<div class="row">
 									<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
-										<img class="img-myc" src="../../public/images/<?php echo $value[6] ?>">
+										<img class="img-myc" src="../../public/images/<?php echo $arC[$stt][$k]['image'] ?>">
 									</div>
 									<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
-										<?php echo $value[4] ?>
+										<?php echo $arC[$stt][$k]['name'] ?>
 									</div>
 								</div>
 							</td>
-							<th>$<?php echo $value[5] ?></th>
+							<th>$<?php echo $arC[$stt][$k]['price'] ?></th>
 							<td class="count-ap">
-								<input class="text-center" type="number" value="<?php echo $value[3] ?>" min="1">
+								<input class="text-center" type="number" value="<?php echo $arC[$stt][$k]['sl'] ?>" min="1">
 							</td>
-							<td>$<?php echo $total = $value[5]*$value[3]; ?></td>
+							<td>$<?php  echo $total = $arC[$stt][$k]['sl']*$arC[$stt][$k]['price']; $sub += $total  ?></td>
 							<td class="edit-bill">
 								<!-- Button trigger modal -->
 								<button type="button" data-toggle="modal" data-target="#exampleModal">
@@ -98,18 +53,20 @@
 							</td>
 						</tr>
 						<?php
+						$stt++;
 					}
+				}
 				 ?>
 				<tr class="list-pr-ap">
 					<td colspan="4" class="text-left">
-						<button class="btn prc-bill ">&laquo; Keep buying</button>
+						<a href="" class="btn prc-bill" >&laquo; Keep buying</a>
 					</td>
 					<td class="font-weight-bold">
-						SubTotal: $2397
+						SubTotal: $
+						<?php echo $sub; ?>
 					</td>
 					<td>
-						<button class="btn prc-bill">Check Out &raquo;</button>
-
+						<a href="watch?sub=<?php echo $sub ?>" class="btn prc-bill" >Checkout &raquo;</a>
 					</td>
 				</tr>
 
@@ -156,7 +113,7 @@
 	</div>
 </div>
 	
-<!-- <script>
+<script>
 	$(document).ready(function() {
 		var needToRemove;
 		var confirmModal = $('#exampleModal');
@@ -168,6 +125,6 @@
 			needToRemove.remove();
 		});
 	});
-</script> -->
+</script>
 
 <?php require 'partials/footer.php'; ?>

@@ -160,17 +160,11 @@
 		    </div>
 		  </div>
 		</div>
-
-
-
-		
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
 		<a href="#"><div><strong>iMac Pro</strong><span>(Power to the pro)</span></div></a>
 	</div>
-
-
 </content>
 
 <?php require 'partials/footer.php'; ?>

@@ -4,17 +4,9 @@
 .text-red {
     color: #C41100;
 }
-/*#view-detail .hr-v-dl {
-    padding: 40px 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-}*/
 .search-ipt input {
     padding: 0 18px !important;
 }
-/*.search-ipt > input:visited {
-    outline: 0 !important;
-}*/
 .search-ipt > input:focus {
     border: 1px solid #ddd;
     border-right: none;
@@ -42,9 +34,6 @@
     color: #fff !important;
     text-transform: none;
 }
-/*.menu .navbar .collapse .navbar-nav .nav-item {
-    margin-left: none !important;
-}*/
 #iphone {
     margin-top: 5px;
     background-color: #edece9;
@@ -101,7 +90,7 @@
     position: relative;
     margin: 10px 0;
 }
-#mac:hover div{ /*a or div*/
+#mac:hover div{
     background-color: #000;
     opacity: 0.7;
     transition: 1s, 3s;
@@ -114,14 +103,12 @@
     position: absolute;
     top: 35%;
     color: #fff;
-    /*font-size: 62px;*/
     padding: 0 100px;
     letter-spacing: 10px;
 }
 #mac div span {
-    /*font-size: 40px;*/
-    /*text-decoration: none !important;*/
-
+    font-size: 40px;
+    text-decoration: none;
 }
 .ip-item {
     margin-bottom: 20px;
@@ -222,7 +209,6 @@ footer {
     color: #C41100;
     border: 1px solid #000;
     background-color: rgba(0,0,0,0.9);
-    /*background-color: rgba(255,255,255,0.7);*/
 }
 .colblack{
     color: #111;
@@ -238,22 +224,10 @@ footer {
 img {
     width: 100%;
 }
-
-/*cart*/
 .cart h2 {
     margin-top: 50px;
     margin-bottom: 50px;
-
-    /*display: none;*/
 }
-.bg-cart {
-    /*background-color: #FBF0E1 !important;*/
-}
-.table-bordered {
-    /*border-color: #000 !important;*/
-}
-
-/*>>>>>>> dev*/
 .edit-bill a {
     width: 50%;
 }
@@ -281,13 +255,11 @@ img {
     color: #fff;
     background-color: #000;
     border: 1px solid #fff;
+
 }
-/*<<<<<<< HEAD*/
 .cart table thead tr th {
     font-size: 28px !important;
 }
-
-/*foot*/
 footer {
     background-color: #000;
     padding-top: 5px;
