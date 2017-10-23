@@ -6,21 +6,40 @@ $id    = $_REQUEST['id'];//Lay parameter tu request
 $name  = $_REQUEST['name'];//Lay parameter tu request
 $price = $_REQUEST['price'];//Lay parameter tu request
 $image = $_REQUEST['image'];//Lay parameter tu request
+$idcolor=$id.$color;
+$array["$idcolor"]= array(
 
-// $_SESSION['cart']['color']=$color;
-// $_SESSION['cart']['sl']=$sl;
-// $_SESSION['cart']['id']=$id;
+        "id"       => "$id",
+        "name"     => "$name",
+        "color"    => "$color",
+        "sl"       => "$sl",
+        "price"    => "$price",
+        "image"    => "$image"
+
+);
+if (isset($_SESSION['cart'])){
+    $arrcart=$_SESSION['cart'];
+    $stt=0;
+    foreach ($arrcart as $key =>$values) {
+        $var=array_keys($values);
+        $k =array_shift($var);
+        if($k == $idcolor){
+            $arrcart[$stt][$k]['sl']= $values[$k]['sl']+ $sl;
+            $true="1";
+        }
+        $stt++;
+    }
+        if($true=="1"){
+            $_SESSION['cart']=$arrcart;
+        }else{
+            $_SESSION['cart'][]=$array;
+        }
+    
+}
+else{
+    $_SESSION['cart'][]=$array;
+}
 
 
- //echo "So luong ".$_SESSION['color'];
- $_SESSION['stt']++;
- $_SESSION['data'] =$_SESSION['stt']."+".$id."+".$color."+".$sl."+".$name."+".$price."+".$image."|";
- $_SESSION['cart'].=$_SESSION['data'];
 
-//  $_SESSION['cart']= array(
-//     $id => array(
-//         "Color" => $color,
-//         "Quantity" => $sl
-//     )
-// );
 ?>
