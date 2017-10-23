@@ -280,6 +280,13 @@ height: 60px;
     text-decoration: none;
 
 }
+.overlay-image-ip {
+  position: relative;
+  width: 100%;
+}
+.overlay-image-ip:hover .overlay {
+  opacity: 1;
+}
 /*.image-iphone {
   display: block;
   width: 100%;
