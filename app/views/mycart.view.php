@@ -18,7 +18,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="list-pr-ap align-middle">
+				<!-- <tr class="list-pr-ap align-middle">
 					<td>
 						<img class="img-myc" src="../../public/images/7+-f.jpg">
 					</td>
@@ -29,7 +29,6 @@
 					</td>
 					<td>$699</td>
 					<td class="edit-bill">
-						<!-- Button trigger modal -->
 						<button type="button" data-toggle="modal" data-target="#exampleModal">
 						  	<img class="remove" src="/public/images/trash-ap-3.png">
 						</button>
@@ -46,7 +45,6 @@
 					</td>
 					<td>$1598</td>
 					<td class="edit-bill">
-						<!-- Button trigger modal -->
 						<button type="button" data-toggle="modal" data-target="#exampleModal">
 						  	<img class="remove" src="/public/images/trash-ap-3.png">
 						</button>
@@ -63,12 +61,11 @@
 					</td>
 					<td>$669</td>
 					<td class="edit-bill">
-						<!-- Button trigger modal -->
 						<button type="button" data-toggle="modal" data-target="#exampleModal">
 						  	<img class="remove" src="/public/images/trash-ap-3.png">
 						</button>
 					</td>
-				</tr>
+				</tr> -->
 
 				<?php 
 					foreach ($arC as $value) {
