@@ -152,6 +152,8 @@ height: 60px;
 
 #wrapper-ipad {
     background-color: #ececef;
+    text-transform: none; 
+    letter-spacing: 0;
 }
 .ipad-products {
     padding: 30px 0 10px 10px;
@@ -225,13 +227,19 @@ height: 60px;
 }
 
 .text {
-  color: #fff;
-  font-size: 20px;
+ /* color: #fff;*/
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+.text:hover a {
+    color: white;
+}
+.text a {
+    color: white;
 }
 
 /*iphone page*/
