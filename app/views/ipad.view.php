@@ -26,7 +26,9 @@
 									
 									?>">
 						    <div class="overlay">
-							    <div class="text">View Detail</div>
+							    <div class="text">
+								<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>">View Detail</a>	
+								</div>
 							</div>
 						</div>
 						<h5><?php echo $products->ProductName; ?></h5>

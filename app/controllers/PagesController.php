@@ -5,6 +5,7 @@ use App\Core\App;
 use App\Models\Product;
 
 use App\Models\TypeProduct;
+use App\Models\Order;
 
 class PagesController
 {
@@ -51,7 +52,7 @@ class PagesController
   public function detailProduct()
   {
     $id = $_GET['idProduct'];
-    $sql = " SELECT p.ID_Product, ProductName, c.Color, Config, description, Image FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
+    $sql = " SELECT * FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
     $products = Product::selectByType($sql);
 
     return view('detail-iPad', ['products' => $products]);
@@ -64,6 +65,29 @@ class PagesController
 
   public function mycart()
   {
-    return view('mycart');
+    if (isset($_SESSION['cart'])){
+      $arCs=$_SESSION['cart'];
+    }else{
+      $arCs=array();
+    }
+    // echo "<pre>";
+    //   print_r($arC);
+    // echo "</pre>";
+
+    
+    return view('mycart',['arC' => $arCs ]);
+  }
+  public function orderCustomer()
+  {
+    die($_POST['date']);
+    if (isset($_POST['submit'])) {
+      $param = [
+        'OrderDate'   => $_POST['date'],
+        'Email'       => $_POST['email'],
+        'Add'         => $_POST['add'],
+        'Orderer'     => $_POST['name'],
+        'PhoneNumber' => $_POST['phone']
+      ];
+    }
   }
 }

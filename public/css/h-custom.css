@@ -163,14 +163,14 @@ height: 60px;
 .ipad-item {
 /*    background-color: #ece8e4;*/
     text-align: center;
-    padding: 0 50px;
+    padding:0 50px 50px 50px;
 }
 .ipad-item p {
     color: black;
 }
 .ipad-item h5 {
     color: black;
-    padding: 15px;
+    padding-top: 15px;
     font-size: 19px;
 }
 .ipad-item a {
@@ -254,7 +254,7 @@ height: 60px;
 .iphone-item {
 /*    background-color: #ece8e4;*/
     text-align: center;
-    padding: 10px;
+    padding-bottom: 50px;
 }
 .iphone-item p {
     color: black;
@@ -366,9 +366,9 @@ height: 60px;
 .order-info {
     background-color: white;
 }
-.order {
+/*.order {
     padding-bottom: 10px;
-}
+}*/
 .customer-info {
     padding-top: 15px;
 }
@@ -382,9 +382,31 @@ height: 60px;
     padding-bottom: 30px;
 
 }
-
+/*.invalid-feedback {
+    display: none;
+}*/
 
 .footer {
     background-color: #000;
     padding-top: 5px;
+}
+
+/*edit user page*/
+.wrapper-editUser {
+    background-color: #ececef;
+
+}
+/*.editUser {
+    padding: 20px 0;
+}*/
+.edit-info {
+    background-color: white;
+    padding-top: 20px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 20px;
+ /*   border-radius: 3px;*/
+}
+.form-editinfo {
+    padding: 5px 0;
 }
