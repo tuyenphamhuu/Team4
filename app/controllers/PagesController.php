@@ -66,16 +66,16 @@ class PagesController
   public function mycart()
   {
     if (isset($_SESSION['cart'])){
-      $array = rtrim($_SESSION['cart'],'|');
-      $arrayCards = explode("|",$array);
-      foreach($arrayCards as $items){
-        $arC[] = explode("+",$items);
-      }
+      $arCs=$_SESSION['cart'];
+    }else{
+      $arCs=array();
     }
-    echo "<pre>";
-      print_r($arC);
-    echo "</pre>";
-    return view('mycart', [ 'arC' => $arC ]);
+    // echo "<pre>";
+    //   print_r($arC);
+    // echo "</pre>";
+
+    
+    return view('mycart',['arC' => $arCs ]);
   }
   public function orderCustomer()
   {
