@@ -30,7 +30,7 @@
 								?>">
 							<div class="overlay">
 								<div class="text">
-									<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>">View Detail</a>
+									<a href="/detailProduct?idProduct=<?php echo $products->ID_Product; ?>&type=<?php echo $products->ID_TypeProduct ?>">View Detail</a>
 								</div>
 							</div>
 						</div>
