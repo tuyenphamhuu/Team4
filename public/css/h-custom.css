@@ -366,9 +366,9 @@ height: 60px;
 .order-info {
     background-color: white;
 }
-.order {
+/*.order {
     padding-bottom: 10px;
-}
+}*/
 .customer-info {
     padding-top: 15px;
 }
@@ -396,9 +396,16 @@ height: 60px;
     background-color: #ececef;
 
 }
+/*.editUser {
+    padding: 20px 0;
+}*/
 .edit-info {
     background-color: white;
     padding-top: 20px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 20px;
+ /*   border-radius: 3px;*/
 }
 .form-editinfo {
     padding: 5px 0;

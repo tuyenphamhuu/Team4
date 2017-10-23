@@ -4,6 +4,9 @@
 	<div class="container">
 		<div class="row justify-content-center editUser">
 			<div class=" col-5 edit-info">
+				<div class="text-center">
+					<p>Edit User</p>
+				</div>
 				<form action="orderCustomer" method="POST" class="container" id="needs-validation" novalidate>
 					<div class="form-row">
 					    <div class="col form-editinfo">
@@ -32,10 +35,10 @@
 					  	</div>
 						<hr>
 						<div class="submit-order text-center">
-					  	<button class="btn btn-dark" type="submit">Submit</button>
-					</div>
+						  	<button class="btn btn-dark" type="submit">Submit</button>
+						  	<button class="btn btn-dark" type=" ">Cancel</button>
+						</div>
 				</form>
-				
 			</div>
 		</div>
 	</div>
