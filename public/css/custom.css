@@ -12,6 +12,9 @@
 .search-ipt input {
     padding: 0 18px !important;
 }
+/*.search-ipt > input:visited {
+    outline: 0 !important;
+}*/
 .search-ipt > input:focus {
     border: 1px solid #ddd;
     border-right: none;
