@@ -156,7 +156,7 @@
 	</div>
 </div>
 	
-<script>
+<!-- <script>
 	$(document).ready(function() {
 		var needToRemove;
 		var confirmModal = $('#exampleModal');
@@ -168,6 +168,6 @@
 			needToRemove.remove();
 		});
 	});
-</script>
+</script> -->
 
 <?php require 'partials/footer.php'; ?>
