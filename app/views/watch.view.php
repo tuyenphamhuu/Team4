@@ -65,9 +65,15 @@
 						<!-- </div> -->
 					</div>
 						<div class="submit-order text-center">
-					  	<button class="btn btn-dark" name="submit" type="submit">Submit</button>
+					  	<button class="btn btn-dark" type="submit">Check out</button>
 					</div>
 				</form>
+
+				<form id="MyForm" method="post" >
+  <label for="txtName">Name:</label>
+  <input id="txtName" name="txtName" type="text" minlength="2" maxlength="50" placeholder="Required">
+  <input type="submit" value="Submit"/>
+</form>
 			</div>	
 		</div>		
 	</div>
@@ -76,7 +82,6 @@
 
 <?php require 'partials/footer.php'; ?>
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   "use strict";
   window.addEventListener("load", function() {
@@ -90,5 +95,15 @@
     }, false);
   }, false);
 }());
+$(document).ready(function(){
+  $("#MyForm").validate({
+    rules: {
+      txtName: {
+        required: true,
+        minlength: 10
+      }      
+    }
+  });
+})
 </script>
 
