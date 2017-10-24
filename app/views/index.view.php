@@ -48,7 +48,6 @@
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
 												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
 													</a>
 												</button>
 											</div>
