@@ -19,7 +19,7 @@
 				
 				<div class="iphone-item">
 					<a href="#">
-						<div class="overlay-image">
+						<div class="overlay-image-ip">
 							<img src="public/images/<?php 
 								if ($products->Image != ''){
 									echo $products->Image;
