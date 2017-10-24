@@ -1,17 +1,21 @@
 
 <?php require 'app/views/partials/head-admin.php'; ?>
 <?php require 'core/function.php'; ?>
-<br>
 <div class="container-fluid">
     <div class="row">
         <?php require 'app/views/partials/sidebar-left.php'; ?>
         
-        <div class="right col-lg-10 col-md-10 col-sm-9 col-12">
-            <a class="btn btn-primary" href="/admin/addProduct" role="button">Add product</a>
+        <div class="right col-lg-10 col-md-10 col-sm-9 col-12 wrapper-main-manager-page">
+
+            <div class="wrapper-btn row ">
+                <h3>Products</h3>
+                <a class="btn btn-dark btn-manager-add" href="/admin/addProduct" role="button"><b>+ Add Product</b></a>
+            </div>
+            <hr>
             <table class="table table-responsive">
                 <thead class="thead-inverse">
                     <tr>
-                    <th>STT</th>
+                    <th>No.</th>
                     <th>Image</th>
                     <th>Product Name</th>
                     <th>New Price</th>
@@ -42,8 +46,8 @@
                     <td><?php echo $product->NewPrice; ?></td>
                     <td><?php echo $product->OldPrice; ?></td>
                     <td><?php echo the_excerpt($product->description); ?></td>                    <!-- <td> <?php //echo the_excerpt($product->Config); ?></td> -->
-                    <td><a class="btn btn-dark" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">edit</a></td>
-                    <td><a class="btn btn-warning" href="delProduct?id=<?php echo $product->ID_Product; ?>" role="button">del</a></td>
+                    <td><a class="btn btn-dark" href="editProduct?id=<?php echo $product->ID_Product; ?>" role="button">Edit</a></td>
+                    <td><a class="btn btn-warning" href="delProduct?id=<?php echo $product->ID_Product; ?>" role="button">Del</a></td>
                     </tr>
                     <?php
                         $stt++;

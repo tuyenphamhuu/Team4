@@ -1,15 +1,40 @@
-<div id="logo-img-admin" class="left col-lg-2 col-md-2 col-sm-3 col-12">
+
+
+<div id="logo-img-admin" class="left-sidebar col-lg-2 col-md-2 col-sm-3 col-12 menu-manager">
+	<div class="row top-menumanager text-center">
+			<!-- <div class="text-center"> -->
+           		<i class="fa fa-apple" aria-hidden="true"></i>
+            	<p class="text-top-menumanager"><b>Apple manager</b></p>
+            <!-- </div> -->
+    </div>
+	
 	<div class="ad-func text-transform">
-		<p class="name-func">MENU MANAGER</p>
 		<ul class="nav nav-pills flex-column">
 			<li class="nav-item">
-			<a class="nav-link colblack-a" href="/"><h3>Home</h3> <span class="sr-only">(current)</span></a>
+				<a class="nav-link colblack-a" href="/">
+					<div class="row main-menumanager">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<p>Home</p>
+					</div> 
+					<span class="sr-only">(current)</span>
+				</a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link colblack-a" href="/admin/indexProduct"><h3>Product</h3></a>
+				<a class="nav-link colblack-a" href="/admin/indexProduct">
+					<div class="row main-menumanager">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<p>Product</p>
+					</div>
+				</a>
+
 			</li>
 			<li class="nav-item">
-			<a class="nav-link colblack-a" href="/indexUser"><h3>Account</h3></a>
+				<a class="nav-link colblack-a" href="/indexUser">
+					<div class="row main-menumanager">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<p>Account</p>
+					</div>
+				</a>
 			</li>
 		</ul>
 	</div>
