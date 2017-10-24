@@ -73,13 +73,14 @@
     /*transition: all 0.5s ease;*/
 
 }
+.wrap-item-prd {
+    /*z-index: 9;*/
+}
 .wrap-item-prd img {
     transition: all 0.5s ease-in;
 }
 .wrap-item-prd img:hover {
     max-height: 100%;
-    /*z-index: 999999999999;*/
-
 }
 .wrap-item-prd > img:hover .wrap-item-prd {
     max-height: 100%;

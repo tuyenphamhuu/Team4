@@ -8,7 +8,7 @@
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
-					<th style="width: 4%">Images</th>
+					<th style="width: 4%">STT</th>
 					<th style="width: 35%">Products Name</th>
 					<th style="width: 10%">Color</th>
 					<th style="width: 15%">Price</th>
