@@ -101,4 +101,45 @@ class QueryBuilder
       die($e->getMessage());
     }
   }
+
+  public function pagination($query, $countUser)
+      {
+
+          
+          //die($key);
+          $total = $countUser;
+          //Find limit and current page
+          $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+          // echo $_GET['page'];
+          $limit = 5;
+          // echo $limit;
+          $totalPage = ceil($total / $limit);
+
+          // Limit currentPage from 1 to totalPage
+          if ($currentPage > $totalPage) {
+              $currentPage = $totalPage;
+          }
+          if ($currentPage < 1) {
+              $currentPage = 1;
+          }
+
+          //  Find Start
+          $start = ($currentPage - 1) * $limit;
+
+          //echo $start;
+          $sql = $query;
+
+         
+          $sql .= " LIMIT {$start},{$limit}";
+          // echo $sql;
+          //die($sql);
+          $arrPagination = [];
+          $arrPagination['all'] = $this->pdo->prepare($sql);
+          $arrPagination['all']->execute();
+          $arrPagination['currentPage'] = $currentPage;
+          $arrPagination['totalPage'] = $totalPage;
+  
+
+          return $arrPagination;
+      }
 }
