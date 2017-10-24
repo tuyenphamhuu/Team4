@@ -465,17 +465,6 @@ height: 60px;
 .btn-manager-add {
     margin-left: 20px;
 }
-.left-sidebar{
-  position: fixed;
-  top: 0;
-  margin: 0;
-  height: 100vh;
-  background-color: #000;
-}
-.right {
-  position: absolute;
-  right:0;
-}
 /*del products*/
 /*head-admin page*/
 

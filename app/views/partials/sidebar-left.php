@@ -1,13 +1,10 @@
 
 
-<div id="logo-img-admin" class="left-sidebar col-lg-2 col-md-2 col-sm-3 col-12 menu-manager">
+<div id="logo-img-admin" class="left sidebar col-lg-2 col-md-2 col-sm-3 col-12 menu-manager sidebar">
 	<div class="row top-menumanager text-center">
-			<!-- <div class="text-center"> -->
-           		<i class="fa fa-apple" aria-hidden="true"></i>
-            	<p class="text-top-menumanager"><b>Apple manager</b></p>
-            <!-- </div> -->
+   		<i class="fa fa-apple" aria-hidden="true"></i>
+    	<p class="text-top-menumanager"><b>Apple manager</b></p>
     </div>
-	
 	<div class="ad-func text-transform">
 		<ul class="nav nav-pills flex-column">
 			<li class="nav-item">
@@ -38,4 +35,5 @@
 			</li>
 		</ul>
 	</div>
+	
 </div>
