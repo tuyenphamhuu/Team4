@@ -8,48 +8,24 @@
 				<p class="slogan">Safety, security is above all</p>
 				<div class="container-fluid margin-lr">
 					<div class="row justify-content-center prd">
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-						    <img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
-						    <div class="overlay-n">
-						      <h2>iPhone X</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">Detail</button>
-						    </div>
-						  </div>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ip8-.jpg" alt="iphone_8">
-								<div class="overlay-n">
-									<h2>Iphone 8</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ip7-.jpg" alt="iphone_7">
-								<div class="overlay-n">
-									<h2>Iphone 7</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ip6s-.gif" alt="iphone_6">
-								<div class="overlay-n">
-									<h2>Iphone 6s</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
+						<?php 
+							foreach ($iphones as $items) {
+								?>
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+										<div class="wrap-item-prd hover-ap hover">
+											<img class="mx-auto d-block rounded" src="public/images/<?php echo $items->Image ?>" alt="">
+											<div class="overlay-n">
+												<h2><?php echo $items->ProductName ?></h2>
+												<button type="button" class="info" data-toggle="modal" data-target=".myModal">
+													<a href=""></a>
+												Detail
+												</button>
+											</div>
+										</div>
+									</div>
+								<?php
+							}
+						 ?>
 					</div>
 				</div>
 			</div>
@@ -60,50 +36,24 @@
 				<p class="slogan">Safety, security is above all</p>
 				<div class="container-fluid margin-lr">
 					<div class="row prd">
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-pro-f.jpg" alt="ipad-pro-f.jpg">
-								<div class="overlay-n">
-									<h2>Ipad Pro</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-f.jpg" alt="ipad-f.jpg">
-								<div class="overlay-n">
-									<h2>Ipad</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-mini-4-f.jpg" alt="ipad-mini-4-f.jpg">
-								<div class="overlay-n">
-									<h2>Ipad mini 4</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="wrap-item-prd hover-ap hover">
-								<img class="mx-auto d-block rounded" src="public/images/ios11-f.jpg" alt="ios11-f.jpg">
-								<div class="overlay-n">
-									<h2>iOS 11</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
+						<?php 
+							foreach ($ipads as $items) {
+								?>
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+										<div class="wrap-item-prd hover-ap hover">
+											<img class="mx-auto d-block rounded" src="public/images/<?php echo $items->Image ?>" alt="">
+											<div class="overlay-n">
+												<h2><?php echo $items->ProductName ?></h2>
+												<button type="button" class="info" data-toggle="modal" data-target=".myModal">
+												Detail
+												</button>
+											</div>
+										</div>
+									</div>	
+								<?php
+							}
+						 ?>
+						
 					</div>
 				</div>
 			</div>
