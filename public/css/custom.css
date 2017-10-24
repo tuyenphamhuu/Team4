@@ -32,6 +32,7 @@
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff !important;
+    letter-spacing: 0;
     text-transform: none;
 }
 #iphone {
@@ -44,6 +45,7 @@
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 0;
+    letter-spacing: 0;
     text-transform: none;
 }
 .slogan {
@@ -52,6 +54,7 @@
     font-size: 21px;
     margin-bottom: 70px;
     text-transform: none;
+    letter-spacing: 0;
 }
 .prd {
     margin-top: 40px;
