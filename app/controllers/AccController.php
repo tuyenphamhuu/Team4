@@ -30,14 +30,11 @@ class AccController
   {
     return view('admin/index');
   }
-  
-
-  // public function getLogout()
-  // {
-  //   session_start();
-  //   session_destroy();
-  //   return view('admin/login');
-  // }
+  public function logout()
+  {
+    unset($_SESSION['user']);
+    return redirect('loginadmin');
+  }
 
   // public function index()
   // {
@@ -54,10 +51,4 @@ class AccController
 
   //   return redirect('users');
   // }
-  public static function checkLogin()
-  {
-    if (!isset($_SESSION['user'])) {
-      return redirect('loginadmin');
-    }
-  }
 }

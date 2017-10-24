@@ -18,6 +18,8 @@
 	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>
 <!-- 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="/public/css/h-custom.css">
 	<!-- 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
@@ -27,5 +29,16 @@
 </head>
 <body>
 <!-- <img id="img-admin" class="mx-auto d-block wh" src="/public/images/logo-apple.png"> -->
-<h2 class="text-center">APPLE MANAGER PAGE</h2>
+	<h2 class="text-center">APPLE MANAGER PAGE</h2>
+	<div class="text-right">
+		<div class="dropdown">
+		  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Hello <strong><?php echo $_SESSION['user']->UserName; ?></strong>
+		  	</button>
+		  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item" href="/logout">Logout</a>
+			    
+		  	</div>
+		</div>
+	</div>
 <?php ob_end_flush() ?>
