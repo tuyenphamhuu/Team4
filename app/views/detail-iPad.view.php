@@ -40,7 +40,7 @@
 											?>
 												<div class="col-lg-3 text-center">
 								        			<div class="form-check">
-												    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" value="<?php echo $product->Color ?>" >
+												    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" checked="checked" value="<?php echo $product->Color ?>" >
 												    		<label for="exampleRadios1" class="form-check-label">
 												     		<span>
 												    			<img class="image-color" src="public/images/<?php echo $product->Color ?>.png">
@@ -74,7 +74,7 @@
 				<hr>
 				<div class="detail5 row">
     				<a href="#" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Buy now</button></a>
-    				<button type="button" id="add-btn" class="btn btn-dark">Add to cart</button>
+    				<button type="button"  id="add-btn" class="btn btn-dark">Add to cart</button>
 				</div>
 
 				<hr>
@@ -110,36 +110,50 @@
 			</div>
  		<div class="row">
                 <div class="row semore-product">
-       				<div class="col-md-3 text-center">
-            			<img class="img-fluid" src="public/images/ipad-pro-12in-256GB.png">
-            			<a class="colorblack" href="#">
-            				<p>12.9-inch iPad Pro 256GB</p>
-            			</a>
-           			</div>	
-        			<div class="col-md-3 text-center">
-            			<img class="img-fluid" src="public/images/ipad-9in-128GB.png">
-             			<a class="colorblack" href="#">
-             				<p>9.7-inch iPad Pro 128GB</p>
-             			</a>
-        			</div>
-    				<div class="col-md-3 text-center">	
-             			<img class="img-fluid" src="public/images/ipad-mini4-128G.png">
-            			<a class="colorblack" href="#">
-             				<p>iPad Mini 4 128GB</p>
-             			</a>
-        			</div>
-        			<div class="col-md-3 text-center">	
-             			<img class="img-fluid" src="public/images/ipad-pro-10in-256G.png">
-             			<a class="colorblack" href="#">
-            				<p>10.5 inch iPad Pro 256GB</p>
-             			</a>
-    				</div>
+                	<?php 
+                		foreach ($moreprd as $moreprds) {
+                			?>
+                				<div class="col-md-3 text-center">
+			            			<img class="img-fluid" src="public/images/<?php echo $moreprds->Image ?>">
+			            			<a class="colorblack" href="/detailProduct?idProduct=<?php echo $moreprds->ID_Product ?>&type=<?php echo $moreprds->ID_TypeProduct ?>">
+			            				<?php echo $moreprds->ProductName ?>
+			            			</a>
+			           			</div>
+                			<?php
+                		}
+                	 ?>
+       					
+        			
       			</div>
  			</div>
  		</div>
  	</div>
 </div>
 
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+	<div class="modal-header">
+	  <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+	<div class="modal-body">
+	<div class="alert alert-primary" role="alert">
+	Add product to success.
+	</div>
+	
+	</div>
+	<div class="modal-footer">
+	  <button type="button" class="btn btn-secondary" data-dismiss="modal">On page</button>
+	  <a href="/mycart"><button type="button" class="btn btn-primary">Checkout</button></a>
+	</div>
+  </div>
+</div>
+</div>
 
 
 <?php require 'partials/footer.php'; ?>
@@ -153,7 +167,7 @@
      url:"ajax.php", //goi toi file ajax.php
      data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val()+"&name="+jQuery("#ProductName").val()+"&price="+jQuery("#NewPrice").val()+"&image="+jQuery("#image").val(),
      success:function(html){
-      jQuery("#responseDiv").html(html);
+		$('#exampleModal').modal('show');
      }
     });
    });

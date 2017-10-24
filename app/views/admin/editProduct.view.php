@@ -1,7 +1,7 @@
 
 <?php require 'app/views/partials/head-admin.php'; ?>
 <br>
-<div class="container-fluid">
+<div class="container-fluid edit-products ">
     <div class="row">
         <?php require 'app/views/partials/sidebar-left.php'; ?>
         

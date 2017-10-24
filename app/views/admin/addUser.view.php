@@ -1,3 +1,4 @@
+<?php require 'app/views/partials/head-admin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

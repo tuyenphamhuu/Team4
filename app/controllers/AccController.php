@@ -16,8 +16,9 @@ class AccController
     session_start();
     $_SESSION['user'] = $user;
     
-    return redirect('admin/index');
+    return redirect('admin/indexProduct');
   }
+
 
 
   public function getLogin()
@@ -29,14 +30,11 @@ class AccController
   {
     return view('admin/index');
   }
-  
-
-  // public function getLogout()
-  // {
-  //   session_start();
-  //   session_destroy();
-  //   return view('admin/login');
-  // }
+  public function logout()
+  {
+    unset($_SESSION['user']);
+    return redirect('loginadmin');
+  }
 
   // public function index()
   // {

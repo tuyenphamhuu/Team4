@@ -8,9 +8,16 @@
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
+<<<<<<< HEAD
 					<th style="width: 9%">Images</th>
 					<th style="width: 40%">Products Name</th>
 					<th style="width: 15%">Unit Price</th>
+=======
+					<th style="width: 4%">STT</th>
+					<th style="width: 35%">Name Products</th>
+					<th style="width: 10%">Color</th>
+					<th style="width: 15%">Price</th>
+>>>>>>> dev
 					<th style="width: 15%">Quantity</th>
 					<th style="width: 15%">Total Amount</th>
 					<th style="width: 6%">Delete</th>
@@ -36,6 +43,11 @@
 										<?php echo $arC[$stt][$k]['name'] ?>
 									</div>
 								</div>
+							</td>
+							<td>
+							<div class="detail-image">
+								<img class="image-color" src="public/images/<?php echo $arC[$stt][$k]['color']?>.png">
+							</div>
 							</td>
 							<th>$<?php echo $arC[$stt][$k]['price'] ?></th>
 							<td class="count-ap">
