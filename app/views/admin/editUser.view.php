@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
+<?php require 'app/views/partials/head-admin.php'; ?>
 	 <?php 
 	 	foreach ($user as $user) {
 	 		?>

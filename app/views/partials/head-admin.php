@@ -1,3 +1,7 @@
+<?php ob_start() ?>
+<?php if (!isset($_SESSION['user'])) {
+	return redirect('loginadmin');
+} ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,3 +27,4 @@
 <body>
 <!-- <img id="img-admin" class="mx-auto d-block wh" src="/public/images/logo-apple.png"> -->
 <h2 class="text-center">APPLE MANAGER PAGE</h2>
+<?php ob_end_flush() ?>

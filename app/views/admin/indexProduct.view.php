@@ -1,4 +1,3 @@
-
 <?php require 'app/views/partials/head-admin.php'; ?>
 <?php require 'core/function.php'; ?>
 <br>
