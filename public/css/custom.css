@@ -78,9 +78,13 @@
     /*z-index: 999999999999;*/
 
 }
+.wrap-item-prd > img:hover .wrap-item-prd {
+    max-height: 100%;
+}
 .wrap-item-prd:hover img {
     margin-bottom: 20px;
     transform: scale(1.4,1.4);
+    overflow: hidden;
 }
 .hover-ap:hover button.info {
     background-color: rgba(0,0,0,0.5);
