@@ -14,7 +14,11 @@ class PagesController
   {
     //session_start();
     $_SESSION['data'] = TypeProduct::selectAll();
-    return view('index');
+    $sqlIphone        = " SELECT * FROM product WHERE ID_TypeProduct = '1' ORDER BY ID_Product DESC LIMIT 4";
+    $iphones          = Product::selectByType($sqlIphone); 
+    $sqlIpad          = " SELECT * FROM product WHERE ID_TypeProduct = '2' ORDER BY ID_Product DESC LIMIT 4";
+    $ipads            = Product::selectByType($sqlIpad); 
+    return view('index', ['iphones' => $iphones, 'ipads' => $ipads]); 
   }
 
   public function iphone()

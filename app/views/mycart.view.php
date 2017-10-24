@@ -9,7 +9,8 @@
 			<thead>
 				<tr>
 					<th style="width: 4%">STT</th>
-					<th style="width: 45%">Name Products</th>
+					<th style="width: 35%">Name Products</th>
+					<th style="width: 10%">Color</th>
 					<th style="width: 15%">Price</th>
 					<th style="width: 15%">Quantity</th>
 					<th style="width: 15%">Total Money</th>
@@ -36,6 +37,11 @@
 										<?php echo $arC[$stt][$k]['name'] ?>
 									</div>
 								</div>
+							</td>
+							<td>
+							<div class="detail-image">
+								<img class="image-color" src="public/images/<?php echo $arC[$stt][$k]['color']?>.png">
+							</div>
 							</td>
 							<th>$<?php echo $arC[$stt][$k]['price'] ?></th>
 							<td class="count-ap">
