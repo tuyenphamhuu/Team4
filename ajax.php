@@ -21,8 +21,8 @@ if (isset($_SESSION['cart'])){
     $arrcart=$_SESSION['cart'];
     $stt=0;
     foreach ($arrcart as $key =>$values) {
-        $var=array_keys($values);
-        $k =array_shift($var);
+        $var=array_keys($values);// lấy tất cả các key của array
+        $k =array_shift($var);// Lấy key đầu tiên
         if($k == $idcolor){
             $arrcart[$stt][$k]['sl']= $values[$k]['sl']+ $sl;
             $true="1";
