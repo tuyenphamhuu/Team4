@@ -19,18 +19,17 @@ class Account
   }
   
   // insert Account
-  public static function insertUser($user, $pass, $rule, $email, $add, $phone) 
+  public static function insertUser($params) 
   {
-    App::get ('database') -> insert(Account::$table, [
-      'UserName'    => $user,
-      'PassWord'  => md5($pass),
-      'Rule_rank'   => $rule,
-      'Email'       => $email,
-      'Addr'        => $add,
-      'PhoneNumber' => $phone
-    ]);
-    return view('admin/indexUser');
-    // App::get('database')->insert(Account::$table, $params);
+    // App::get ('database') -> insert(Account::$table, [
+    //   'UserName'    => $user,
+    //   'PassWord'  => md5($pass),
+    //   'Rule_rank'   => $rule,
+    //   'Email'       => $email,
+    //   'Addr'        => $add,
+    //   'PhoneNumber' => $phone
+    // ]);
+    App::get('database')->insert(Account::$table, $params);
   }
   // get Account by id
   public static function getById($id) 
