@@ -20,7 +20,7 @@
                         <label for="exampleInputEmail1">New Price</label>
                     </div>
                     <div class="col-md-9">
-                        <input name="NewPrice" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter New Price">
+                        <input name="NewPrice" type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter New Price">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -28,7 +28,7 @@
                         <label for="exampleInputEmail1">Old Price</label>
                     </div>
                     <div class="col-md-9">
-                        <input name="OldPrice" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Old Price">
+                        <input name="OldPrice" type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Enter Old Price">
                     </div>
                 </div>
                 <div class="form-group row">

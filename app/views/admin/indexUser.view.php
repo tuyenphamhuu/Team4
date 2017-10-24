@@ -4,6 +4,13 @@
 	<div class="row">
 		<?php require 'app/views/partials/sidebar-left.php'; ?>
 			<table id="tbUser">
+<div class="container-fluid">
+    <div class="row">
+        <?php require 'app/views/partials/sidebar-left.php'; ?>
+        
+        <div class="right col-lg-10 col-md-10 col-sm-9 col-12">
+            <a class="btn btn-primary" href="/admin/addProduct" role="button">Add product</a>
+            <table id="tbUser">
 		<thead>
 			<tr>
 				<th>ID</th>
@@ -38,15 +45,22 @@
 			}
 		 ?>	
 	</table>
+        </div>
+    </div>
+</div>
 	<script>
 		$(document).ready(function() {
 		    $('#tbUser').DataTable();
 		} );
+<<<<<<< HEAD
   </script>
 
 	</div>
 	
 </div>	
+=======
+ 	 </script>
+>>>>>>> dev
 
 
 
