@@ -32,7 +32,7 @@
                         ?>
                     <tr>
                     <th scope="row"><?php echo $stt; ?></th>
-                    <td><img style="width: 150px;" src="/public/images/<?php 
+                    <td><img class="img-main-manager" src="/public/images/<?php 
                     if ($product->Image != ''){
                         echo $product->Image;
                     }
