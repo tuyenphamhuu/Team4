@@ -16,9 +16,10 @@
 											<img class="mx-auto d-block rounded" src="public/images/<?php echo $items->Image ?>" alt="">
 											<div class="overlay-n">
 												<h2><?php echo $items->ProductName ?></h2>
-												<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-													<a href=""></a>
-												Detail
+												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
+												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
+												
+													</a>
 												</button>
 											</div>
 										</div>
@@ -30,6 +31,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div id="ipad" class="row text-center">
 			<div class="col-12 text-center">
 				<h1 class="prd-type">iPad</h1>
@@ -44,8 +46,10 @@
 											<img class="mx-auto d-block rounded" src="public/images/<?php echo $items->Image ?>" alt="">
 											<div class="overlay-n">
 												<h2><?php echo $items->ProductName ?></h2>
-												<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-												Detail
+												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
+												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
+												
+													</a>
 												</button>
 											</div>
 										</div>
@@ -60,7 +64,7 @@
 		</div>
 
 		<!-- Modal -->
-		<div class="modal fade myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<!-- <div class="modal fade myModalIphone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      	<!-- view detail -->
@@ -113,23 +117,23 @@
 		  </div>
 		</div>
 
-<script>
-		document.getElementById('.myBtn').onclick = function() {
-			myFunction()
-		};
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-						
-			$(document).ready(function(){
-			    $("window").click(function(){
-			        $("p").hide();
-			    });
-			    $("window").click(function(){
-			        $("p").show();
-			    });
-});
-		}
-		</script>
+		<script>
+			document.getElementById('.myBtn').onclick = function() {
+				myFunction()
+				};
+				function myFunction() {
+					document.getElementById("myDropdown").classList.toggle("show");
+								
+					$(document).ready(function(){
+					    $("window").click(function(){
+					        $("p").hide();
+					    });
+					    $("window").click(function(){
+					        $("p").show();
+					    });
+				});
+			}
+		</script> -->
 
 		
 	</div>
