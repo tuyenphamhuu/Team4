@@ -40,7 +40,7 @@
 											?>
 												<div class="col-lg-3 text-center">
 								        			<div class="form-check">
-												    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" value="<?php echo $product->Color ?>" >
+												    	<input class="form-check-input" type="radio" name="Radios1" id="exampleRadios1" checked="checked" value="<?php echo $product->Color ?>" >
 												    		<label for="exampleRadios1" class="form-check-label">
 												     		<span>
 												    			<img class="image-color" src="public/images/<?php echo $product->Color ?>.png">
