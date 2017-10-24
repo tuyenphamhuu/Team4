@@ -18,7 +18,6 @@
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
 												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
 													</a>
 												</button>
 											</div>
@@ -48,7 +47,6 @@
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
 												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
 													</a>
 												</button>
 											</div>
@@ -57,7 +55,6 @@
 								<?php
 							}
 						 ?>
-						
 					</div>
 				</div>
 			</div>
@@ -68,7 +65,7 @@
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      	<!-- view detail -->
-				<div id="view-detail" class="container">
+				<!-- <div id="view-detail" class="container">
 					<div class="row justify-content-around hr-v-dl">
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
 							<img class="img-dt mx-auto d-block" src="public/images/ip_8_f.jpg">
@@ -133,7 +130,7 @@
 					    });
 				});
 			}
-		</script> -->
+		</script> --> 
 
 		
 	</div>
