@@ -8,10 +8,10 @@
             <form action="/delProduct" method="POST">
                 <div class="form-group">
                     <input type="text" name="ID_Product" hidden="hidden" value="<?php echo $product[0]->ID_Product; ?>">
-                    <label > <h2><b>Do you want to delete product " <?php echo $product[0]->ProductName; ?> " ?</b></h2></label>
+                    <label > <h4><b>Do you want to delete product " <?php echo $product[0]->ProductName; ?> " ?</b></h4></label>
                 </div>
-                <button type="submit" class="btn btn-danger">YES</button>
-                <a class="btn btn-primary" href="indexProduct" role="button">Cancer</a>
+                <button type="submit" class="btn btn-danger">Yes</button>
+                <a class="btn btn-primary" href="indexProduct" role="button">Cancel</a>
             </form>
         </div>
     </div>

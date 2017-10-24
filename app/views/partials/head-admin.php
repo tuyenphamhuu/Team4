@@ -9,8 +9,10 @@
 	<title>APPLE STORE TEAM 4</title>
 	<link rel="stylesheet" type="text/css" href="/public/css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="https://glyphicons.com/">
+	<link rel="stylesheet" href="/public/images/font-awesome-4.7.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="/public/css/h-custom.css">
 	<script src="/public/ckeditor/ckeditor.js"></script>
 	<script src="/public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
