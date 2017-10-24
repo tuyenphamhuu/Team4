@@ -16,8 +16,9 @@ class AccController
     session_start();
     $_SESSION['user'] = $user;
     
-    return redirect('admin/index');
+    return redirect('admin/indexProduct');
   }
+
 
 
   public function getLogin()
@@ -53,4 +54,10 @@ class AccController
 
   //   return redirect('users');
   // }
+  public static function checkLogin()
+  {
+    if (!isset($_SESSION['user'])) {
+      return redirect('loginadmin');
+    }
+  }
 }

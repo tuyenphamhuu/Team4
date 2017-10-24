@@ -1,4 +1,4 @@
-<?php require 'app/views/partials/head.php'; ?>
+<?php require 'app/views/partials/head-admin.php'; ?>
 
 <div id="ad-admin">
 	<div class="row">
