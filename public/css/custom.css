@@ -62,32 +62,31 @@
 .wrap-item-prd {
     position: relative;
 }
-.overlay-n {
-    display: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.1);
+.wrap-item-prd:hover .overlay-n {
+    display: block;
+    background-color: rgba(0,0,0,.2);
 }
 .wrap-item-prd img {
     transition: all 0.5s ease-in;
 }
-.wrap-item-prd a {
-    color: #fff;
-}
 .wrap-item-prd:hover img {
     transform: scale(1.2,1.2);
-    background-color: rgba(0,0,0,.2);
 }
 .wrap-item-prd:hover button.info {
     background-color: rgba(0,0,0,0.5);
 }
-.wrap-item-prd:hover .overlay-n h2, .wrap-item-prd:hover button.info {
-    display: block;
+.overlay-n button a {
+    color: #fff;
 }
-.wrap-item-prd a:hover {
+.overlay-n button a:hover {
     text-decoration: none;
+}
+.overlay-n {
+    display: none; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 .margin-lr {
     margin-bottom: 5px;
