@@ -61,7 +61,34 @@
 }
 .wrap-item-prd {
     position: relative;
+    width: 100%;
 }
+/*.overlay-n {
+    display: none;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+.overlay-n h3 {
+    padding: 5px 0;
+    background-color: rgba(0,0,0,.7);
+}
+.overlay-n button {
+    position: absolute;
+    top: 100px;
+    padding: 3px 10px;
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,.4);
+}
+.overlay-n button a {
+    color: #fff;
+}
+.overlay-n button a:hover {
+    text-decoration: none;
+}*/
 .wrap-item-prd:hover .overlay-n {
     display: block;
     background-color: rgba(0, 0, 0, .2);
