@@ -31,16 +31,17 @@
 </head>
 <body>
 <!-- <img id="img-admin" class="mx-auto d-block wh" src="/public/images/logo-apple.png"> -->
-	<h2 class="text-center">APPLE MANAGER PAGE</h2>
 	<div class="text-right">
 		<div class="dropdown">
-		  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Hello <strong><?php echo $_SESSION['user']->UserName; ?></strong>
-		  	</button>
+				<i class="fa fa-user-circle" aria-hidden="true"></i>
+			  	<a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <strong>Hello <?php echo $_SESSION['user']->UserName; ?>!</strong>
+			  	</a>
 		  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 			    <a class="dropdown-item" href="/logout">Logout</a>
 			    
 		  	</div>
+
 		</div>
 	</div>
 <?php ob_end_flush() ?>
