@@ -20,6 +20,7 @@ $router->get('admin/editUser', 'UsersController@getEditUser');
 $router->post('editUser', 'UsersController@postEditUser');
 $router->post('orderCustomer','PagesController@orderCustomer');
 $router->get('logout', 'AccController@logout');
+$router->post('seach', 'PagesController@seach');
 
 $router->post('users', 'ProductController@store');
 $router->get('admin/editProduct', 'ProductController@showEditProduct');//vu

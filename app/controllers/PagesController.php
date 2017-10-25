@@ -24,7 +24,7 @@ class PagesController
   public function iphone()
   {
     $id       = $_GET['id'];
-    $sql      = " SELECT * FROM product WHERE ID_TypeProduct = '{$id}'";
+    $sql      = " SELECT * FROM product WHERE ID_TypeProduct = '{$id}' ORDER BY ID_Product DESC";
     $products = Product::selectByType($sql);
     return view('iphone', ['products' => $products ]);
   }
@@ -56,7 +56,7 @@ class PagesController
   public function detailProduct()
   {
     $id  = $_GET['idProduct'];
-    $sql = " SELECT * FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product = $id ";
+    $sql = " SELECT * FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product   = $id ";
     $products  = Product::selectByType($sql);
     $idtype    = $_GET['type'];
     $sqltype   = " SELECT * FROM product WHERE ID_TypeProduct = $idtype ORDER BY RAND() LIMIT 4 ";
@@ -95,5 +95,12 @@ class PagesController
         'PhoneNumber' => $_POST['phone']
       ];
     }
+  }
+  public function seach()
+  {
+    $name     = $_POST['aname'];
+    $sql      = " SELECT * FROM product WHERE ProductName LIKE '%{$name}%' ORDER BY ID_Product DESC ";
+    $results  = Product::selectByType($sql); 
+    return view('seach', ['results' => $results]);    
   }
 }

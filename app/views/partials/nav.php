@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
 			  	<div class="search-ipt input-group stylish-input-group">
-	                <input id="key" type="text" class="form-control search" placeholder="Search" >
+	                <input type="text" class="form-control search" placeholder="Search" >
 	                <span class="input-group-addon">
 	                    <button type="submit">
 	                        <img src="images/search.svg" alt="search.svg">
@@ -17,26 +17,6 @@
 	                </span>
 	            </div>
 			</div>
-			<script>
-				$('#key').on('input',function(e){
-					//alert($('#wrapper-iphone').html());
-			     var name = $('#key').val();
-					$.ajax({
-						url: 'seach.php',
-						type: 'POST',
-						cache: false,
-						data: {
-							aname : name
-						},
-						success: function(data){
-							$('#wrapper-iphone').html(data);
-						},
-						error: function (){
-							alert('Có lỗi xảy ra');
-						}
-					});
-			    });
-			</script>
 			<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 text-center">
 				<a href="mycart">
 					<img class="iconcart" src="/public/images/ic_shopping_cart_black_24px.svg" alt="shopping cart">
