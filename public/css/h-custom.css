@@ -423,7 +423,7 @@ height: 60px;
 }
 
 .menu-manager {
-     background-color: #ececef;
+     background-color: #f8f9fa;
     font-size: 16px;
 }
 .icon-main-menumanage i {
@@ -433,12 +433,14 @@ height: 60px;
 .top-menumanager {
   /*  background-color: #111;*/
     font-size: 16px;
+    margin-top: 10px;
 }
 .top-menumanager i {
     font-size: 40px;
 }
 .top-menumanager p {
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 0;
 }
 .main-menumanager i {
     font-size: 30px;
@@ -459,13 +461,7 @@ height: 60px;
      background-color: #ececef;
 
 }*/
-.wrapper-btn {
-    padding-left: 25px;
-    margin-top: 20px;
-}
-.btn-manager-add {
-    margin-left: 20px;
-}
+
 /*del products*/
 /*head-admin page*/
 .hello-admin {
@@ -489,5 +485,13 @@ height: 60px;
 /*indexProducts*/
 .img-main-manager {
     width: 150px;
+}
+.wrapper-btn {
+    padding-left: 25px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.btn-manager-add {
+    margin-left: 20px;
 }
 
