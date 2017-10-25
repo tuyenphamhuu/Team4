@@ -1,7 +1,16 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 
-
+<?php 
+	$sub = 0;
+	
+	echo "<pre>";
+		print_r($_SESSION['cart']);
+	echo "</pre>";
+	foreach ($_SESSION['cart'] as $items) {
+		$sub += $items;
+	}
+ ?>
 <div class="order-wrapper">
 	<div class="container">
 		<div class="row justify-content-center order">

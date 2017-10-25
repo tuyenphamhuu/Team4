@@ -101,6 +101,6 @@ class PagesController
     $name     = $_POST['aname'];
     $sql      = " SELECT * FROM product WHERE ProductName LIKE '%{$name}%' ORDER BY ID_Product DESC ";
     $results  = Product::selectByType($sql);
-    return view('seach', ['results' => $results]);    
+    return view('seach', ['results' => $results]);
   }
 }
