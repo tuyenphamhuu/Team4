@@ -1,5 +1,9 @@
 <?php require 'app/views/partials/head-admin.php'; ?>
 
+<div id="ad-admin">
+	<div class="row">
+		<?php require 'app/views/partials/sidebar-left.php'; ?>
+			<table id="tbUser">
 <div class="container-fluid">
     <div class="row">
         <?php require 'app/views/partials/sidebar-left.php'; ?>
@@ -55,7 +59,15 @@
 		        "info":     false
 		    } );
 		} );
+<<<<<<< HEAD
+  </script>
+
+	</div>
+	
+</div>	
+=======
  	 </script>
+>>>>>>> dev
 
 
 

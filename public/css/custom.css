@@ -32,6 +32,7 @@
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff !important;
+    letter-spacing: 0;
     text-transform: none;
 }
 #iphone {
@@ -44,6 +45,7 @@
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 0;
+    letter-spacing: 0;
     text-transform: none;
 }
 .slogan {
@@ -52,6 +54,7 @@
     font-size: 21px;
     margin-bottom: 70px;
     text-transform: none;
+    letter-spacing: 0;
 }
 .prd {
     margin-top: 40px;
@@ -78,9 +81,13 @@
     /*z-index: 999999999999;*/
 
 }
+.wrap-item-prd > img:hover .wrap-item-prd {
+    max-height: 100%;
+}
 .wrap-item-prd:hover img {
     margin-bottom: 20px;
     transform: scale(1.4,1.4);
+    overflow: hidden;
 }
 .hover-ap:hover button.info {
     background-color: rgba(0,0,0,0.5);
@@ -153,6 +160,7 @@
     padding: 10px;
 }
 .stylish-input-group .input-group-addon{
+    width: 17%;
     background: white !important; 
     border-radius: 0px 25px 25px 0px;
 }
