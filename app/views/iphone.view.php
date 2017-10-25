@@ -1,6 +1,12 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 
+<input id="key" type="text" class="form-control search" placeholder="Search by name
+by ajax" >
+
+
+<div id="show"></div>
+
 <!-- <h1>iPhone</h1> -->
 <content>
 <div id="wrapper-iphone">
@@ -53,3 +59,24 @@
 </div>	
 </content>
 <?php require 'partials/footer.php'; ?>
+
+<script>
+	$('#key').on('keyup',function(e){
+		// alert($('#sho').html());
+     var name = $('#key').val();
+		$.ajax({
+			url: 'seach',
+			type: 'POST',
+			cache: false,
+			data: {
+				aname : name
+			},
+			success: function(data){
+				$('#wrapper-iphone').html(data);
+			},
+			error: function (){
+				alert('Có lỗi xảy ra');
+			}
+		});
+    });
+</script>
