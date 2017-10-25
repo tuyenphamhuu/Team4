@@ -14,7 +14,7 @@ $array["$idcolor"]= array(
         "color"    => "$color",
         "sl"       => "$sl",
         "price"    => "$price",
-        "image"    => "$image"
+        "image"    => "$image",
 
 );
 if (isset($_SESSION['cart'])){
@@ -34,7 +34,6 @@ if (isset($_SESSION['cart'])){
         }else{
             $_SESSION['cart'][]=$array;
         }
-    
 }
 else{
     $_SESSION['cart'][]=$array;
