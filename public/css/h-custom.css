@@ -410,7 +410,7 @@ height: 60px;
     letter-spacing: 0;
     font-size: 20px;
     color: white;
-    padding-top: 30px;
+ /*   padding-top: 30px;*/
 }
 .nav-item a {
     color: white;
@@ -434,13 +434,9 @@ height: 60px;
 }
 .top-menumanager i {
     font-size: 40px;
-    margin-left: 10px;
-    margin-top: 5px;
 }
 .top-menumanager p {
-    font-size: 17px;
-    margin-left: 15px;
-    margin-top: 13px;
+    font-size: 15px;
 }
 .main-menumanager i {
     font-size: 30px;
@@ -467,6 +463,23 @@ height: 60px;
 }
 /*del products*/
 /*head-admin page*/
+.hello-admin {
+    background-color: #111;
+    padding: 10px 10px;
+}
+.hello-admin .dropdown a {
+    color: white;
+}
+.hello-admin .dropdown i {
+    color: white;
+}
+.hello-admin .dropdown:hover a {
+    color: blue;
+}
+.hello-admin .dropdown .dropdown-menu a {
+    color: #111;
+}
+
 
 /*indexProducts*/
 .img-main-manager {

@@ -50,6 +50,7 @@
 				 ?>
 		</div>
 	</div>
+	aaa
 </div>	
 </content>
 <?php require 'partials/footer.php'; ?>
