@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="/public/css/h-custom.css">
 	<link rel="stylesheet" href="/public/css/reponsive.css">
 	<link rel="stylesheet" href="/public/css/jquery.dataTables.css">
-
-	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap2.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/	twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
