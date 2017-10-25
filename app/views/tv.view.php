@@ -1,5 +1,6 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
+
 <div class="wrapper-editUser">
 	<div class="container">
 		<div class="row justify-content-center editUser">
@@ -43,7 +44,6 @@
 		</div>
 	</div>
 </div>
-
 
 <?php require 'partials/footer.php'; ?>
 

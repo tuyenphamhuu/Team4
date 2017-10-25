@@ -18,7 +18,6 @@
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
 												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
 													</a>
 												</button>
 											</div>
@@ -56,7 +55,6 @@
 								<?php
 							}
 						 ?>
-						
 					</div>
 				</div>
 			</div>
@@ -114,6 +112,7 @@
 				</div>
 		    </div>
 		  </div>
+		</div>
 		</div> -->
 
 		<script>
@@ -133,15 +132,11 @@
 				});
 			}
 		</script>
-
-		
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
 		<a href="#"><div><strong>iMac Pro</strong><span>(Power to the pro)</span></div></a>
 	</div>
-
-
 </content>
 
 <?php require 'partials/footer.php'; ?>
