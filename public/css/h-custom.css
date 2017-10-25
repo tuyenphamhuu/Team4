@@ -415,12 +415,15 @@ height: 60px;
 .nav-item a {
     color: white;
 }
-.nav-item:hover a {
+.main-menumanager:hover p {
+    color: #ffc107;
+}
+.main-menumanager:hover i {
     color: #ffc107;
 }
 
 .menu-manager {
-    background-color: #26292e;
+     background-color: #ececef;
     font-size: 16px;
 }
 .icon-main-menumanage i {
@@ -430,7 +433,6 @@ height: 60px;
 .top-menumanager {
   /*  background-color: #111;*/
     font-size: 16px;
-    color: white;
 }
 .top-menumanager i {
     font-size: 40px;
@@ -440,11 +442,14 @@ height: 60px;
 }
 .main-menumanager i {
     font-size: 30px;
+     color: #111;
+
 }
 .main-menumanager p {
     margin-left: 15px;
     margin-top: 7px;
     font-size: 16px;
+     color: #111;
 }
 
 /*.btn-manager-add {
