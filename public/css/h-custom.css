@@ -428,7 +428,7 @@ height: 60px;
 
 }
 .top-menumanager {
-    background-color: #111;
+  /*  background-color: #111;*/
     font-size: 16px;
     color: white;
 }
@@ -454,10 +454,10 @@ height: 60px;
 /*.btn-manager-add {
     font-size: 25px;
 }*/
-.wrapper-main-manager-page {
+/*.wrapper-main-manager-page {
      background-color: #ececef;
 
-}
+}*/
 .wrapper-btn {
     padding-left: 25px;
     margin-top: 20px;
@@ -465,15 +465,11 @@ height: 60px;
 .btn-manager-add {
     margin-left: 20px;
 }
-.left-sidebar{
-  position: fixed;
-  top: 0;
-  margin: 0;
-  height: 100vh;
-  background-color: #000;
-}
-.right {
-  position: absolute;
-  right:0;
-}
 /*del products*/
+/*head-admin page*/
+
+/*indexProducts*/
+.img-main-manager {
+    width: 150px;
+}
+

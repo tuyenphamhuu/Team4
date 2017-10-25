@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE <html></html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -13,24 +13,16 @@
 	<link rel="stylesheet" href="/public/css/jquery.dataTables.css">
 
 
-<!-- >>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2 -->
-	<link rel="stylesheet" href="/public/css/effects.min.css">
-	<link rel="stylesheet" href="/public/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/public/css/bootstrap2.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
-
-	<script charset="utf-8" src="/public/js/jquery-3.2.1.min.js"></script>	
-<!-- <<<<<<< HEAD -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> <!-- modal -->
-	<!-- <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script> <!-- modal -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-<!-- ======= -->
-	<script charset="utf-8" src="/public.js/jquery-3.1.1.slim.min.js"></script>
-	<script charset="utf-8" src="/public/js/bootstrap.min.js" ></script>
-	<script charset="utf-8" src="/public/js/bootstrap2.min.js"></script>
-	<script charset="utf-8" src="/public/js/jquery.dataTables.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap2.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<script type="text/javascript" charset="utf-8" src="/public/js/jquery-3.2.1.min.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="/public.js/jquery-3.1.1.slim.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/public/js/jquery.dataTables.min.js"></script>
+	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>
 <!-- >>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2 -->
 	<script src="/public/js/custom.js" charset="utf-8" async defer></script>
 

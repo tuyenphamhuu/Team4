@@ -11,7 +11,7 @@
                 <a class="btn btn-dark btn-manager-add" href="/admin/addProduct" role="button"><b>+ Add Product</b></a>
             </div>
             <hr>
-            <table class="table table-responsive">
+            <table id="example" class="table table-responsive" cellpadding="0" width="100%" >
                 <thead class="thead-inverse">
                     <tr>
                     <th>No.</th>
@@ -32,7 +32,7 @@
                         ?>
                     <tr>
                     <th scope="row"><?php echo $stt; ?></th>
-                    <td><img style="width: 150px;" src="/public/images/<?php 
+                    <td><img class="img-main-manager" src="/public/images/<?php 
                     if ($product->Image != ''){
                         echo $product->Image;
                     }
@@ -57,3 +57,13 @@
         </div>
     </div>
 </div>
+
+<script>
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                "paging":   true,
+                "ordering": false,
+                "info":     false
+            } );
+        } );
+     </script>
