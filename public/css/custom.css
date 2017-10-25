@@ -62,10 +62,16 @@
 .wrap-item-prd {
   position: relative;
 }
-.wrap-item-prd:hover {
-  position: relative;
-    /*z-index: 9999;*/
+.overlay-n {
+    position: absolute;
+    top: 0;
+    display: none;
+    color: red;
 }
+/*.wrap-item-prd:hover {
+  position: relative;
+    //z-index: 9999;
+}*/
 /*.overlay-n {
     display: none; 
 }
