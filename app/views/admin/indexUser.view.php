@@ -48,8 +48,4 @@
 				$(document).ready(function() {
 				    $('#tbUser').DataTable();
 				} );
-		  	</script>
-		</div>
-
-	</div>	
-	 </script>
+		  </script>
