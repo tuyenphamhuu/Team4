@@ -16,8 +16,6 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap2.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
-
-
 	<script type="text/javascript" charset="utf-8" src="/public/js/jquery-3.2.1.min.js"></script>	
 	<script type="text/javascript" charset="utf-8" src="/public.js/jquery-3.1.1.slim.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap.min.js" ></script>
