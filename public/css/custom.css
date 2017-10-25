@@ -58,9 +58,19 @@
 }
 .prd {
     margin-top: 40px;
-}  
-.overlay-n {
-   display: none; 
+} 
+.wrap-item-prd {
+  position: relative;
+}
+.wrap-item-prd:hover {
+  position: relative;
+    /*z-index: 9999;*/
+}
+/*.overlay-n {
+    display: none; 
+}
+.overlay-n:hover {
+    z-index: 9999;
 }
 .hover-ap:hover .overlay-n {
     display: block;
@@ -70,11 +80,34 @@
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.1);
-    /*transition: all 0.5s ease;*/
-
 }
-.wrap-item-prd {
-    /*z-index: 9;*/
+.wrap-item-prd img {
+    transition: all 0.5s ease-in;
+    max-height: 150px;
+    margin: 0 auto;
+}
+.wrap-item-prd:hover {
+    z-index: 9999;
+}
+.wrap-item-prd:hover img {
+    transform: scale(1.4,1.4);
+    background-color: rgba(0,0,0,.2);
+}
+.overlay-n {
+    display: none;
+}
+.wrap-item-prd:hover .overlay-n {
+    display: block;
+}
+.overlay-n h2, .overlay-n button a {
+    position: absolute;
+    top: 0;
+    display: none;
+    color: #fff;
+    
+}
+.overlay-n button a:hover {
+    text-decoration: none;
 }
 .wrap-item-prd img {
     transition: all 0.5s ease-in;
@@ -82,8 +115,8 @@
 .wrap-item-prd img:hover {
     max-height: 100%;
 }
-.wrap-item-prd > img:hover .wrap-item-prd {
-    max-height: 100%;
+.wrap-item-prd:hover {
+    z-index: 9999;
 }
 .wrap-item-prd:hover img {
     margin-bottom: 20px;
@@ -93,7 +126,7 @@
 .hover-ap:hover button.info {
     background-color: rgba(0,0,0,0.5);
     cursor: pointer;
-}
+}*/
 .margin-lr {
     margin-bottom: 5px;
 }
