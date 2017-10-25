@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
--- Máy chủ: localhost
--- Thời gian đã tạo: Th10 18, 2017 lúc 03:54 PM
--- Phiên bản máy phục vụ: 5.7.19-0ubuntu0.16.04.1
--- Phiên bản PHP: 7.0.22-0ubuntu0.16.04.1
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th10 20, 2017 lúc 07:53 AM
+-- Phiên bản máy phục vụ: 10.1.26-MariaDB
+-- Phiên bản PHP: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -64,10 +66,48 @@ CREATE TABLE `color` (
 --
 
 INSERT INTO `color` (`ID_Color`, `ID_Product`, `Color`) VALUES
-(1, 1, 'Silver\n'),
+(1, 1, 'Silver'),
 (2, 1, 'Space Gray'),
 (3, 9, 'Silver'),
-(4, 9, 'Rose Gold');
+(4, 9, 'Rose Gold'),
+(5, 1, 'Silver'),
+(6, 1, 'Space Gray'),
+(7, 9, 'Silver'),
+(8, 9, 'Rose Gold'),
+(9, 2, 'Silver'),
+(10, 2, 'Space Gray'),
+(11, 4, 'Silver'),
+(12, 4, 'Rose Gold'),
+(13, 5, 'Silver'),
+(14, 5, 'Space Gray'),
+(15, 6, 'Silver'),
+(16, 6, 'Rose Gold'),
+(17, 7, 'Silver'),
+(18, 7, 'Space Gray'),
+(19, 8, 'Silver'),
+(20, 8, 'Rose Gold'),
+(21, 9, 'Silver'),
+(22, 9, 'Space Gray'),
+(23, 10, 'Silver'),
+(24, 10, 'Rose Gold'),
+(25, 11, 'Silver'),
+(26, 11, 'Space Gray'),
+(27, 12, 'Silver'),
+(28, 12, 'Rose Gold'),
+(29, 13, 'Silver'),
+(30, 13, 'Space Gray'),
+(31, 14, 'Silver'),
+(32, 14, 'Rose Gold'),
+(33, 15, 'Silver'),
+(34, 15, 'Space Gray'),
+(35, 16, 'Silver'),
+(36, 16, 'Rose Gold'),
+(37, 17, 'Silver'),
+(38, 17, 'Rose Gold'),
+(39, 18, 'Silver'),
+(40, 18, 'Space Gray'),
+(41, 19, 'Silver'),
+(42, 19, 'Rose Gold');
 
 -- --------------------------------------------------------
 
@@ -254,41 +294,50 @@ ALTER TABLE `type_product`
 --
 ALTER TABLE `account`
   MODIFY `ID_Account` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT cho bảng `color`
 --
 ALTER TABLE `color`
-  MODIFY `ID_Color` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_Color` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+
 --
 -- AUTO_INCREMENT cho bảng `detail_order`
 --
 ALTER TABLE `detail_order`
   MODIFY `ID_DetailOrder` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT cho bảng `order`
 --
 ALTER TABLE `order`
   MODIFY `ID_Order` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
   MODIFY `ID_Product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
 --
 -- AUTO_INCREMENT cho bảng `product_rep`
 --
 ALTER TABLE `product_rep`
   MODIFY `ID_ProductRep` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT cho bảng `rule`
 --
 ALTER TABLE `rule`
   MODIFY `ID_Rule` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT cho bảng `type_product`
 --
 ALTER TABLE `type_product`
   MODIFY `ID_TypeProduct` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

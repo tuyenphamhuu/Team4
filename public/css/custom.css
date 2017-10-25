@@ -32,6 +32,7 @@
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff !important;
+    letter-spacing: 0;
     text-transform: none;
 }
 #iphone {
@@ -44,6 +45,7 @@
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 0;
+    letter-spacing: 0;
     text-transform: none;
 }
 .slogan {
@@ -52,48 +54,47 @@
     font-size: 21px;
     margin-bottom: 70px;
     text-transform: none;
+    letter-spacing: 0;
 }
 .prd {
     margin-top: 40px;
-<<<<<<< HEAD
-}   
-.overlay-n {
-=======
-}  
+}     
 .overlay-n {
    display: none; 
+ }
+.wrap-item-prd {
+    position: relative;
 }
-.hover-ap:hover .overlay-n {
+.wrap-item-prd:hover .overlay-n {
     display: block;
->>>>>>> dev
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-<<<<<<< HEAD
-    overflow: hidden;
-=======
-    background-color: rgba(0,0,0,0.1);
-    /*transition: all 0.5s ease;*/
-
->>>>>>> dev
+    background-color: rgba(0,0,0,.2);
 }
 .wrap-item-prd img {
     transition: all 0.5s ease-in;
 }
-.wrap-item-prd img:hover {
-    max-height: 100%;
-    /*z-index: 999999999999;*/
-
-}
 .wrap-item-prd:hover img {
-    margin-bottom: 20px;
-    transform: scale(1.4,1.4);
+    transform: scale(1.2,1.2);
 }
-.hover-ap:hover button.info {
+.wrap-item-prd:hover button.info {
     background-color: rgba(0,0,0,0.5);
-    cursor: pointer;
+}
+.overlay-n button a {
+    color: #fff;
+}
+.overlay-n button a:hover {
+    text-decoration: none;
+}
+.overlay-n {
+    display: none; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 .margin-lr {
     margin-bottom: 5px;
@@ -162,6 +163,7 @@
     padding: 10px;
 }
 .stylish-input-group .input-group-addon{
+    width: 17%;
     background: white !important; 
     border-radius: 0px 25px 25px 0px;
 }
@@ -286,7 +288,3 @@ img {
 footer {
     background-color: #000;
     padding-top: 5px;
-<<<<<<< HEAD
-=======
-}
->>>>>>> dev

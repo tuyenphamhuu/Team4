@@ -14,7 +14,7 @@
 					<th style="width: 15%">Unit Price</th>
 =======
 					<th style="width: 4%">STT</th>
-					<th style="width: 35%">Name Products</th>
+					<th style="width: 35%">Products Name</th>
 					<th style="width: 10%">Color</th>
 					<th style="width: 15%">Price</th>
 >>>>>>> dev

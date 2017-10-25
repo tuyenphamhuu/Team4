@@ -8,50 +8,6 @@
 				<p class="slogan">Safety, security is above all</p>
 				<div class="container-fluid margin-lr">
 					<div class="row justify-content-center prd">
-<<<<<<< HEAD
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-						      	<img class="mx-auto d-block rounded" src="public/images/ipx.png" alt="">
-						      	<div class="overlay-n">
-						      		<h2>iPhone X</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">Detail</button>
-						      	</div>
-						    </div>
-						</div>
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ip8-.jpg" alt="iphone_8">
-								<div class="overlay-n">
-									<h2>Iphone 8</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ip7-.jpg" alt="iphone_7">
-								<div class="overlay-n">
-									<h2>Iphone 7</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ip6s-.gif" alt="iphone_6">
-								<div class="overlay-n">
-									<h2>Iphone 6s</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-=======
 						<?php 
 							foreach ($iphones as $items) {
 								?>
@@ -62,7 +18,6 @@
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
 												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
 													</a>
 												</button>
 											</div>
@@ -71,7 +26,6 @@
 								<?php
 							}
 						 ?>
->>>>>>> dev
 					</div>
 				</div>
 			</div>
@@ -83,52 +37,6 @@
 				<p class="slogan">Safety, security is above all</p>
 				<div class="container-fluid margin-lr">
 					<div class="row prd">
-<<<<<<< HEAD
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-pro-f.jpg" alt="ipad-pro-f.jpg">
-								<div class="overlay-n">
-									<h2>Ipad Pro</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-f.jpg" alt="ipad-f.jpg">
-								<div class="overlay-n">
-									<h2>Ipad</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ipad-mini-4-f.jpg" alt="ipad-mini-4-f.jpg">
-								<div class="overlay-n">
-									<h2>Ipad mini 4</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="wrap-item-prd hover ehover3">
-								<img class="mx-auto d-block rounded" src="public/images/ios11-f.jpg" alt="ios11-f.jpg">
-								<div class="overlay-n">
-									<h2>iOS 11</h2>
-									<button type="button" class="info" data-toggle="modal" data-target=".myModal">
-									Detail
-									</button>
-								</div>
-							</div>
-						</div>
-=======
 						<?php 
 							foreach ($ipads as $items) {
 								?>
@@ -138,8 +46,7 @@
 											<div class="overlay-n">
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
-												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
+													<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
 													</a>
 												</button>
 											</div>
@@ -148,8 +55,6 @@
 								<?php
 							}
 						 ?>
-						
->>>>>>> dev
 					</div>
 				</div>
 			</div>
@@ -160,7 +65,7 @@
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      	<!-- view detail -->
-				<div id="view-detail" class="container">
+				<!-- <div id="view-detail" class="container">
 					<div class="row justify-content-around hr-v-dl">
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
 							<img class="img-dt mx-auto d-block" src="public/images/ip_8_f.jpg">
@@ -234,10 +139,9 @@
 					    });
 				});
 			}
-		</script> -->
+		</script> --> 
 
 		
->>>>>>> dev
 	</div>
 	<div id="mac">
 		<img src="images/imacbg-f.jpg">
