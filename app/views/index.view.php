@@ -18,7 +18,6 @@
 												<h2><?php echo $items->ProductName ?></h2>
 												<button type="button" class="info" data-toggle="modal" data-target=".myModalIphone">
 												<a class="info" href="/detailProduct?idProduct=<?php echo $items->ID_Product;?>&type=<?php echo $items->ID_TypeProduct ?>">View Detail
-												
 													</a>
 												</button>
 											</div>
@@ -56,7 +55,6 @@
 								<?php
 							}
 						 ?>
-						
 					</div>
 				</div>
 			</div>
@@ -76,8 +74,12 @@
 							<h5 class="text-uppercase font-weight-bold">Iphone 8</h5>
 							<h4 class="text-red font-weight-bold"><i>$699.00</i></h4>
 							<hr>
+<<<<<<< HEAD
+							<table class="colorblack-title">
+=======
 							<p>
 								<table class="colorblack-title">
+>>>>>>> dev
 								<tr>
 									<th>Producer:</th>
 									<td><small>Apple</small></td>
@@ -107,14 +109,23 @@
 									<td><small>$699</small></td>
 								</tr>
 							</table>
+<<<<<<< HEAD
+=======
 							</p>
+>>>>>>> dev
 							<button class="info">Add to Cart</button>
 						</div>
 					</div>
 				</div>
 		    </div>
 		  </div>
+<<<<<<< HEAD
+		</div>
+<<<<<<< HEAD
+=======
+=======
 		</div> -->
+>>>>>>> dev
 
 		<script>
 			document.getElementById('.myBtn').onclick = function() {
@@ -132,7 +143,7 @@
 					    });
 				});
 			}
-		</script> -->
+		</script> --> 
 
 		
 	</div>
@@ -140,8 +151,6 @@
 		<img src="images/imacbg-f.jpg">
 		<a href="#"><div><strong>iMac Pro</strong><span>(Power to the pro)</span></div></a>
 	</div>
-
-
 </content>
 
 <?php require 'partials/footer.php'; ?>

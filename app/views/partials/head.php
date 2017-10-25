@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 	<title>APPLE STORE TEAM 4</title>
-	<link rel="stylesheet" type="text/css" href="https://glyphicons.com/">
+	<link rel="stylesheet" href="https://glyphicons.com/">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
 	
-	<link rel="stylesheet" type="text/css" href="/public/css/custom.css">
-	<link rel="stylesheet" type="text/css" href="/public/css/n-custom.css">
-	<link rel="stylesheet" type="text/css" href="/public/css/h-custom.css">
-	<link rel="stylesheet" type="text/css" href="/public/css/reponsive.css">
-	<link rel="stylesheet" type="text/css" href="/public/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="/public/css/custom.css">
+	<link rel="stylesheet" href="/public/css/n-custom.css">
+	<link rel="stylesheet" href="/public/css/h-custom.css">
+	<link rel="stylesheet" href="/public/css/reponsive.css">
+	<link rel="stylesheet" href="/public/css/jquery.dataTables.css">
+
 
 	<link rel="stylesheet" type="text/css" href="/public/css/effects.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
@@ -22,8 +23,8 @@
 	<script type="text/javascript" charset="utf-8" src="/public/js/bootstrap2.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/public/js/jquery.dataTables.min.js"></script>
 	<script src="/public/js/custom.js" type="text/javascript" charset="utf-8" async defer></script>
-
-	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<!-- >>>>>>> 980614f4ccb962487eb9e3799e7569887b59e5a2 -->
+	<script src="/public/js/custom.js" charset="utf-8" async defer></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
