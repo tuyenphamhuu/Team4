@@ -29,11 +29,10 @@
 						$var=array_keys($value);
 						$k =array_shift($var);
 						$idcolor=$arC[$key][$k]['id'].$arC[$key][$k]['color'];
-						echo $idcolor;
 						?>
 						<tr class="list-pr-ap" id="<?php echo $idcolor;?>">
 						
-							<th><?php echo $key+1; ?></th>
+							<th><?php echo $stt+1; ?></th>
 							<td>
 								<div class="row">
 									<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
@@ -68,6 +67,7 @@
 							</td>
 						</tr>
 						<?php
+						$stt;
 					}
 				}
 				 ?>
