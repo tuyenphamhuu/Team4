@@ -1,5 +1,5 @@
 .text-transform {
-    text-transform: none !important;
+    text-transform: none;
 }
 .text-red {
     color: #C41100;
@@ -15,8 +15,8 @@
     padding: 0 .75rem;
 }
 .navbar-nav {
-    float:none;
-    margin:0 auto;
+    float: none;
+    margin: 0 auto;
     display: block;
     text-align: center;
 }
@@ -28,7 +28,7 @@
     padding: 0px 27px;
 }
 .backgroundblack {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff !important;
@@ -58,30 +58,22 @@
 }
 .prd {
     margin-top: 40px;
-}     
-.overlay-n {
-   display: none; 
- }
+}
 .wrap-item-prd {
     position: relative;
 }
 .wrap-item-prd:hover .overlay-n {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
 }
 .wrap-item-prd img {
     transition: all 0.5s ease-in;
 }
 .wrap-item-prd:hover img {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 .wrap-item-prd:hover button.info {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .overlay-n button a {
     color: #fff;
@@ -90,7 +82,7 @@
     text-decoration: none;
 }
 .overlay-n {
-    display: none; 
+    display: none;
     position: absolute;
     top: 0;
     width: 100%;
@@ -103,9 +95,10 @@
     padding-bottom: 50px;
     background-color: #edece9;
 }
-#iphone div div>div.col-md-3, #ipad div div>div.col-md-3 {
-    padding-left: 3px; 
-    padding-right: 3px; 
+#iphone div div>div.col-md-3,
+#ipad div div>div.col-md-3 {
+    padding-left: 3px;
+    padding-right: 3px;
 }
 .cart h2 {
     margin-top: 50px;
@@ -115,7 +108,7 @@
     position: relative;
     margin: 10px 0;
 }
-#mac:hover div{
+#mac:hover div {
     background-color: #000;
     opacity: 0.7;
     transition: 1s, 3s;
@@ -141,48 +134,48 @@
 .ip-item div a img {
     width: 100%;
 }
-.colorblack-title{
-    color: #111;   
+.colorblack-title {
+    color: #111;
 }
 .list-unstyled li h4 b a {
     font-size: 16px;
-}  
-.colorblack{
+}
+.colorblack {
     color: #111;
     font-size: 13px;
     text-transform: none;
 }
-.backggray{
+.backggray {
     padding-top: 40px;
     background-color: #f2f2f2;
     text-transform: none;
-    letter-spacing: 0;  
+    letter-spacing: 0;
 }
-.bordertop{
-    border-top:1px solid #111;
+.bordertop {
+    border-top: 1px solid #111;
     padding: 10px;
 }
-.stylish-input-group .input-group-addon{
+.stylish-input-group .input-group-addon {
     width: 17%;
-    background: white !important; 
+    background: white !important;
     border-radius: 0px 25px 25px 0px;
 }
-.stylish-input-group .form-control{
-    border-right:0; 
-    box-shadow:0 0 0;
-    border-radius: 25px 0px 0px 25px; 
-    border-color:#ccc;
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-radius: 25px 0px 0px 25px;
+    border-color: #ccc;
     padding: 10px;
 }
-.stylish-input-group button{
-    border:0;
-    background:transparent;
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
 }
-.logo{
+.logo {
     width: 70px;
     height: 70px;
 }
-.iconcart{
+.iconcart {
     width: 60px;
     padding-top: 15px;
     height: 60px;
@@ -195,7 +188,7 @@ footer {
     color: #111;
 }
 .list-unstyled li:hover a {
-    color: #111;    
+    color: #111;
 }
 #view-detail {
     position: absolute;
@@ -228,23 +221,23 @@ footer {
     font-size: 14px;
     padding: 5px 20px;
     border: 1px solid #fff;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 #view-detail .info:hover {
     color: #C41100;
     border: 1px solid #000;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
-.colblack{
+.colblack {
     color: #111;
     font-size: 13px;
 }
-.wh{
+.wh {
     width: 80px;
     height: 80px;
 }
 .nav-link {
-    color:white;
+    color: white;
 }
 img {
     width: 100%;
@@ -280,7 +273,6 @@ img {
     color: #fff;
     background-color: #000;
     border: 1px solid #fff;
-
 }
 .cart table thead tr th {
     font-size: 28px !important;
@@ -288,3 +280,4 @@ img {
 footer {
     background-color: #000;
     padding-top: 5px;
+}
