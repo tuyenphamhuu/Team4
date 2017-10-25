@@ -107,7 +107,7 @@
 	</div>
 </div>
 	
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   jQuery(document).ready(function(){
    jQuery("input[name=\'quantity\']").click(function(){
 	var pri = '.price-'+this.id;
@@ -145,6 +145,6 @@
     });
    });
   });
- </script>
+ </script> -->
 
 <?php require 'partials/footer.php'; ?>
