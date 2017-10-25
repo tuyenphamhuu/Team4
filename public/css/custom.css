@@ -70,9 +70,6 @@
     height: 100%;
     background-color: rgba(0,0,0,0.1);
 }
-/*.overlay-n h2, .overlay-n button.info, .overlay-n button a {
-    display: none;
-}*/
 .wrap-item-prd img {
     transition: all 0.5s ease-in;
 }
