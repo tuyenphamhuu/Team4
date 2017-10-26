@@ -132,8 +132,7 @@
 					    });
 				});
 			}
-		</script> -->
-
+		</script> 
 		
 	</div>
 	<div id="mac">

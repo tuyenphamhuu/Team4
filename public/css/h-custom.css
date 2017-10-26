@@ -455,9 +455,7 @@ height: 60px;
     font-size: 25px;
 }*/
 /*.wrapper-main-manager-page {
-     background-color: #ececef;
-
-}*/
+     background-color: #ececefececef
 .wrapper-btn {
     padding-left: 25px;
     margin-top: 20px;
@@ -471,5 +469,11 @@ height: 60px;
 /*indexProducts*/
 .img-main-manager {
     width: 150px;
+}
+
+
+.wrapper-search-products {
+    background-color: #ececef;
+
 }
 
