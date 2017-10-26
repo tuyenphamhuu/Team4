@@ -465,6 +465,13 @@ height: 60px;
 
 }*/
 
+.wrapper-btn {
+    padding-left: 25px;
+    margin-top: 20px;
+}
+.btn-manager-add {
+    margin-left: 20px;
+}
 /*del products*/
 /*head-admin page*/
 .hello-admin {
@@ -498,4 +505,10 @@ height: 60px;
     margin-left: 20px;
 }
 
+
+
+.wrapper-search-products {
+    background-color: #ececef;
+
+}
 
