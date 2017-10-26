@@ -51,4 +51,10 @@ class AccController
 
   //   return redirect('users');
   // }
+  public static function checkLogin()
+  {
+    if (!isset($_SESSION['user'])) {
+      return redirect('loginadmin');
+    }
+  }
 }
