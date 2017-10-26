@@ -287,6 +287,9 @@ height: 60px;
 .overlay-image-ip:hover .overlay {
   opacity: 1;
 }
+.pagination {
+    margin-bottom: 0;
+}
 /*detail-ipad-page*/
 #wrapper-detail {
     background-color: #ececef;
@@ -494,4 +497,5 @@ height: 60px;
 .btn-manager-add {
     margin-left: 20px;
 }
+
 
