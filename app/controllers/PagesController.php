@@ -61,9 +61,9 @@ class PagesController
 			}
     return view('order');
   }
-  public function admin()
+  public function bill()
   {
-    return view('signin');
+    return view('bill');
   }
 
   public function detailProduct()
@@ -126,8 +126,12 @@ class PagesController
           ];
           Order::insertDetailOrder($para);
         }
+        unset($_SESSION['cart']);
+        $order = Order::queryOrder($idorder);
+        $detail = Order::queryDetailOrder($idorder);
+        return view('bill',['Order' => $order, 'Detail_Order' => $detail ]);
       }
-      //redirect("iPhone");
+      redirect("");
   
   }
 

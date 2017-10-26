@@ -51,6 +51,16 @@ class Order
   {
     App::get('database')->deleteById($sql);
   }
-
- 
+  public static function queryOrder($ID_Order)
+  {
+    $sql = "SELECT * FROM `order`  WHERE  `ID_Order`='{$ID_Order}' ";
+    return App::get('database')->query($sql);
+  }
+  public static function queryDetailOrder($ID_Order)
+  {
+    $sql = "SELECT * FROM detail_order,product  WHERE  `ID_Order`='{$ID_Order}' 
+    AND product.ID_Product = detail_order.ID_Product
+     ";
+    return App::get('database')->query($sql);
+  }
 }

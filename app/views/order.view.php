@@ -55,7 +55,7 @@
 							<input type="text" hidden="hidden" name="time" value="<?php echo $time = date("h:i:sa"); ?>"  >
 							<input type="text" hidden="hidden" name="total" value="<?php if(isset($total)){echo $total;} ?>"  ><br>
 							<h3>Total: <?php if(isset($total)){echo $total;} 
-							else {echo "0";}?>
+							else {echo '0';}?>
 							</h3>
 							<p>Time and date</p>
 						<!-- </div> -->
@@ -71,7 +71,7 @@
 						<!-- </div> -->
 					</div>
 						<div class="submit-order text-center">
-					  	<button class="btn btn-dark" type="submit">Check out</button>
+					  	<button class="btn btn-dark" <?php if(!isset($total)){echo "hidden=hidden";}  ?> type="submit">Check out</button>
 					</div>
 				</form>
 

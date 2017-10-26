@@ -21,6 +21,12 @@ jQuery(document).ready(function(){
          $('.yes-remove').click(function() {
              confirmModal.modal('hide');
              needToRemove.remove();
+             var sum = 0;
+             $('.total').each(function() {
+                 //price = $('.total').text();
+                 sum += Number($(this).text());
+             });
+             $('#total').text(sum);
          });
      });
  
@@ -30,7 +36,7 @@ jQuery(document).ready(function(){
       url:"/ajaxDeleteProduct", //goi toi file update.php
       data:"idcolor="+this.id,
       success:function(html){
- 
+        
       }
      });
     });
@@ -56,6 +62,9 @@ $('.total').each(function() {
 });
 $('#total').text(sum);
 
+function goBack() {
+    window.history.back();
+}
 
 $("input[name=\'quantity\']").click(function() {
 var sum = 0;

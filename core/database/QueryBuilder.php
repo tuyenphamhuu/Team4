@@ -84,6 +84,7 @@ class QueryBuilder
   {
     try {
       $stm = $this->pdo->prepare($sql);
+
       $stm->execute();
       return $stm->fetchAll(PDO::FETCH_CLASS);
     } catch(PDOException $e) {
