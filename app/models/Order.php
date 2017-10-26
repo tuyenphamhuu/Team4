@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use App\Core\App;
-use PDO;
 
-class Account
+class Order
 {
   static $table = "order";
 
@@ -13,12 +12,17 @@ class Account
   {
     return App::get('database')->selectAll(Account::$table);
   }
-  public static function insert($params) 
+  
+  public static function insert($add, $total, $phone, $email, $name) 
   {
-    
-    App::get('database')->insert(Account::$table, $params);
-    return view('admin/indexUser');
-
+    App::get('database')->insert(Order::$table, [
+      
+      'Add'         => $add,
+      'Total'       => $total,
+      'PhoneNumber' => $phone,
+      'Email'       => $email,
+      'UserName'    => $name
+    ]);
   }
   // get Account by id
   public static function getById($id) 
@@ -45,4 +49,6 @@ class Account
   {
     App::get('database')->deleteById($sql);
   }
+
+ 
 }

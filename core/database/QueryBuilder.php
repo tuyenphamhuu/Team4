@@ -31,8 +31,10 @@ class QueryBuilder
       ':' . implode(', :', array_keys($parameters))
     );
     try {
+      
       $statement = $this->pdo->prepare($sql);
       $statement->execute($parameters);
+      return $this->pdo->lastInsertId();
     } catch (Exception $e) {
       return $e->getMessage();
     }
