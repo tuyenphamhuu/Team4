@@ -34,8 +34,8 @@
 						<td><?php echo $user->Addr; ?></td>
 						<td><?php echo $user->PhoneNumber; ?></td>
 						<td>
-							<a class="btn btn-dark" href="admin/editUser?id=<?php echo $user->ID_Account?>">Edit</a>
-							<a class="btn btn-warning"  href="delUser?id=<?php echo $user->ID_Account?>" onclick="return confirm('Do you want to del this ?')" >Delete</a>	
+							<a class="btn btn-sm btn-dark" href="admin/editUser?id=<?php echo $user->ID_Account?>">Edit</a>
+							<a class="btn btn-sm btn-warning"  href="delUser?id=<?php echo $user->ID_Account?>" onclick="return confirm('Do you want to del this ?')" >Delete</a>	
 						</td>
 					</tr>
 				
