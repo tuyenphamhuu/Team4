@@ -40,3 +40,6 @@ $router->get('admin/delProduct', 'ProductController@showDelProduct');//vu
 $router->post('delProduct', 'ProductController@delProduct');//vu
 $router->get('order', 'PagesController@orderView');//vu
 $router->get('mycart', 'PagesController@mycart');
+$router->post('ajaxAddProduct', 'ProductController@ajaxAddProduct');//vu
+$router->post('ajaxUpdateProduct', 'ProductController@ajaxUpdateProduct');//vu
+$router->post('ajaxDeleteProduct', 'ProductController@ajaxDeleteProduct');//vu
