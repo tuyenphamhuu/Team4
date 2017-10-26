@@ -1,5 +1,7 @@
-	<?php require 'partials/head.php'; ?>
-<?php require 'partials/nav.php'; ?>
+<?php require 'partials/head.php'; ?>
+<?php require 'partials/nav.php'; 
+//if(isset($_SESSION['sl'])){echo $_SESSION['sl'];}
+?>
 	
 <div id="wrapper-detail">
 	<div class="container">	
@@ -131,7 +133,6 @@
 </div>
 
 <!-- Modal -->
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -158,18 +159,17 @@
 
 <?php require 'partials/footer.php'; ?>
 
-
- <script type="text/javascript">
-  jQuery(document).ready(function(){
-   jQuery("#add-btn").click(function(){
-    jQuery.ajax({
-     type:"POST",
-     url:"ajax.php", //goi toi file ajax.php
-     data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val()+"&name="+jQuery("#ProductName").val()+"&price="+jQuery("#NewPrice").val()+"&image="+jQuery("#image").val(),
-     success:function(html){
-		$('#exampleModal').modal('show');
-     }
+<script>
+jQuery(document).ready(function(){
+    jQuery("#add-btn").click(function(){
+     jQuery.ajax({
+      type:"POST",
+      url:"/ajaxAddProduct", //goi toi file ajax.php
+      data:"color="+jQuery('input[name=Radios1]:checked').val()+"&sl="+jQuery("#example-number-input").val()+"&id="+jQuery("#idProduct").val()+"&name="+jQuery("#ProductName").val()+"&price="+jQuery("#NewPrice").val()+"&image="+jQuery("#image").val(),
+      success:function(html){
+         $('#exampleModal').modal('show');
+      }
+     });
     });
    });
-  });
- </script>
+</script>

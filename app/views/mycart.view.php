@@ -8,12 +8,13 @@
 		<table class="bg-cart bill-ap table text-transform table-hover table-responsive">
 			<thead>
 				<tr>
+
 					<th style="width: 4%">No.</th>
 					<th style="width: 35%">Name Products</th>
 					<th style="width: 10%">Color</th>
 					<th style="width: 15%">Price</th>
 					<th style="width: 15%">Quantity</th>
-					<th style="width: 15%">Total Money</th>
+					<th style="width: 15%">Total Amount</th>
 					<th style="width: 6%">Delete</th>
 				</tr>
 			</thead>
@@ -28,11 +29,10 @@
 						$var=array_keys($value);
 						$k =array_shift($var);
 						$idcolor=$arC[$key][$k]['id'].$arC[$key][$k]['color'];
-						echo $idcolor;
 						?>
 						<tr class="list-pr-ap" id="<?php echo $idcolor;?>">
 						
-							<th><?php echo $key+1; ?></th>
+							<th><?php echo $stt+1; ?></th>
 							<td>
 								<div class="row">
 									<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
@@ -67,6 +67,7 @@
 							</td>
 						</tr>
 						<?php
+						$stt++;
 					}
 				}
 				 ?>
@@ -106,45 +107,6 @@
 
 	</div>
 </div>
-	
-<script type="text/javascript">
-  jQuery(document).ready(function(){
-   jQuery("input[name=\'quantity\']").click(function(){
-	var pri = '.price-'+this.id;
-    var qua = '.quantity-'+this.id;
-    jQuery.ajax({
-     type:"POST",
-     url:"update.php", //goi toi file update.php
-     data:"idcolor="+this.id+"&quantity="+jQuery(qua).val(),
-     success:function(html){
-		//$('#exampleModal').modal('show');
-     }
-    });
-   });
-   $(document).ready(function() {
-		var needToRemove;
-		var confirmModal = $('#exampleModal');
-		$('.remove').click(function() {
-			needToRemove = $(this).closest('tr');
-			confirmModal.modal('hide');
-		});
-		$('.yes-remove').click(function() {
-			confirmModal.modal('hide');
-			needToRemove.remove();
-		});
-	});
 
-   jQuery(".removeP").click(function(){
-    jQuery.ajax({
-     type:"POST",
-     url:"delete.php", //goi toi file update.php
-     data:"idcolor="+this.id,
-     success:function(html){
-
-     }
-    });
-   });
-  });
- </script>
 
 <?php require 'partials/footer.php'; ?>
