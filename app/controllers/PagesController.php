@@ -66,7 +66,16 @@ class PagesController
     return view('signin');
   }
 
-
+  public function detailProduct()
+  {
+    $id  = $_GET['idProduct'];
+    $sql = " SELECT * FROM product as p INNER JOIN color as c ON p.ID_Product = c.ID_Product  WHERE p.ID_Product   = $id ";
+    $products  = Product::selectByType($sql);
+    $idtype    = $_GET['type'];
+    $sqltype   = " SELECT * FROM product WHERE ID_TypeProduct = $idtype ORDER BY RAND() LIMIT 4 ";
+    $moreprd   = Product::selectByType($sqltype);
+    return view('detail-iPad', ['products' => $products, 'moreprd' => $moreprd ]);
+  }
 
   // public function orderView()
   // {
@@ -87,20 +96,27 @@ class PagesController
     
     return view('mycart',['arC' => $arCs ]);
   }
-
   public function orderCustomer()
   {
-    $add=$_POST['add'];
-    $total=$_POST['total'];
-    $phone=$_POST['phone'];
-    $email=$_POST['email'];
-    $name=$_POST['name'];
-   $id = Order::insert($add, $total, $phone, $email, $name);
-    //return redirect("");
+   
+      $add=$_POST['add'];
+      $total=$_POST['total'];
+      $phone=$_POST['phone'];
+      $email=$_POST['email'];
+      $name=$_POST['name'];
+     echo $id = Order::insert($add, $total, $phone, $email, $name);
+      //return redirect("");
+  
   }
 
   
 
 
- 
+  public function seach()
+  {
+    $name     = $_POST['aname'];
+    $sql      = " SELECT * FROM product WHERE ProductName LIKE '%{$name}%' ORDER BY ID_Product DESC ";
+    $results  = Product::selectByType($sql); 
+    return view('seach', ['results' => $results]);    
+  }
 }
