@@ -12,7 +12,7 @@
 							foreach ($iphones as $items) {
 								?>
 									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-										<div class="wrap-item-prd hover-ap hover">
+										<div class="wrap-item-prd hover-ap">
 											<img class="mx-auto d-block rounded" src="public/images/<?php echo $items->Image ?>" alt="">
 											<div class="overlay-n">
 												<h2><?php echo $items->ProductName ?></h2>
@@ -42,7 +42,7 @@
 							foreach ($ipads as $items) {
 								?>
 									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-										<div class="wrap-item-prd hover-ap hover">
+										<div class="wrap-item-prd hover-ap">
 											<img class="mx-auto d-block rounded" src="public/images/<?php echo $items->Image ?>" alt="">
 											<div class="overlay-n">
 												<h2><?php echo $items->ProductName ?></h2>
