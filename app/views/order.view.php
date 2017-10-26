@@ -71,7 +71,7 @@
 						<!-- </div> -->
 					</div>
 						<div class="submit-order text-center">
-					  	<button class="btn btn-dark" <?php if(!isset($total)){echo "hidden=hidden";}  ?> type="submit">Check out</button>
+					  	<button class="btn btn-dark" <?php if($total==null){echo "hidden=hidden";}  ?> type="submit">Check out</button>
 					</div>
 				</form>
 
