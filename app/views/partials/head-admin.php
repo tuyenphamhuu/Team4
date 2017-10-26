@@ -31,7 +31,7 @@
 </head>
 <body>
 <!-- <img id="img-admin" class="mx-auto d-block wh" src="/public/images/logo-apple.png"> -->
-	<div class="text-right">
+	<div class="text-right hello-admin">
 		<div class="dropdown">
 				<i class="fa fa-user-circle" aria-hidden="true"></i>
 			  	<a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

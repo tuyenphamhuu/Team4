@@ -1,11 +1,14 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 
+<div class="row wrapper-search-products">
+	<div class="col-10"></div>
+	<div class="col-2">
 <input id="key" type="text" class="form-control search" placeholder="Search by name
 by ajax" >
+</div>
+</div>
 
-
-<div id="show"></div>
 
 <!-- <h1>iPhone</h1> -->
 <content>
@@ -55,8 +58,23 @@ by ajax" >
 					}
 				 ?>
 		</div>
+		<hr>
+		<nav aria-label="Page navigation example">
+  			<ul class="pagination justify-content-end">
+    			<li class="page-item disabled">
+      				<a class="page-link" href="#" tabindex="-1">Previous</a>
+    			</li>
+    			<li class="page-item"><a class="page-link" href="#">1</a></li>
+    			<li class="page-item"><a class="page-link" href="#">2</a></li>
+    			<li class="page-item"><a class="page-link" href="#">3</a></li>
+    			<li class="page-item">
+      				<a class="page-link" href="#">Next</a>
+    			</li>
+  			</ul>
+		</nav>
+
 	</div>
-</div>	
+		</div>	
 </content>
 <?php require 'partials/footer.php'; ?>
 
@@ -79,4 +97,4 @@ by ajax" >
 			}
 		});
     });
-</script>
+</script>	

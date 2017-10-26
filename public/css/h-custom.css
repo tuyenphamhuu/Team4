@@ -287,6 +287,9 @@ height: 60px;
 .overlay-image-ip:hover .overlay {
   opacity: 1;
 }
+.pagination {
+    margin-bottom: 0;
+}
 /*detail-ipad-page*/
 #wrapper-detail {
     background-color: #ececef;
@@ -410,17 +413,20 @@ height: 60px;
     letter-spacing: 0;
     font-size: 20px;
     color: white;
-    padding-top: 30px;
+ /*   padding-top: 30px;*/
 }
 .nav-item a {
     color: white;
 }
-.nav-item:hover a {
+.main-menumanager:hover p {
+    color: #ffc107;
+}
+.main-menumanager:hover i {
     color: #ffc107;
 }
 
 .menu-manager {
-    background-color: #26292e;
+     background-color: #f8f9fa;
     font-size: 16px;
 }
 .icon-main-menumanage i {
@@ -430,25 +436,25 @@ height: 60px;
 .top-menumanager {
   /*  background-color: #111;*/
     font-size: 16px;
-    color: white;
+    margin-top: 10px;
 }
 .top-menumanager i {
     font-size: 40px;
-    margin-left: 10px;
-    margin-top: 5px;
 }
 .top-menumanager p {
-    font-size: 17px;
-    margin-left: 15px;
-    margin-top: 13px;
+    font-size: 18px;
+    margin-bottom: 0;
 }
 .main-menumanager i {
     font-size: 30px;
+     color: #111;
+
 }
 .main-menumanager p {
     margin-left: 15px;
     margin-top: 7px;
     font-size: 16px;
+     color: #111;
 }
 
 /*.btn-manager-add {
@@ -458,6 +464,7 @@ height: 60px;
      background-color: #ececef;
 
 }*/
+
 .wrapper-btn {
     padding-left: 25px;
     margin-top: 20px;
@@ -467,9 +474,41 @@ height: 60px;
 }
 /*del products*/
 /*head-admin page*/
+.hello-admin {
+    background-color: #111;
+    padding: 10px 10px;
+}
+.hello-admin .dropdown a {
+    color: white;
+}
+.hello-admin .dropdown i {
+    color: white;
+}
+.hello-admin .dropdown:hover a {
+    color: blue;
+}
+.hello-admin .dropdown .dropdown-menu a {
+    color: #111;
+}
+
 
 /*indexProducts*/
 .img-main-manager {
     width: 150px;
+}
+.wrapper-btn {
+    padding-left: 25px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.btn-manager-add {
+    margin-left: 20px;
+}
+
+
+
+.wrapper-search-products {
+    background-color: #ececef;
+
 }
 
