@@ -35,18 +35,16 @@
 							<th><?php echo $stt+1; ?></th>
 							<td>
 								<div class="row">
-									<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+									<div class="col-xl-3 col-lg-5 col-md-12 col-sm-12 col-12">
 										<img class="img-myc" src="../../public/images/<?php echo $arC[$key][$k]['image'] ?>">
 									</div>
-									<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
+									<div class="col-xl-9 col-lg-7 col-md-12 col-sm-12 col-12">
 										<?php echo $arC[$key][$k]['name'] ?>
 									</div>
 								</div>
 							</td>
-							<td>
-							<div class="detail-image">
+							<td class="detail-image">
 								<img class="image-color" src="public/images/<?php echo $arC[$key][$k]['color']?>.png">
-							</div>
 							</td>
 							<th>$<span class="price-<?php echo $idcolor;?>"><?php echo $arC[$key][$k]['price'] ?></span></th>
 							<td class="count-ap">
