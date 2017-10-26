@@ -51,7 +51,7 @@
 								<input name="quantity" class="quantity-<?php echo $idcolor;?>"  class="text-center" type="number" id="<?php echo $idcolor;?>" value="<?php echo $arC[$key][$k]['sl'] ?>" min="1">
 								<input type="text" class="idcolor" hidden="hidden" value="<?php echo $idcolor;?>">
 							</td>
-							<td>$ <span class="total total-<?php echo $idcolor;?>">
+							<td>$ <span id="tt" class="total total-<?php echo $idcolor;?>">
 							<?php echo $total = $arC[$key][$k]['sl']*$arC[$key][$k]['price'];
 							// $sub += $total  ?></span></td>
 							<td class="edit-bill">
@@ -71,14 +71,15 @@
 				 ?>
 				<tr class="list-pr-ap">
 					<td colspan="4" class="text-left">
-						<a href="" class="btn prc-bill" >&laquo; Keep buying</a>
+					<button type="button" class="btn btn-dark" onclick="goBack()" >&laquo; Keep buying</button>
+						<!-- <a href="" class="btn prc-bill" >&laquo; Keep buying</a> -->
 					</td>
 					<td class="font-weight-bold">
 						SubTotal: $ <span id="total"></span>
 						<?php //echo $sub; ?>
 					</td>
 					<td>
-						<a href="order?sub=<?php echo $sub ?>" class="btn prc-bill" >Checkout &raquo;</a>
+						<a href="order" class="btn btn-dark" >Checkout &raquo;</a>
 					</td>
 				</tr>
 
@@ -108,3 +109,8 @@
 
 
 <?php require 'partials/footer.php'; ?>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
