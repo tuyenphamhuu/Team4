@@ -15,7 +15,7 @@
   					</div>
   					<div class="form-row form-editinfo">
 					    <div class="col">
-					      	<input type="text" name="rule" class="form-control" id="validationCustom02" placeholder="Rule_Rank" required>
+					      	<input type="text" name="role" class="form-control" id="validationCustom02" placeholder="Role_Rank" required>
 					    </div>
 					</div>
 					<div class="form-row form-editinfo">
