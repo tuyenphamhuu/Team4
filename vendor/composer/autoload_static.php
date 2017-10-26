@@ -18,6 +18,7 @@ class ComposerStaticInite8d29c97a5d2864984eccb1f12418596
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'App\\Models\\Account' => __DIR__ . '/../..' . '/app/models/Account.php',
+        'App\\Models\\Order' => __DIR__ . '/../..' . '/app/models/Order.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/models/Product.php',
         'App\\Models\\TypeProduct' => __DIR__ . '/../..' . '/app/models/TypeProduct.php',
         'ComposerAutoloaderInite8d29c97a5d2864984eccb1f12418596' => __DIR__ . '/..' . '/composer/autoload_real.php',

@@ -78,7 +78,7 @@
 						<?php //echo $sub; ?>
 					</td>
 					<td>
-						<a href="watch?sub=<?php echo $sub ?>" class="btn prc-bill" >Checkout &raquo;</a>
+						<a href="order?sub=<?php echo $sub ?>" class="btn prc-bill" >Checkout &raquo;</a>
 					</td>
 				</tr>
 

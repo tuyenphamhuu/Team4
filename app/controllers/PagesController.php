@@ -44,9 +44,22 @@ class PagesController
   {
     return view('tv');
   }
-  public function watch()
+  public function order()
   {
-    return view('watch');
+    if(isset($_SESSION['cart'])){
+			// echo "<pre>";
+			// 	print_r($_SESSION['cart']);
+			// echo "</pre>";
+			$arrcart=$_SESSION['cart'];
+			$total=0;
+			foreach ($arrcart as $key =>$values) {
+				$var=array_keys($values);// lấy tất cả các key của array
+				$k =array_shift($var);// Lấy key đầu tiên
+					$total += +($arrcart[$key][$k]['sl']*$arrcart[$key][$k]['price']);
+        }
+        return view('order',['total' => $total]); 
+			}
+    return view('order');
   }
   public function admin()
   {
@@ -85,17 +98,29 @@ class PagesController
   }
   public function orderCustomer()
   {
-    die($_POST['date']);
-    if (isset($_POST['submit'])) {
+   
+      $add   =$_POST['add'];
+      $total =$_POST['total'];
+      $phone =$_POST['phone'];
+      $email =$_POST['email'];
+      $name  =$_POST['name'];
       $param = [
-        'OrderDate'   => $_POST['date'],
-        'Email'       => $_POST['email'],
-        'Add'         => $_POST['add'],
-        'Orderer'     => $_POST['name'],
-        'PhoneNumber' => $_POST['phone']
+        'Addr'         => $add,
+        'Total'       => $total,
+        'PhoneNumber' => $phone,
+        'Email'       => $email,
+        'UserName'    => $name
       ];
-    }
+      //echo $add. $total. $phone. $email. $name;
+      //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+      echo  Order::insertOrder($param);
+      //redirect("iPhone");
+  
   }
+
+  
+
+
   public function seach()
   {
     $name     = $_POST['aname'];
