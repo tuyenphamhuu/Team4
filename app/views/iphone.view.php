@@ -4,8 +4,7 @@
 <div class="row wrapper-search-products">
 	<div class="col-10"></div>
 	<div class="col-2">
-<input id="key" type="text" class="form-control search" placeholder="Search by name
-by ajax" >
+<input id="key" type="text" class="form-control search" placeholder="Search ajax" >
 </div>
 </div>
 
