@@ -99,13 +99,22 @@ class PagesController
   public function orderCustomer()
   {
    
-      $add=$_POST['add'];
-      $total=$_POST['total'];
-      $phone=$_POST['phone'];
-      $email=$_POST['email'];
-      $name=$_POST['name'];
-     echo $id = Order::insert($add, $total, $phone, $email, $name);
-      //return redirect("");
+      $add   =$_POST['add'];
+      $total =$_POST['total'];
+      $phone =$_POST['phone'];
+      $email =$_POST['email'];
+      $name  =$_POST['name'];
+      $param = [
+        'Addr'         => $add,
+        'Total'       => $total,
+        'PhoneNumber' => $phone,
+        'Email'       => $email,
+        'UserName'    => $name
+      ];
+      //echo $add. $total. $phone. $email. $name;
+      //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+      echo  Order::insertOrder($param);
+      //redirect("iPhone");
   
   }
 

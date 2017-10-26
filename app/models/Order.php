@@ -2,7 +2,10 @@
 
 namespace App\Models;
 
-use App\Core\App;
+use App\core\App;
+
+use PDO;
+
 
 class Order
 {
@@ -13,16 +16,10 @@ class Order
     return App::get('database')->selectAll(Account::$table);
   }
   
-  public static function insert($add, $total, $phone, $email, $name) 
+  public static function insertOrder($params) 
   {
-    App::get('database')->insert(Order::$table, [
-      
-      'Add'         => $add,
-      'Total'       => $total,
-      'PhoneNumber' => $phone,
-      'Email'       => $email,
-      'UserName'    => $name
-    ]);
+    //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+    return App::get('database')->insert(Order::$table, $params);
   }
   // get Account by id
   public static function getById($id) 
