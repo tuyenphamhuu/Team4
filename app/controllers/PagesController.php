@@ -104,7 +104,7 @@ class PagesController
       $phone =$_POST['phone'];
       $email =$_POST['email'];
       $name  =$_POST['name'];
-      $param = [
+      $params = [
         'Addr'         => $add,
         'Total'       => $total,
         'PhoneNumber' => $phone,
@@ -113,7 +113,20 @@ class PagesController
       ];
       //echo $add. $total. $phone. $email. $name;
       //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
-      echo  Order::insertOrder($param);
+      $idorder = Order::insertOrder($params);
+      if(isset($idorder) and isset($_SESSION['cart'])){
+        foreach ($_SESSION['cart'] as $key => $value) {
+          $var=array_keys($value);// lấy tất cả các key của array
+          $k =array_shift($var);// Lấy key đầu tiên $arrcart[$key][$k]['sl']
+          $para = [
+            'ID_Order'         => $idorder,
+            'ID_Product'       => $_SESSION['cart'][$key][$k]['id'],
+            'Quantity' => $_SESSION['cart'][$key][$k]['sl'],
+            'Color'       => $_SESSION['cart'][$key][$k]['color']
+          ];
+          Order::insertDetailOrder($para);
+        }
+      }
       //redirect("iPhone");
   
   }

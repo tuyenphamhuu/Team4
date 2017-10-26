@@ -21,6 +21,11 @@ class Order
     //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
     return App::get('database')->insert(Order::$table, $params);
   }
+  public static function insertDetailOrder($para) 
+  {
+    //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+    return App::get('database')->insert('detail_order', $para);
+  }
   // get Account by id
   public static function getById($id) 
   {
