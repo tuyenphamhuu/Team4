@@ -75,7 +75,6 @@
 				</div>
 				<hr>
 				<div class="detail5 row">
-    				<a href="/order" target="_blank"><button type="button" id="buynow-btn" class="btn btn-dark">Buy now</button></a>
     				<button type="button"  id="add-btn" class="btn btn-dark">Add to cart</button>
 				</div>
 
