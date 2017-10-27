@@ -74,9 +74,9 @@
   		</table><br>
         <h4>Total: $<?php echo $total; ?></h4>
 
-  <div class="footer-left"> Da Nang City 19st, Oct 2017<br/>
+  <div class="footer-left"> <?php echo $Order[0]->Addr; ?> 27st, Oct 2017<br/>
     Customer <br>(Sign & Full name)</div>
-  <div class="footer-right"> Da Nang City 19st, Oct 2017<br/>
+  <div class="footer-right"> Da Nang City 27st, Oct 2017<br/>
     Saller<br>(Sign & Full name)</div>
     <input id="printpagebutton" type="button" value="Print Bill" onclick="printpage()"/>
 </div>
