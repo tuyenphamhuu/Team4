@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tohoma";
+    text-transform: none;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 21cm;
+    overflow:hidden;
+    min-height:297mm;
+    padding: 2.5cm;
+    margin-left:auto;
+    margin-right:auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.subpage {
+    padding: 1cm;
+    border: 5px red solid;
+    height: 237mm;
+    outline: 2cm #FFEAEA solid;
+}
+ @page {
+ size: A4;
+ margin: 0;
+}
+button {
+    width:100px;
+    height: 24px;
+}
+.header {
+    overflow:hidden;
+    text-align: center;
+}
+.logo {
+    background-color:#FFFFFF;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+.company {
+ /*   padding-top:24px;*/
+    text-transform:none;
+    background-color:#FFFFFF;
+    font-size:14px;
+}
+.title {
+    text-align:center;
+    position:relative;
+  /*  color:#0000FF;*/
+    font-size: 24px;
+    top:1px;
+}
+.info-customer {
+    font-size: 14px;
+}
+.footer-left {
+    text-align:center;
+    text-transform:none;
+    padding-top:24px;
+    position:relative;
+    height: 150px;
+    width:50%;
+    color:#000;
+    float:left;
+    font-size: 14px;
+    bottom:1px;
+}
+.footer-right {
+    text-align:center;
+    text-transform:none;
+    padding-top:24px;
+    position:relative;
+    height: 150px;
+    width:50%;
+    color:#000;
+    font-size: 14px;
+    float:right;
+    bottom:1px;
+}
+.TableData {
+    background:#ffffff;
+    font: 16px;
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+    border:thin solid #d3d3d3;
+}
+.TableData th {
+    background: rgba(0,0,255,0.1);
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    border: solid 1px #ccc;
+    height: 24px;
+}
+.TableData tr {
+    height: 24px;
+    border:thin solid #d3d3d3;
+}
+.TableData tr td {
+    padding-right: 2px;
+    padding-left: 2px;
+    border:thin solid #d3d3d3;
+}
+.TableData tr:hover {
+    background: rgba(0,0,0,0.05);
+}
+.TableData .col {
+    text-align:center;
+    width: 10%;
+}
+.TableData .colNamePr {
+    text-align:left;
+    width: 40%;
+}
+
+.TableData .colPrice {
+    text-align:right;
+    width: 120px;
+}
+.TableData .colQuantity {
+    text-align: center;
+    width: 50px;
+}
+.TableData .colAmount {
+    text-align: right;
+    width: 120px;
+}
+.TableData .total {
+    text-align: right;
+    font-weight:bold;
+    text-transform:none;
+    padding-right: 4px;
+}
+.TableData .total-amount{
+    text-align: right;
+    width: 120px;
+}
+@media print {
+ @page {
+ margin: 0;
+ border: initial;
+ border-radius: initial;
+ width: initial;
+ min-height: initial;
+ box-shadow: initial;
+ background: initial;
+ page-break-after: always;
+}
+}

@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
-use App\Core\App;
+use App\core\App;
+
 use PDO;
 
-class Account
+
+class Order
 {
   static $table = "order";
 
@@ -13,12 +15,16 @@ class Account
   {
     return App::get('database')->selectAll(Account::$table);
   }
-  public static function insert($params) 
+  
+  public static function insertOrder($params) 
   {
-    
-    App::get('database')->insert(Account::$table, $params);
-    return view('admin/indexUser');
-
+    //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+    return App::get('database')->insert(Order::$table, $params);
+  }
+  public static function insertDetailOrder($para) 
+  {
+    //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+    return App::get('database')->insert('detail_order', $para);
   }
   // get Account by id
   public static function getById($id) 
@@ -44,5 +50,17 @@ class Account
   public static function deleteById($sql) 
   {
     App::get('database')->deleteById($sql);
+  }
+  public static function queryOrder($ID_Order)
+  {
+    $sql = "SELECT * FROM `order`  WHERE  `ID_Order`='{$ID_Order}' ";
+    return App::get('database')->query($sql);
+  }
+  public static function queryDetailOrder($ID_Order)
+  {
+    $sql = "SELECT * FROM detail_order,product  WHERE  `ID_Order`='{$ID_Order}' 
+    AND product.ID_Product = detail_order.ID_Product
+     ";
+    return App::get('database')->query($sql);
   }
 }

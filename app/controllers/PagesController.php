@@ -44,13 +44,26 @@ class PagesController
   {
     return view('tv');
   }
-  public function watch()
+  public function order()
   {
-    return view('watch');
+    if(isset($_SESSION['cart'])){
+			// echo "<pre>";
+			// 	print_r($_SESSION['cart']);
+			// echo "</pre>";
+			$arrcart=$_SESSION['cart'];
+			$total=0;
+			foreach ($arrcart as $key =>$values) {
+				$var=array_keys($values);// lấy tất cả các key của array
+				$k =array_shift($var);// Lấy key đầu tiên
+					$total += +($arrcart[$key][$k]['sl']*$arrcart[$key][$k]['price']);
+        }
+        return view('order',['total' => $total]); 
+			}
+    return view('order');
   }
-  public function admin()
+  public function bill()
   {
-    return view('signin');
+    return view('bill');
   }
 
   public function detailProduct()
@@ -85,16 +98,45 @@ class PagesController
   }
   public function orderCustomer()
   {
-    if (isset($_POST['submit'])) {
-      $param = [
-        'OrderDate'   => $_POST['date'],
-        'Email'       => $_POST['email'],
-        'Add'         => $_POST['add'],
-        'Orderer'     => $_POST['name'],
-        'PhoneNumber' => $_POST['phone']
+      $add   =$_POST['add'];
+      $total =$_POST['total'];
+      $phone =$_POST['phone'];
+      $email =$_POST['email'];
+      $name  =$_POST['name'];
+      $params = [
+        'Addr'         => $add,
+        'Total'       => $total,
+        'PhoneNumber' => $phone,
+        'Email'       => $email,
+        'UserName'    => $name
       ];
-    }
+      //echo $add. $total. $phone. $email. $name;
+      //INSERT INTO `order`(`ID_Order`, `Add`, `Total`, `PhoneNumber`, `Email`, `UserName`)
+      $idorder = Order::insertOrder($params);
+      if(isset($idorder) and isset($_SESSION['cart'])){
+        foreach ($_SESSION['cart'] as $key => $value) {
+          $var=array_keys($value);// lấy tất cả các key của array
+          $k =array_shift($var);// Lấy key đầu tiên $arrcart[$key][$k]['sl']
+          $para = [
+            'ID_Order'         => $idorder,
+            'ID_Product'       => $_SESSION['cart'][$key][$k]['id'],
+            'Quantity' => $_SESSION['cart'][$key][$k]['sl'],
+            'Color'       => $_SESSION['cart'][$key][$k]['color']
+          ];
+          Order::insertDetailOrder($para);
+        }
+        unset($_SESSION['cart']);
+        $order = Order::queryOrder($idorder);
+        $detail = Order::queryDetailOrder($idorder);
+        return view('bill',['Order' => $order, 'Detail_Order' => $detail ]);
+      }
+      redirect("");
+  
   }
+
+  
+
+
   public function seach()
   {
     $name     = $_POST['aname'];
