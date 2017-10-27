@@ -6,7 +6,7 @@
 <div id="wrapper-detail">
 	<div class="container">	
 		<nav class="breadcrumb">
-			 <a class="breadcrumb-item" href="/iPad?id=2">iPad</a>	
+			 <a class="breadcrumb-item" href="#">Detail-Product</a>	
 		</nav>
 		<hr>
 	</div>
@@ -15,7 +15,7 @@
 
 			<div class="col-md-6 text-center">
 				<div class="detail-image">
-					<img src="public/images/<?php echo $products[0]->Image; ?>">
+					<img src="public/images/<?php echo $products[0]->Image ?>">
 				</div>
 			</div>
 			<div class="col-md-6">

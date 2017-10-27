@@ -85,7 +85,6 @@ class PagesController
   }
   public function orderCustomer()
   {
-    die($_POST['date']);
     if (isset($_POST['submit'])) {
       $param = [
         'OrderDate'   => $_POST['date'],
